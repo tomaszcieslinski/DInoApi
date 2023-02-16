@@ -15,5 +15,5 @@ PGUSER = postgres\
 PGHOST= localhost\
 PGDATABASE = postgres\
 PGPASSWORD= admin\
-PGPORT = 5432\
+PGPORT = 5432
 
