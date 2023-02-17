@@ -46,81 +46,53 @@ const getTransactions = async (req: Request, response: Response, next: NextFunct
         }
  });
 };
+
+let query = `{
+    swaps(orderBy: timestamp, orderDirection: desc, where:
+     { pool: "0x19c10e1f20df3a8c2ac93a62d7fba719fa777026" }
+    ) {
+      pool {
+    
+        token0 {
+          id
+          symbol
+        }
+        token1 {
+          id
+          symbol
+        }
+      }
+      sender
+      id
+      recipient
+      timestamp
+      amount0
+      amount1
+     }
+    }`
+
 async function listen(){
         setInterval(async () => {
             console.time('appLifeTime');
             let dinoCallArr :DinoCall[] = [];
-            let url = "https://api.ethplorer.io/getTokenHistory/0x49642110B712C1FD7261Bc074105E9E44676c68F?apiKey="+process.env.APIKEY+"&type=transfer&limit=100"
-            let response= await axios.get(url).catch()
-            let txArray = Object.assign(Array.from(response.data.operations))
-            let exchanges = process.env.EXCHANGES?.split(' ')!
+            let url = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3"
+            let response= await axios.post(url,{query:query}).catch()
+            let txArray = Object.assign(Array.from(response.data.data.swaps))
             for(let i = 0;i<txArray.length;i++){
-                let dinoCall = new DinoCall();
-                let from = txArray[i].from.toString()
-                let to = txArray[i].to    
-                for(let j = 0;j<exchanges.length;j++){                    
-                    if((from.localeCompare(exchanges[j].toString().toLowerCase())==0)){
-                        dinoCall.from = from;
-                        dinoCall.walletaddress = to;
+                let dinoCall = new DinoCall();   
+                if(txArray[i].amount0<0){
+                        dinoCall.walletaddress = txArray[i].recipient;
                         dinoCall.type= "BUY";
-                        dinoCall.timestamp = txArray[i].timestamp;
-                        dinoCall.value = Number(txArray[i].value)/1E18;
-                        dinoCall.transactionHash = txArray[i].transactionHash;
-                        dinoCallArr.push(dinoCall)
-                        break;
-                    }
-                }
+                        dinoCall.timestamp = Number(txArray[i].timestamp);
+                        dinoCall.value = Math.abs(txArray[i].amount0)
+                        dinoCall.ethervalue=txArray[i].amount1
+                        dinoCall.transactionHash = txArray[i].id;
+                        dinoCallArr.push(dinoCall)  
+                }          
             }
-            let filter = exchanges.map(item =>{return item.toLowerCase()})
-            let filteredTx = dinoCallArr.filter(tx => !filter.includes(tx.walletaddress.toString()))
-            updateTransactionsWithDinoBuyData(filteredTx)
+            updateTransactionsWithDinoBuyData(dinoCallArr)
             console.timeEnd('appLifeTime');
         }, 4000);
-}
-
-
-function selectEtheriumValues(){
-     let dinoCallArr :DinoCall[] = [];
-        let transactions;
-        client.query(`SELECT transactionhash,ethervalue from wallettransactions`, (err: any, res: any) => {
-            if (err) {
-                console.error(err);
-                return;
-            }else{
-                let txs = Object.assign(res.rows)
-                for(let i = 0;i < txs.length;i++){
-                    let dinoCall = new DinoCall();
-                    dinoCall.ethervalue=txs[i].ethervalue;
-                    dinoCall.transactionHash=txs[i].transactionhash;
-                    dinoCallArr.push(dinoCall)
-                }       
-                console.log("Selecting Data Done")
-                updateDatabase(dinoCallArr);
-            }
-     });
-}
-
-
-async function updateDatabase(dinoArr:DinoCall[]){
-
-    let filtered = dinoArr.filter(item => item.ethervalue==null)
-    console.log(filtered.length, "rows to update")
-        for(let i =0;i<filtered.length;i++ ){
-            setTimeout(async ()=>{
-                console.log(filtered[i].transactionHash)
-                let url = "https://api.ethplorer.io/getTxInfo/"+filtered[i].transactionHash+"?"+process.env.APIKEY
-                let response= await axios.get(url).catch()
-                let etherValue = response.data.operations[0].value/1E18
-                client.query('UPDATE wallettransactions SET ethervalue = ($1) where transactionhash like ($2)',[etherValue,filtered[i].transactionHash],(err: any,res: any)=>{
-                    if(err){
-                        throw err
-                        console.log(err)
-                    }else{
-                        console.log("Updated",i)
-                    }
-                });
-            },i*1000)
-        }
 }
 
 
@@ -132,8 +104,8 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
           console.log(error)
         } 
        });
-       client.query('INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING'
-       , [array[i].walletaddress,array[i].transactionHash,new Date(array[i].timestamp),array[i].value], (error: any, results: { rows: any; }) => {
+       client.query('INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value,ethervalue) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING'
+       , [array[i].walletaddress,array[i].transactionHash,new Date(array[i].timestamp*1000),array[i].value,array[i].ethervalue], (error: any, results: { rows: any; }) => {
         if (error) {
           throw error
           console.log(error)
@@ -142,4 +114,5 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
     }
 }
 
-export default { getTransactions,listen,selectEtheriumValues};
+
+export default {getTransactions,listen};
