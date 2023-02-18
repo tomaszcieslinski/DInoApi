@@ -95,8 +95,9 @@ const getTransactions = async (req: Request, response: Response, next: NextFunct
                 dinoBuyArray[j].buyData.push(buyData)
               }
             }
-          }
-            return response.status(200).json({dinoBuyArray});
+          }     
+            let sortedArr= dinoBuyArray.sort((a, b) => (b.totalEther) - (a.totalEther)).slice(0,99);
+            return response.status(200).json({sortedArr});
         }
      });
 };
