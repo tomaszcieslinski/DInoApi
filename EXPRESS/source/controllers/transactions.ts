@@ -37,39 +37,45 @@ class DinoCall implements IDinoCall{
 // getting all posts
 const getTransactions = async (req: Request, response: Response, next: NextFunction) => {
 
-    client.query(`select walletaddress,SUM(ethervalue) as ethervalue,count(walletaddress) AS Value From wallettransactions GROUP BY walletaddress`, (err: any, res: any) => {
+    let dateFrom = req.query.dateFrom;
+    let dateTo = req.query.dateTo;
+    if(dateFrom || dateTo){
+      client.query(`select walletaddress,SUM(ethervalue) as ethervalue,count(walletaddress) AS Value From wallettransactions where "timestamp"  >= ($1) and "timestamp"  <= ($2)
+       GROUP BY walletaddress`,[dateFrom,dateTo], (err: any, res: any) => {
         if (err) {
             console.error(err);
             return;
         }else{
-            return response.status(200).json({ message: res });
+            return response.status(200).json({ message: res.rows });
         }
- });
+     });
+    }
 };
 
 let query = `{
-    swaps(orderBy: timestamp, orderDirection: desc, where:
-     { pool: "0x19c10e1f20df3a8c2ac93a62d7fba719fa777026" }
-    ) {
-      pool {
-    
-        token0 {
-          id
-          symbol
-        }
-        token1 {
-          id
-          symbol
-        }
+  swaps(orderBy: timestamp, orderDirection: desc, where:
+   { pool: "0x19c10e1f20df3a8c2ac93a62d7fba719fa777026" }
+  ) {
+    pool {
+  
+      token0 {
+        id
+        symbol
       }
-      sender
-      id
-      recipient
-      timestamp
-      amount0
-      amount1
-     }
-    }`
+      token1 {
+        id
+        symbol
+      }
+    }
+    origin
+    sender
+    id
+    recipient
+    timestamp
+    amount0
+    amount1
+   }
+  }`
 
 async function listen(){
         setInterval(async () => {
@@ -81,7 +87,7 @@ async function listen(){
             for(let i = 0;i<txArray.length;i++){
                 let dinoCall = new DinoCall();   
                 if(txArray[i].amount0<0){
-                        dinoCall.walletaddress = txArray[i].recipient;
+                        dinoCall.walletaddress = txArray[i].origin;
                         dinoCall.type= "BUY";
                         dinoCall.timestamp = Number(txArray[i].timestamp);
                         dinoCall.value = Math.abs(txArray[i].amount0)
@@ -109,7 +115,7 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
         if (error) {
           throw error
           console.log(error)
-        } 
+        }
        });
     }
 }
