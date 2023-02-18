@@ -34,22 +34,71 @@ class DinoCall implements IDinoCall{
     
 }
 
+interface IBuyData{
+    transactionhash: string
+    ether: number
+    dino: number
+}
+
+class BuyData implements IBuyData{
+  transactionhash!: string
+  ether!: number
+  dino!: number
+}
+
+interface IDinoResult{
+  walletAddress: String;
+  totalBuys: number;
+  totalEther: number;
+  buyData:BuyData[];
+}
+
+class DinoResult implements IDinoResult{
+  walletAddress!: String;
+  totalBuys: number =0;
+  totalEther: number=0;
+  buyData!:BuyData[];
+}
+
+
 // getting all posts
 const getTransactions = async (req: Request, response: Response, next: NextFunction) => {
 
     let dateFrom = req.query.dateFrom;
     let dateTo = req.query.dateTo;
-    if(dateFrom || dateTo){
-      client.query(`select walletaddress,SUM(ethervalue) as ethervalue,count(walletaddress) AS Value From wallettransactions where "timestamp"  >= ($1) and "timestamp"  <= ($2)
-       GROUP BY walletaddress`,[dateFrom,dateTo], (err: any, res: any) => {
+    client.query(`select walletaddress,transactionhash,ethervalue,value From wallettransactions where "timestamp"  >= ($1) and "timestamp"  <= ($2)`,[dateFrom,dateTo], (err: any, res: any) => {
         if (err) {
             console.error(err);
             return;
         }else{
-            return response.status(200).json({ message: res.rows });
+
+          let dinoBuyArray:DinoResult[] = []
+          let buyArray = Object.assign(Array.from(res.rows))
+          let filteredBuyArray = buyArray.filter((a: { walletaddress: any; }, i: any) => buyArray.findIndex((s: { walletaddress: any; }) => a.walletaddress === s.walletaddress) === i)
+          for(let i = 0 ; i<filteredBuyArray.length;i++){
+            let dinoResult:DinoResult = new DinoResult();
+            dinoResult.walletAddress = filteredBuyArray[i].walletaddress
+            let buyData:BuyData[] = []
+            dinoResult.buyData=buyData
+            dinoBuyArray.push(dinoResult)
+          }
+         console.log(buyArray)
+          for(let i = 0; i<buyArray.length;i++){
+            for(let j =0;j<dinoBuyArray.length;j++){       
+              if(dinoBuyArray[j].walletAddress.localeCompare(buyArray[i].walletaddress) == 0 ){
+                dinoBuyArray[j].totalBuys =  Number(dinoBuyArray[j].totalBuys) + 1      
+                dinoBuyArray[j].totalEther = dinoBuyArray[j].totalEther + Number(buyArray[i].ethervalue)
+                let buyData: BuyData = new BuyData()
+                buyData.dino = buyArray[i].value
+                buyData.ether = buyArray[i].ethervalue
+                buyData.transactionhash = buyArray[i].transactionhash.toString().split("#")[0]
+                dinoBuyArray[j].buyData.push(buyData)
+              }
+            }
+          }
+            return response.status(200).json({dinoBuyArray});
         }
      });
-    }
 };
 
 let query = `{
