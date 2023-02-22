@@ -3,6 +3,7 @@ import { Request, Response, NextFunction, response } from 'express';
 import * as dotenv from 'dotenv' 
 dotenv.config()
 import axios, { AxiosResponse } from 'axios';
+import Web3 from 'web3';
 
 const { Client } = require('pg');
 const client = new Client();
@@ -62,7 +63,36 @@ class DinoResult implements IDinoResult{
 
 
 // getting all posts
+
+
+
+const getWalletRank = async (req: Request, response: Response, next: NextFunction) => {
+
+
+  let dateFrom = req.query.dateFrom;
+  let dateTo = req.query.dateTo;
+  let wallet = req.query.walletaddress
+
+  client.query(`with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
+  From wallettransactions 
+  where ("timestamp" >= ($1) and "timestamp" <= ($2))
+  GROUP BY walletaddress
+  order by ethervalue desc)
+  select * from ranks
+  where address = ($3) `,[dateFrom,dateTo,wallet], (err: any, res: any) => {
+    if (err) {
+        console.error(err);
+        return;
+    }else{
+      let walletRank = Object.assign(Array.from(res.rows))
+        return response.status(200).json({walletRank});
+    }
+ });
+
+};
+
 const getTransactions = async (req: Request, response: Response, next: NextFunction) => {
+
 
     let dateFrom = req.query.dateFrom;
     let dateTo = req.query.dateTo;
@@ -129,7 +159,6 @@ let query = `{
 
 async function listen(){
         setInterval(async () => {
-            console.time('appLifeTime');
             let dinoCallArr :DinoCall[] = [];
             let url = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3"
             let response= await axios.post(url,{query:query}).catch()
@@ -147,7 +176,6 @@ async function listen(){
                 }          
             }
             updateTransactionsWithDinoBuyData(dinoCallArr)
-            console.timeEnd('appLifeTime');
         }, 4000);
 }
 
@@ -171,4 +199,14 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
 }
 
 
-export default {getTransactions,listen};
+
+
+async function getDataD(){
+
+}
+
+
+
+
+
+export default {getTransactions,listen,getDataD,getWalletRank};

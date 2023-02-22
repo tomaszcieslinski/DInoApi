@@ -4,6 +4,7 @@ import express, { Express } from 'express';
 import morgan from 'morgan';
 import routes from './routes/posts';
 import transactions from './controllers/transactions';
+import Web3 from 'web3';
 
 const router: Express = express();
 
