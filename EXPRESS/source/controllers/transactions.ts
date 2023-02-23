@@ -263,7 +263,8 @@ async function filterData(transactionArray: any[], any: any ){
       dinoCallArr.push(dinoCall)
   }
   console.log("Prepared Data:", dinoCallArr.length,"Filtered Routers: ",counter)
-  updateTransactionsWithDinoBuyData(dinoCallArr)
+  await updateTransactionsWithDinoBuyData(dinoCallArr)
+  listen()
   console.log("Database init done")
 }
 
