@@ -198,25 +198,31 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
        });
     }
 }
-
+var web = new Web3('https://mainnet.infura.io/v3/5f6163e838e94331b8d34de358f97b4e');
 async function getDataD(){
   console.log("DataBase initialize")
+
+  await fetchDataV3()
+  console.log("V3 fetched")
+  console.log("done")
+}
+
+
+
+
+
+
+async function fetchDataV3(){
   let blockStep = 2000;
-  var web = new Web3('https://mainnet.infura.io/v3/5f6163e838e94331b8d34de358f97b4e');
   let lastBlock = await web.eth.getBlockNumber()
   let previousBlock = lastBlock - blockStep;
   let transactionArray= []
   let txArray=[]; 
-  let txArray2=[]; 
-  let counter =0 ;
   do{
     let url = "https://api.etherscan.io/api?module=logs&action=getLogs&fromBlock="+previousBlock+"&toBlock="+lastBlock+"&address=0x19c10e1f20df3a8c2ac93a62d7fba719fa777026&topic0=0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67&offset=1000&apikey=JPK2J198PB1PCDNHCBJ6P9RQVVIDPPPK6Y"
-    let url2 ="https://api.etherscan.io/api?module=logs&action=getLogs&fromBlock="+previousBlock+"&toBlock="+lastBlock+"&address=0x82d6b30bff73c6363d024cbc2f44d1cbbee5972e&topic0=0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822&offset=1000&apikey=JPK2J198PB1PCDNHCBJ6P9RQVVIDPPPK6Y"
     setTimeout(async () => {},);
     let response= await axios.get(url).catch()
     txArray = Object.assign(Array.from(response.data.result))
-    let response2= await axios.get(url2).catch()
-    txArray2 = Object.assign(Array.from(response2.data.result))
     lastBlock = lastBlock-blockStep
     previousBlock= previousBlock-blockStep
     for(let i = 0; i< txArray.length;i++){
@@ -224,14 +230,14 @@ async function getDataD(){
         transactionArray.push(txArray[i])
       }
     }
-    for(let i = 0; i< txArray2.length;i++){
-      if(txArray2[i].topics[1].localeCompare(txArray2[i].topics[2])!=0){
-        transactionArray.push(txArray2[i])
-      }
-    }
-
     console.log("fetched buys: ", transactionArray.length,"BLOCKS:", "FROM",lastBlock,"TO",previousBlock)
   }while(txArray.length!=0)
+    await filterData(transactionArray,String)
+
+}
+
+async function filterData(transactionArray: any[], any: any ){
+  let counter =0;
   let dinoCallArr :DinoCall[] = [];
   for(let i = 0; i< transactionArray.length;i++){
     let dinoCall = new DinoCall(); 
@@ -259,7 +265,6 @@ async function getDataD(){
   console.log("Prepared Data:", dinoCallArr.length,"Filtered Routers: ",counter)
   updateTransactionsWithDinoBuyData(dinoCallArr)
   console.log("Database init done")
-  listen()
 }
 
 
