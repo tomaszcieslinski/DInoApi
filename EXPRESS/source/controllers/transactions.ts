@@ -6,6 +6,7 @@ import axios, { AxiosResponse } from 'axios';
 import Web3 from 'web3';
 import fs from 'fs'
 
+
 const { Client } = require('pg');
 const client = new Client();
 client.connect((err: { stack: any; }) => {
@@ -198,7 +199,7 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]){
        });
     }
 }
-var web = new Web3('https://mainnet.infura.io/v3/5f6163e838e94331b8d34de358f97b4e');
+var web = new Web3('https://mainnet.infura.io/v3/'+process.env.INFURA_KEY);
 async function getDataD(){
   console.log("DataBase initialize")
 
@@ -219,7 +220,7 @@ async function fetchDataV3(){
   let transactionArray= []
   let txArray=[]; 
   do{
-    let url = "https://api.etherscan.io/api?module=logs&action=getLogs&fromBlock="+previousBlock+"&toBlock="+lastBlock+"&address=0x19c10e1f20df3a8c2ac93a62d7fba719fa777026&topic0=0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67&offset=1000&apikey=JPK2J198PB1PCDNHCBJ6P9RQVVIDPPPK6Y"
+    let url = "https://api.etherscan.io/api?module=logs&action=getLogs&fromBlock="+previousBlock+"&toBlock="+lastBlock+"&address=0x19c10e1f20df3a8c2ac93a62d7fba719fa777026&topic0=0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67&offset=1000&apikey="+process.env.ETHERSCAN_KEY
     setTimeout(async () => {},);
     let response= await axios.get(url).catch()
     txArray = Object.assign(Array.from(response.data.result))

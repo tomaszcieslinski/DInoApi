@@ -46,5 +46,7 @@ const PORT: any = process.env.PORT ?? 6060;
 
 
 httpServer.listen(PORT, () => console.log(`The server is running on port ${PORT}`));
-transactions.getDataD()
+transactions.getDataD();
+
+
 
