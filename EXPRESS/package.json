@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "source/server.ts",
+  "engines": {
+    "node": ">=16.17.1"
+  },
   "scripts": {
     "devInit": "nodemon source/serverInit.ts",
     "devListen": "nodemon source/serverListen.ts",
