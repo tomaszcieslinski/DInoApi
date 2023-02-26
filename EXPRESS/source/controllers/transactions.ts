@@ -115,7 +115,6 @@ const getTransactions = async (req: Request, response: Response) => {
           dinoResult.buyData = buyData;
           dinoBuyArray.push(dinoResult);
         }
-        console.log(buyArray);
         for (let i = 0; i < buyArray.length; i++) {
           for (let j = 0; j < dinoBuyArray.length; j++) {
             if (
