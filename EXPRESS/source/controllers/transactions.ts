@@ -174,7 +174,10 @@ async function listen() {
     let dinoCallArr: DinoCall[] = [];
     let url = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3";
     let response = await axios.post(url, { query: query }).catch();
-    let txArray = Object.assign(Array.from(response.data.data.swaps));
+    let txArray;
+    if(Object.assign(Array.from(response.data.data.swaps))!= undefined){
+       txArray = Object.assign(Array.from(response.data.data.swaps));
+    }
     for (let i = 0; i < txArray.length; i++) {
       let dinoCall = new DinoCall();
       if (txArray[i].amount0 < 0) {
