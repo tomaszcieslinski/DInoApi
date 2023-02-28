@@ -168,7 +168,6 @@ let query = `{
     amount1
    }
   }`;
-
 async function listen() {
   setInterval(async () => {
     let dinoCallArr: DinoCall[] = [];
@@ -266,6 +265,7 @@ async function fetchDataV3() {
       "TO",
       previousBlock
     );
+    await new Promise(resolve => setTimeout(resolve, 250));
   } while (txArray.length != 0);
   await filterData(transactionArray, String);
 }
