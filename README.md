@@ -3,10 +3,19 @@
 npm install
 ## Setting .ENV
 #Example
-APIKEY = "KEY"\
+
+
+
+INFURA_KEY="Key"\
+ETHERSCAN_KEY = "KEY"\
 PGUSER = postgres\
 PGHOST= localhost\
 PGDATABASE = postgres\
 PGPASSWORD= admin\
 PGPORT = 5432
+## Setting server
 
+npm run dev for development\
+npm run build before launching app\
+npm run startInitialize for DB initialize then listening\
+npm run startListen if DB initialized
