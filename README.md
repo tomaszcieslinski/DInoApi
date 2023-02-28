@@ -1,8 +1,11 @@
 ### DInoApi
 ## Instalation
 npm install
+### 
+REQUIRE NODE VERSION <= 18.13.0
 ## Setting .ENV
 #Example
+
 
 
 
