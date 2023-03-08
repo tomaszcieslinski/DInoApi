@@ -93,52 +93,20 @@ const getTransactions = async (req: Request, response: Response) => {
   let dateFrom = req.query.dateFrom;
   let dateTo = req.query.dateTo;
   client.query(
-    `select walletaddress,transactionhash,ethervalue,value From wallettransactions where "timestamp"  >= ($1) and "timestamp"  <= ($2)`,
+    `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
+  From wallettransactions 
+  where ("timestamp" >= ($1) and "timestamp" <= ($2))
+  GROUP BY walletaddress
+  order by ethervalue desc)
+  select * from ranks `,
     [dateFrom, dateTo],
     (err: any, res: any) => {
       if (err) {
         console.error(err);
         return;
       } else {
-        let dinoBuyArray: DinoResult[] = [];
-        let buyArray = Object.assign(Array.from(res.rows));
-        let filteredBuyArray = buyArray.filter(
-          (a: { walletaddress: any }, i: any) =>
-            buyArray.findIndex(
-              (s: { walletaddress: any }) => a.walletaddress === s.walletaddress
-            ) === i
-        );
-        for (let i = 0; i < filteredBuyArray.length; i++) {
-          let dinoResult: DinoResult = new DinoResult();
-          dinoResult.walletAddress = filteredBuyArray[i].walletaddress;
-          let buyData: BuyData[] = [];
-          dinoResult.buyData = buyData;
-          dinoBuyArray.push(dinoResult);
-        }
-        for (let i = 0; i < buyArray.length; i++) {
-          for (let j = 0; j < dinoBuyArray.length; j++) {
-            if (
-              dinoBuyArray[j].walletAddress.localeCompare(
-                buyArray[i].walletaddress
-              ) == 0
-            ) {
-              dinoBuyArray[j].totalBuys = Number(dinoBuyArray[j].totalBuys) + 1;
-              dinoBuyArray[j].totalEther =
-                dinoBuyArray[j].totalEther + Number(buyArray[i].ethervalue);
-              let buyData: BuyData = new BuyData();
-              buyData.dino = buyArray[i].value;
-              buyData.ether = buyArray[i].ethervalue;
-              buyData.transactionhash = buyArray[i].transactionhash
-                .toString()
-                .split("#")[0];
-              dinoBuyArray[j].buyData.push(buyData);
-            }
-          }
-        }
-        let sortedArr = dinoBuyArray
-          .sort((a, b) => b.totalEther - a.totalEther)
-          .slice(0, 99);
-        return response.status(200).json({ sortedArr });
+        let walletRank = Object.assign(Array.from(res.rows));
+        return response.status(200).json({ walletRank });
       }
     }
   );
