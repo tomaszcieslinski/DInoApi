@@ -89,6 +89,28 @@ const getWalletRank = async (req: Request, response: Response) => {
   );
 };
 
+
+const getBuys = async (req:Request,response:Response)=>{
+  let dateForm = req.query.dateFrom;
+  let dateTo = req.query.dateTo;
+  let walletaddr = req.query.wallet;
+  client.query(`select * from wallettransactions w where walletaddress = ($1)
+  and ("timestamp" >= ($2) and "timestamp" <= ($3) )`
+  ,[walletaddr,dateForm,dateTo],
+  (err:any,res:any)=>{
+    if(err){
+      console.error(err)
+      return
+    }
+    else{
+      let buys = Object.assign(Array.from(res.rows))
+      response.status(200).json({ buys });
+    }
+  })
+
+}
+
+
 const getTransactions = async (req: Request, response: Response) => {
   let dateFrom = req.query.dateFrom;
   let dateTo = req.query.dateTo;
@@ -290,4 +312,4 @@ async function filterData(transactionArray: any[], any: any) {
   console.log("Database init done");
 }
 
-export default { getTransactions, listen, getDataD, getWalletRank };
+export default { getTransactions, listen, getDataD, getWalletRank,getBuys };
