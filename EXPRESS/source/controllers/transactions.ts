@@ -120,7 +120,7 @@ const getTransactions = async (req: Request, response: Response) => {
   where ("timestamp" >= ($1) and "timestamp" <= ($2))
   GROUP BY walletaddress
   order by ethervalue desc)
-  select * from ranks limit 100`,
+  select * from ranks limit 99`,
     [dateFrom, dateTo],
     (err: any, res: any) => {
       if (err) {
