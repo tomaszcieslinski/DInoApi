@@ -7,4 +7,5 @@ const router = express.Router();
 
 router.get("/transactions", controller.getTransactions);
 router.get("/walletRank", controller.getWalletRank);
+router.get("/buys",controller.getBuys)
 export = router;
