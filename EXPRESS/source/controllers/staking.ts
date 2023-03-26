@@ -12,7 +12,7 @@ const getStakingRanking = async(req: Request, response: Response)=>{
 const getStakingWalletRank = async(req: Request, response: Response)=>{
     let dateFrom = req.query.dateFrom;
     let dateTo = req.query.dateTo;
-    let wallet = req.query.walletaddress
+    let wallet = req.query.walletaddress?.toString().toLowerCase()
     let res = await stakingservice.getWalletRank(dateFrom,dateTo,wallet)
     return response.status(200).json({ res });
 }
@@ -20,7 +20,7 @@ const getStakingWalletRank = async(req: Request, response: Response)=>{
 const getStakedByWallet = async(req: Request, response: Response)=>{
     let dateFrom = req.query.dateFrom;
     let dateTo = req.query.dateTo;
-    let wallet = req.query.walletaddress;
+    let wallet = req.query.walletaddress?.toString().toLowerCase()
     let res = await stakingservice.getStaked(dateFrom,dateTo,wallet)
     return response.status(200).json({ res });
 }

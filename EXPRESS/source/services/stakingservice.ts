@@ -32,7 +32,7 @@ async function getWalletRank(dateForm:any,dateto:any,wallet:any){
 }
 
 async function getStaked(dateForm:any,dateto:any,wallet:any){
-  let res = await client.query(queryenum.GET_STAKED,[dateForm, dateto,wallet])
+  let res = await client.query(queryenum.GET_STAKED,[wallet,dateForm, dateto])
   return res.rows
 }
 

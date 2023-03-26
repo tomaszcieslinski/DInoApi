@@ -67,7 +67,7 @@ class DinoResult implements IDinoResult {
 const getWalletRank = async (req: Request, response: Response) => {
   let dateFrom = req.query.dateFrom;
   let dateTo = req.query.dateTo;
-  let wallet = req.query.walletaddress;
+  let wallet = req.query.walletaddress?.toString().toLowerCase();
 
   client.query(queryenum.GET_WALLET_RANK,
     [dateFrom, dateTo, wallet],
@@ -87,7 +87,7 @@ const getWalletRank = async (req: Request, response: Response) => {
 const getBuys = async (req:Request,response:Response)=>{
   let dateForm = req.query.dateFrom;
   let dateTo = req.query.dateTo;
-  let walletaddr = req.query.wallet;
+  let walletaddr = req.query.walletaddress?.toString().toLowerCase();
   client.query(queryenum.GET_BUYS
   ,[walletaddr,dateForm,dateTo],
   (err:any,res:any)=>{

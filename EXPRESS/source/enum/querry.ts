@@ -43,12 +43,12 @@ const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethe
     select * from ranks limit 99`;
 
 const GET_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
-  From wallettransactions 
-  where ("timestamp" >= ($1) and "timestamp" <= ($2))
-  GROUP BY walletaddress
-  order by ethervalue desc)
-  select * from ranks
-  where address = ($3) `;
+From wallettransactions 
+where ("timestamp" >= ($1) and "timestamp" <= ($2))
+GROUP BY walletaddress
+order by ethervalue desc)
+select * from ranks
+where address = ($3) `;
 
 const GET_BUYS = `select * from wallettransactions w where walletaddress = ($1)
     and ("timestamp" >= ($2) and "timestamp" <= ($3) )`;
@@ -65,7 +65,7 @@ const GET_BURN_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
     order by burned desc)
-    select * from ranks limit 99
+    select * from ranks
     where address = ($3)`;
 
 const GET_BURNS = `select * from burn b where walletaddress = ($1)
@@ -78,12 +78,12 @@ const GET_STAKING_RANKING = ` with ranks as(select walletaddress as address,SUM(
     order by stakedammount desc)
     select * from ranks limit 99`;
 
-const GET_STAKING_WALLET_RANK = ` with ranks as(select walletaddress as address,SUM(stakedammount) as stakedammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
+const GET_STAKING_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(stakedammount) as stakedammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
     From staking 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
     order by stakedammount desc)
-    select * from ranks limit 99
+    select * from ranks 
     where address = ($3)`;
 
 const GET_STAKED = `select * from staking s where walletaddress = ($1)
