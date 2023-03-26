@@ -5,7 +5,7 @@ import axios, { AxiosResponse, HttpStatusCode } from "axios";
 import queryenum from "../enum/querry";
 dotenv.config();
 const settings = {
-  apiKey: "tPu542ovYs2bBB3xXQqHdGKILS9oCsdt",
+  apiKey: process.env.ALCHEMY_KEY,
   network: Network.ETH_MAINNET,
 };
 const alchemy = new Alchemy(settings);
