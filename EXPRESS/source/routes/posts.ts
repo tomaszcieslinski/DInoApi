@@ -22,5 +22,5 @@ router.get("/burn/burns",burn.getBurnWalletRank)
 //StakingRanking
 router.get("/staking",staking.getStakingRanking)
 router.get("/staking/walletRank",staking.getStakingWalletRank)
-router.get("/staking/burns",staking.getStakedByWallet)
+router.get("/staking/staked",staking.getStakedByWallet)
 export = router;
