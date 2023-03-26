@@ -2,9 +2,10 @@
 import { Request, Response, NextFunction, response } from "express";
 import * as dotenv from "dotenv";
 dotenv.config();
-import axios, { AxiosResponse } from "axios";
+import axios, { AxiosResponse, HttpStatusCode } from "axios";
 import Web3 from "web3";
 import fs from "fs";
+import queryenum from "../enum/querry";
 
 const { Client } = require("pg");
 const client = new Client();
@@ -68,14 +69,7 @@ const getWalletRank = async (req: Request, response: Response) => {
   let dateTo = req.query.dateTo;
   let wallet = req.query.walletaddress;
 
-  client.query(
-    `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
-  From wallettransactions 
-  where ("timestamp" >= ($1) and "timestamp" <= ($2))
-  GROUP BY walletaddress
-  order by ethervalue desc)
-  select * from ranks
-  where address = ($3) `,
+  client.query(queryenum.GET_WALLET_RANK,
     [dateFrom, dateTo, wallet],
     (err: any, res: any) => {
       if (err) {
@@ -94,8 +88,7 @@ const getBuys = async (req:Request,response:Response)=>{
   let dateForm = req.query.dateFrom;
   let dateTo = req.query.dateTo;
   let walletaddr = req.query.wallet;
-  client.query(`select * from wallettransactions w where walletaddress = ($1)
-  and ("timestamp" >= ($2) and "timestamp" <= ($3) )`
+  client.query(queryenum.GET_BUYS
   ,[walletaddr,dateForm,dateTo],
   (err:any,res:any)=>{
     if(err){
@@ -110,17 +103,10 @@ const getBuys = async (req:Request,response:Response)=>{
 
 }
 
-
 const getTransactions = async (req: Request, response: Response) => {
   let dateFrom = req.query.dateFrom;
   let dateTo = req.query.dateTo;
-  client.query(
-    `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
-  From wallettransactions 
-  where ("timestamp" >= ($1) and "timestamp" <= ($2))
-  GROUP BY walletaddress
-  order by ethervalue desc)
-  select * from ranks limit 99`,
+  client.query(queryenum.GET_TRANSACTIONS,
     [dateFrom, dateTo],
     (err: any, res: any) => {
       if (err) {
@@ -133,36 +119,11 @@ const getTransactions = async (req: Request, response: Response) => {
     }
   );
 };
-
-let query = `{
-  swaps(orderBy: timestamp, orderDirection: desc, where:
-   { pool: "0x19c10e1f20df3a8c2ac93a62d7fba719fa777026" }
-  ) {
-    pool {
-  
-      token0 {
-        id
-        symbol
-      }
-      token1 {
-        id
-        symbol
-      }
-    }
-    origin
-    sender
-    id
-    recipient
-    timestamp
-    amount0
-    amount1
-   }
-  }`;
 async function listen() {
   setInterval(async () => {
     let dinoCallArr: DinoCall[] = [];
     let url = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3";
-    let response = await axios.post(url, { query: query }).catch();
+    let response = await axios.post(url, { query: queryenum.UNISWAP_TOKEN_QUERRY }).catch();
     let txArray;
     if(response.data.data.swaps!=undefined){
       txArray = Object.assign(Array.from(response.data.data.swaps));
@@ -186,7 +147,7 @@ async function listen() {
 function updateTransactionsWithDinoBuyData(array: DinoCall[]) {
   for (let i = 0; i < array.length; i++) {
     client.query(
-      "INSERT INTO wallets (walletaddress) VALUES ($1) ON CONFLICT DO NOTHING",
+      queryenum.INSERT_WALLETS,
       [array[i].walletaddress],
       (error: any) => {
         if (error) {
@@ -196,7 +157,7 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]) {
       }
     );
     client.query(
-      "INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value,ethervalue) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING",
+      queryenum.INSERT_WALLET_TRANSACTIONS,
       [
         array[i].walletaddress,
         array[i].transactionHash,

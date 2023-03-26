@@ -4,9 +4,10 @@
       "module": "commonjs",
       "esModuleInterop": true,
       "outDir": "./dist",
+      "baseUrl": "./source",
       "rootDir": "./source",
       "target": "es2017",
       "skipLibCheck": true,
-      "strict": true
+      "strict": true,
   }
 }

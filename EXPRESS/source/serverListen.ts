@@ -4,6 +4,8 @@ import express, { Express } from "express";
 import morgan from "morgan";
 import routes from "./routes/posts";
 import transactions from "./controllers/transactions";
+
+import cronworker from './cronjobs/cronworker'
 import Web3 from "web3";
 
 const router: Express = express();
@@ -50,4 +52,7 @@ const PORT: any = process.env.PORT ?? 6060;
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
 );
+
+cronworker.worker()
 transactions.listen();
+
