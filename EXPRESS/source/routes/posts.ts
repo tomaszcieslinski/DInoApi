@@ -1,7 +1,7 @@
 /** source/routes/posts.ts */
 import express from "express";
 import controller from "../controllers/transactions";
-import nftholders from "../controllers/nftholders"
+import nftholders from "../controllers/hatching"
 import burn from "../controllers/burn";
 import staking from "../controllers/staking";
 const router = express.Router();
@@ -11,8 +11,12 @@ router.get("/transactions", controller.getTransactions);
 router.get("/transactions/walletRank", controller.getWalletRank);
 router.get("/transactions/buys",controller.getBuys)
 
-//TransactionRoutes
-router.get("/nft/nftOwners",nftholders.getdata)
+//NFT
+
+router.get("/nft",nftholders.getHatchRanking)
+router.get("/nft/walletRank",nftholders.getHatchRanking)
+router.get("/nft/buys",nftholders.getHatchRanking)
+router.get("/nft/nftOwners",nftholders.getNftOwners)
 
 //BurnRanking
 router.get("/burn",burn.getBurnRanking)

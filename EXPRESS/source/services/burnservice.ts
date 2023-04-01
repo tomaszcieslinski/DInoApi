@@ -33,12 +33,13 @@ async function getWalletRank(dateForm:any,dateto:any,wallet:any){
 }
 
 async function getBurned(dateForm:any,dateto:any,wallet:any){
-  let res = await client.query(queryenum.GET_BURNS,[dateForm, dateto,wallet])
+  let res = await client.query(queryenum.GET_BURNS,[wallet,dateForm, dateto])
   return res.rows
 }
 
 
 async function synchDatabase() {
+  let array: any[] = []
   let pageKey = undefined;
   let data;
   do {
@@ -46,12 +47,13 @@ async function synchDatabase() {
       category: [AssetTransfersCategory.ERC20, AssetTransfersCategory.ERC20],
       fromBlock: "0x0",
       pageKey: pageKey,
-      maxCount:100,
+      maxCount:1000,
       withMetadata:true,
       toAddress: "0x000000000000000000000000000000000000dead",
       contractAddresses: ["0x49642110B712C1FD7261Bc074105E9E44676c68F"],
     });
     pageKey = data.pageKey;
+    array.push.apply(array,data.transfers)
     for (let i = 0; i < data.transfers.length; i++) {
       await client.query(
         queryenum.INSERT_WALLETS,

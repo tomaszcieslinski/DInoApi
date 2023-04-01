@@ -23,6 +23,9 @@ const UNISWAP_TOKEN_QUERRY = `{
      }
     }`;
 
+
+const INSERT_EGG_HATCHERS =
+  "INSERT INTO nftdata (id,hatchedby,hatchdate) VALUES ($1,$2,$3) ON CONFLICT DO NOTHING";
 const INSERT_WALLET_TRANSACTIONS =
   "INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value,ethervalue) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING";
 
@@ -89,7 +92,29 @@ const GET_STAKING_WALLET_RANK = `with ranks as(select walletaddress as address,S
 const GET_STAKED = `select * from staking s where walletaddress = ($1)
     and ("timestamp" >= ($2) and "timestamp" <= ($3) )`;
 
+const GET_HATCH_RANKING = `SELECT hatchedby, COUNT(*) AS hatchedby_count,
+RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
+FROM nftdata
+WHERE hatchdate BETWEEN ($1) AND ($2)
+GROUP BY hatchedby
+ORDER BY rank
+limit 99`
+
+const GET_HATCH_WALLET_RANKING = `SELECT hatchedby, COUNT(*) AS hatchedby_count,
+RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
+FROM nftdata
+WHERE hatchdate BETWEEN ($1) AND ($2) AND hatchedby = ($3)
+GROUP BY hatchedby
+ORDER BY rank`
+
+const GET_HATCHED =  `select * from nftdata s where hatchedby = ($1)
+and (hatchdate >= ($2) and hatchdate <= ($3) )`;
+
 export default {
+  GET_HATCH_RANKING,
+  GET_HATCH_WALLET_RANKING,
+  GET_HATCHED,
+  INSERT_EGG_HATCHERS,
   GET_BURNS,
   GET_BURN_RANKING,
   GET_BURN_WALLET_RANK,
