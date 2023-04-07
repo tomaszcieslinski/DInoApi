@@ -67,7 +67,7 @@ const GET_BURN_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(
     From burn 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
-    order by burned desc)
+    order by ammount desc)
     select * from ranks
     where address = ($3)`;
 
