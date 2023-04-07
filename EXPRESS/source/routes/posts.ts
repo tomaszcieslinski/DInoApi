@@ -14,7 +14,7 @@ router.get("/transactions/buys",controller.getBuys)
 //NFT
 
 router.get("/nft",nftholders.getHatchRanking)
-router.get("/nft/walletRank",nftholders.getHatchRanking)
+router.get("/nft/walletRank",nftholders.getHatchWalletRank)
 router.get("/nft/buys",nftholders.getHatchByWallet)
 router.get("/nft/nftOwners",nftholders.getNftOwners)
 
