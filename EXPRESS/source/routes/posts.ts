@@ -9,22 +9,22 @@ const router = express.Router();
 //TransactionRoutes
 router.get("/transactions", controller.getTransactions);
 router.get("/transactions/walletRank", controller.getWalletRank);
-router.get("/transactions/buys",controller.getBuys)
+router.get("/transactions/list",controller.getBuys)
 
 //NFT
 
 router.get("/nft",nftholders.getHatchRanking)
 router.get("/nft/walletRank",nftholders.getHatchWalletRank)
-router.get("/nft/buys",nftholders.getHatchByWallet)
+router.get("/nft/list",nftholders.getHatchByWallet)
 router.get("/nft/nftOwners",nftholders.getNftOwners)
 
 //BurnRanking
 router.get("/burn",burn.getBurnRanking)
 router.get("/burn/walletRank",burn.getBurnWalletRank)
-router.get("/burn/burns",burn.getBurnedByWallet)
+router.get("/burn/list",burn.getBurnedByWallet)
 
 //StakingRanking
 router.get("/staking",staking.getStakingRanking)
 router.get("/staking/walletRank",staking.getStakingWalletRank)
-router.get("/staking/staked",staking.getStakedByWallet)
+router.get("/staking/list",staking.getStakedByWallet)
 export = router;
