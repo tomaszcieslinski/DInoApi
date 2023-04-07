@@ -25,7 +25,7 @@ const UNISWAP_TOKEN_QUERRY = `{
 
 
 const INSERT_EGG_HATCHERS =
-  "INSERT INTO nftdata (id,hatchedby,hatchdate) VALUES ($1,$2,$3) ON CONFLICT DO NOTHING";
+  "INSERT INTO nftdata (id,hatchedby,hatchdate,hatchtx) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING";
 const INSERT_WALLET_TRANSACTIONS =
   "INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value,ethervalue) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING";
 

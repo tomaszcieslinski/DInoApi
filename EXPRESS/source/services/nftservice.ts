@@ -75,10 +75,11 @@ async function synchDatabase() {
     return value !== undefined;
   });
   arr = arr.filter(ob=>!newidArray.includes(Number(ob.tokenId)))
+  console.log(arr.length)
   for (let i = 0; i < arr.length; i++) {
     await client.query(
       queryenum.INSERT_EGG_HATCHERS,
-      [Number(arr[i].tokenId),arr[i].to,new Date(arr[i].metadata.blockTimestamp)],
+      [Number(arr[i].tokenId),arr[i].to,new Date(arr[i].metadata.blockTimestamp),arr[i].hash],
       (error: any, response:any) => {
         if (error) {
           throw error;
