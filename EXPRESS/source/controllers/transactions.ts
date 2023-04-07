@@ -22,12 +22,12 @@ interface IDinoCall {
   transactionHash: String;
   type: String;
   value: Number;
-  ethervalue: Number;
+  ammount: Number;
   from: String;
   walletaddress: String;
 }
 class DinoCall implements IDinoCall {
-  ethervalue!: Number;
+  ammount!: Number;
   timestamp!: number;
   transactionHash!: String;
   type: String = "transaction";
@@ -135,7 +135,7 @@ async function listen() {
         dinoCall.type = "BUY";
         dinoCall.timestamp = Number(txArray[i].timestamp);
         dinoCall.value = Math.abs(txArray[i].amount0);
-        dinoCall.ethervalue = txArray[i].amount1;
+        dinoCall.ammount = txArray[i].amount1;
         dinoCall.transactionHash = txArray[i].id;
         dinoCallArr.push(dinoCall);
       }
@@ -163,7 +163,7 @@ function updateTransactionsWithDinoBuyData(array: DinoCall[]) {
         array[i].transactionHash,
         new Date(array[i].timestamp * 1000),
         array[i].value,
-        array[i].ethervalue,
+        array[i].ammount,
       ],
       (error: any) => {
         if (error) {
@@ -248,7 +248,7 @@ async function filterData(transactionArray: any[], any: any) {
     }
     dinoCall.transactionHash = transactionArray[i].transactionHash;
     dinoCall.timestamp = Number(transactionArray[i].timeStamp);
-    dinoCall.ethervalue =
+    dinoCall.ammount =
       web.eth.abi.decodeParameters(
         ["int256", "int256", "uint160", "uint128", "uint24"],
         transactionArray[i].data

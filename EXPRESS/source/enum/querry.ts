@@ -38,32 +38,32 @@ const INSERT_BURN_DATA =
 const INSERT_STAKE_DATA =
   "INSERT INTO staking (hash,walletaddress,stakedammount,timestamp) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING";
 
-const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
+const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethervalue) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
     From wallettransactions 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
-    order by ethervalue desc)
+    order by ammount desc)
     select * from ranks limit 99`;
 
-const GET_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(ethervalue) as ethervalue,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
+const GET_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(ethervalue) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
 From wallettransactions 
 where ("timestamp" >= ($1) and "timestamp" <= ($2))
 GROUP BY walletaddress
-order by ethervalue desc)
+order by ammount desc)
 select * from ranks
 where address = ($3) `;
 
-const GET_BUYS = `select * from wallettransactions w where walletaddress = ($1)
+const GET_BUYS = `select walletaddress,transactionhash,ethervalue as ammount from wallettransactions w where walletaddress = ($1)
     and ("timestamp" >= ($2) and "timestamp" <= ($3) )`;
 
-const GET_BURN_RANKING = `with ranks as(select walletaddress as address,SUM(burned) as burned,count("timestamp")AS Value, RANK() over (order by SUM(burned)desc) as rank 
+const GET_BURN_RANKING = `with ranks as(select walletaddress as address,SUM(burned) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(burned)desc) as rank 
     From burn 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
-    order by burned desc)
+    order by ammount desc)
     select * from ranks limit 99`;
 
-const GET_BURN_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(burned) as burned,count("timestamp")AS Value, RANK() over (order by SUM(burned)desc) as rank 
+const GET_BURN_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(burned) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(burned)desc) as rank 
     From burn 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
@@ -71,43 +71,43 @@ const GET_BURN_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(
     select * from ranks
     where address = ($3)`;
 
-const GET_BURNS = `select * from burn b where walletaddress = ($1)
+const GET_BURNS = `select txhash as transactionhash, walletaddress, burned as ammount  from burn b where walletaddress = ($1)
     and ("timestamp" >= ($2) and "timestamp" <= ($3) )`;
 
-const GET_STAKING_RANKING = ` with ranks as(select walletaddress as address,SUM(stakedammount) as stakedammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
+const GET_STAKING_RANKING = ` with ranks as(select walletaddress as address,SUM(stakedammount) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
     From staking 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
-    order by stakedammount desc)
+    order by ammount desc)
     select * from ranks limit 99`;
 
-const GET_STAKING_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(stakedammount) as stakedammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
+const GET_STAKING_WALLET_RANK = `with ranks as(select walletaddress as address,SUM(stakedammount) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(stakedammount)desc) as rank 
     From staking 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
     GROUP BY walletaddress
-    order by stakedammount desc)
+    order by ammount desc)
     select * from ranks 
     where address = ($3)`;
 
-const GET_STAKED = `select * from staking s where walletaddress = ($1)
+const GET_STAKED = `select hash as transactionhash,walletaddress,stakedammount as ammount from staking s where walletaddress = ($1)
     and ("timestamp" >= ($2) and "timestamp" <= ($3) )`;
 
-const GET_HATCH_RANKING = `SELECT hatchedby, COUNT(*) AS hatchedby_count,
+const GET_HATCH_RANKING = `SELECT hatchedby as address, COUNT(*) AS ammount,
 RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
 FROM nftdata
 WHERE hatchdate BETWEEN ($1) AND ($2)
-GROUP BY hatchedby
+GROUP BY address
 ORDER BY rank
 limit 99`
 
-const GET_HATCH_WALLET_RANKING = `SELECT hatchedby, COUNT(*) AS hatchedby_count,
+const GET_HATCH_WALLET_RANKING = `SELECT hatchedby as address, COUNT(*) AS ammount,
 RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
 FROM nftdata
 WHERE hatchdate BETWEEN ($1) AND ($2) AND hatchedby = ($3)
-GROUP BY hatchedby
+GROUP BY address
 ORDER BY rank`
 
-const GET_HATCHED =  `select * from nftdata s where hatchedby = ($1)
+const GET_HATCHED =  `select id as ammount, hatchtx as transactionhash, hatchedby as address from nftdata s where hatchedby = ($1)
 and (hatchdate >= ($2) and hatchdate <= ($3) )`;
 
 export default {
