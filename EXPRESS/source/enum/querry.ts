@@ -100,12 +100,13 @@ GROUP BY address
 ORDER BY rank
 limit 99`
 
-const GET_HATCH_WALLET_RANKING = `SELECT hatchedby as address, COUNT(*) AS ammount,
-RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
-FROM nftdata
-WHERE hatchdate BETWEEN ($1) AND ($2) AND hatchedby = ($3)
-GROUP BY address
-ORDER BY rank`
+const GET_HATCH_WALLET_RANKING = `with ranks as(select hatchedby  as address,COUNT(id) as ammount,count(hatchtx)AS Value, RANK() over (order by COUNT(id)desc) as rank 
+From nftdata 
+where (hatchdate  >= ($1) and hatchdate <= ($2))
+GROUP BY hatchedby
+order by ammount desc)
+select * from ranks
+where address = ($3)`
 
 const GET_HATCHED =  `select id as ammount, hatchtx as transactionhash, hatchedby as address from nftdata s where hatchedby = ($1)
 and (hatchdate >= ($2) and hatchdate <= ($3) )`;
