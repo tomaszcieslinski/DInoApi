@@ -21,9 +21,11 @@ client.connect((err: { stack: any }) => {
   }
 });
 
-
+let nftContract: String | undefined
 async function getNftOwnerList(){
-  let res = await (await alchemy.nft.getOwnersForContract("0xC34D0Ac694833309D8cA77a144Cb9d2Ac10edd6f")).owners
+  
+ nftContract = process.env.NFT_CONTRACT
+  let res = await (await alchemy.nft.getOwnersForContract(String(process.env.NFT_CONTRACT))).owners
   return res
 }
 
@@ -52,7 +54,7 @@ async function synchDatabase() {
   let arr: any[]= []
   let pageKey = undefined;
   let data;
-  const address = ["0xC34D0Ac694833309D8cA77a144Cb9d2Ac10edd6f"];
+  const address = [String(process.env.NFT_CONTRACT)];
   do {
     data = await alchemy.core.getAssetTransfers({
       fromBlock: "0x0",
