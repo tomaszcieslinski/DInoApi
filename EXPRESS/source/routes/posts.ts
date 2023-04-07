@@ -15,13 +15,13 @@ router.get("/transactions/buys",controller.getBuys)
 
 router.get("/nft",nftholders.getHatchRanking)
 router.get("/nft/walletRank",nftholders.getHatchRanking)
-router.get("/nft/buys",nftholders.getHatchRanking)
+router.get("/nft/buys",nftholders.getHatchByWallet)
 router.get("/nft/nftOwners",nftholders.getNftOwners)
 
 //BurnRanking
 router.get("/burn",burn.getBurnRanking)
 router.get("/burn/walletRank",burn.getBurnWalletRank)
-router.get("/burn/burns",burn.getBurnWalletRank)
+router.get("/burn/burns",burn.getBurnedByWallet)
 
 //StakingRanking
 router.get("/staking",staking.getStakingRanking)
