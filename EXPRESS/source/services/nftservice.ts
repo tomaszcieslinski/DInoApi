@@ -127,14 +127,14 @@ async function synchNFTDataBase(){
   console.log("syncstart")
   let data: any[]= []
 do{
-  const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa6d94743723e8ac0d28e2f89e465ce7399db640c/nfts', {
+  const response = await axios.get(`https://api.traitsniper.com/v1/collections/${String(process.env.NFT_CONTRACT)}/nfts`, {
     params: {
       'page': page,
       'limit': '200'
     },
     headers: {
       'accept': 'application/json',
-      'x-ts-api-key': '656325fd-6b80-40dc-8bbb-761d2397d172'
+      'x-ts-api-key': `${String(process.env.TRAITSNIPER_API)}`
     }
   });
   data.push.apply(data,response.data.nfts)
