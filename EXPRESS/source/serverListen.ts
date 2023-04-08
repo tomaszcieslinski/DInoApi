@@ -52,10 +52,10 @@ const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
 //cronworker.worker()
 // //transactions.listen();
- nftservice.synchNFTDataBase()
+ //nftservice.synchNFTDataBase()
 
 // console.log("testStart")
-// nftservice.synchDatabase()
+ nftservice.synchDatabase()
 // console.log("testStart")
 // nftservice.synchNFTDataBase()
 httpServer.listen(PORT, () =>
