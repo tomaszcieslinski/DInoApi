@@ -122,25 +122,35 @@ for(let i = 0 ; i<data.length;i++){
 
 
 let page = 1;
-let data;
+let totalpage;
 async function synchNFTDataBase(){
+  console.log("syncstart")
+  let data: any[]= []
 do{
   const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa6d94743723e8ac0d28e2f89e465ce7399db640c/nfts', {
     params: {
       'page': page,
-      'limit': '100'
+      'limit': '200'
     },
     headers: {
       'accept': 'application/json',
       'x-ts-api-key': '656325fd-6b80-40dc-8bbb-761d2397d172'
     }
   });
-  data = response.data;
-  page = data.page
-  for(let i = 0;i<data.nfts.length;i++){
+  data.push.apply(data,response.data.nfts)
+  totalpage = response.data.total_page
+  console.log(totalpage)
+  console.log(page)
+  page++
+  console.log(page)
+  console.log(data.length)
+  await new Promise(resolve => setTimeout(resolve, 13000));
+}
+while(page <= totalpage)
+  for(let i = 0;i<data.length;i++){
     await client.query(
       queryenum.INSERT_WALLETS,
-      [data.nfts[i].owner],
+      [data[i].owner],
       (error: any, response:any) => {
         if (error) {
           throw error;
@@ -150,7 +160,7 @@ do{
     );
     await client.query(
       queryenum.INSERT_NFT_OWNERS,
-      [data.nfts[i].id,data.nfts[i].owner],
+      [data[i].id,data[i].owner],
       (error: any, response:any) => {
         if (error) {
           throw error;
@@ -160,7 +170,7 @@ do{
     );
     await client.query(
       queryenum.UPDATE_NFT_DATA,
-      [data.nfts[i].id,data.nfts[i].name,data.nfts[i].image,data.nfts[i].rarity_score,data.nfts[i].token_id],
+      [data[i].id,data[i].name,data[i].image,data[i].rarity_score,data[i].token_id],
       (error: any, response:any) => {
         if (error) {
           throw error;
@@ -168,10 +178,20 @@ do{
         }
       }
     );
-    for(let j =0;j<data.nfts[i].traits.length;j++){
+    for(let j =0;j<data[i].traits.length;j++){
+      await client.query(
+        queryenum.INSERT_TRAIT_DATA,
+        [data[i].traits[j].trait_id,data[i].traits[j].name,data[i].traits[j].value,0,data[i].traits[j].score],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
+        }
+      );
       await client.query(
         queryenum.INESRT_NFT_TRAITS,
-        [data.nfts[i].traits[j].trait_id,data.nfts[i].id],
+        [data[i].traits[j].trait_id,data[i].id],
         (error: any, response:any) => {
           if (error) {
             throw error;
@@ -183,15 +203,5 @@ do{
     
   }
 
-
-
-
-
-
-
-  page++
-  await new Promise(resolve => setTimeout(resolve, 13000));
-}
-while(page <= data.total_page)
 }
 export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase};

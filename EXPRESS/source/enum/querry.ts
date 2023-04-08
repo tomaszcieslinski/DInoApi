@@ -40,7 +40,7 @@ const INSERT_STAKE_DATA =
 
 
 const INSERT_TRAIT_DATA = 
-"INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING"
+"INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT(traitid) DO NOTHING"
 
 const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethervalue) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
     From wallettransactions 
@@ -118,7 +118,7 @@ and (hatchdate >= ($2) and hatchdate <= ($3) )`;
 
 
 const INSERT_NFT_OWNERS =
-"INSERT INTO nftowners (nftid,owner) VALUES ($1,$2) ON CONFLICT DO NOTHING "
+"INSERT INTO nftowners (nftid,owner) VALUES ($1,$2) ON CONFLICT(nftid) DO UPDATE SET owner = ($2) "
 
 
 const UPDATE_NFT_DATA =
