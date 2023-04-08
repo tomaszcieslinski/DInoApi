@@ -56,7 +56,7 @@ const PORT: any = process.env.PORT ?? 6060;
 
 // console.log("testStart")
 // nftservice.synchDatabase()
-// console.log("testStart")
+console.log("testStart")
 nftservice.synchNFTDataBase()
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
