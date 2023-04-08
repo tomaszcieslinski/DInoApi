@@ -40,7 +40,14 @@ const INSERT_STAKE_DATA =
 
 
 const INSERT_TRAIT_DATA = 
-"INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT(traitid) DO NOTHING"
+"INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT(traitid) DO UPDATE SET rarity = ($5)"
+
+
+const UPDATE_TRAIT_DATA =
+`UPDATE traits
+SET ethprice = ($1)
+WHERE traitid = ($2);`
+
 
 const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethervalue) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
     From wallettransactions 
@@ -132,7 +139,12 @@ const INESRT_NFT_TRAITS =
 
 
 const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
+
+const SELECT_TRAITS = `select distinct n.traitid,t."type",t."name" ,t.ethprice  from nfttraits n join traits t on n.traitid = t.traitid `
+
 export default {
+  SELECT_TRAITS,
+  UPDATE_TRAIT_DATA,
   SELECT_DISTINCT_TRAITS,
   INESRT_NFT_TRAITS,
   UPDATE_NFT_DATA,

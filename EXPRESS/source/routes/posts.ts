@@ -4,6 +4,7 @@ import controller from "../controllers/transactions";
 import nftholders from "../controllers/hatching"
 import burn from "../controllers/burn";
 import staking from "../controllers/staking";
+import nftservice from "../services/nftservice";
 const router = express.Router();
 
 //TransactionRoutes
@@ -17,6 +18,7 @@ router.get("/nft",nftholders.getHatchRanking)
 router.get("/nft/walletRank",nftholders.getHatchWalletRank)
 router.get("/nft/list",nftholders.getHatchByWallet)
 router.get("/nft/nftOwners",nftholders.getNftOwners)
+router.get("/nft/traits",nftservice.getTraits)
 
 //BurnRanking
 router.get("/burn",burn.getBurnRanking)

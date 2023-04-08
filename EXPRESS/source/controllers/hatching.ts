@@ -34,5 +34,11 @@ const getNftOwners = async(req: Request, response: Response)=>{
   return response.status(200).json(res)
 }
 
+const getNftTraits = async (req: Request, response: Response)=>{
+  let res = await nftservice.getTraits()
+  console.log(res)
+  return response.status(200).json(res)
+}
 
-export default { getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners};
+
+export default { getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits};

@@ -6,7 +6,6 @@ let currentDate = new Date(Date.now()).toString()
 function worker(){ 
     cron.schedule('*/30 * * * *', () => {
         console.log("Executing hatch table synchronization", currentDate)
-        nftservice.synchNFTDataBase()
         nftservice.synchDatabase()
         console.log("Executing burn table synchronization", currentDate)
         burnservice.synchDatabase()
@@ -14,4 +13,11 @@ function worker(){
         stakingservice.synchDatabase()
     });
 }
-export default {worker}
+
+function worker2(){ 
+    cron.schedule('0 * * * *', () => {
+        console.log("Executing NFT tables synchronization", currentDate)
+        nftservice.synchNFTDataBase()
+    });
+}
+export default {worker,worker2}

@@ -96,7 +96,7 @@ async function synchDatabase() {
 
 async function synchTraitDatabase(){
 const axios = require('axios');
-const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa6d94743723e8ac0d28e2f89e465ce7399db640c/traits', {
+const response = await axios.get(`https://api.traitsniper.com/v1/collections/${String(process.env.NFT_CONTRACT)}/traits`, {
   params: {
     'include_prices': 'true'
   },
@@ -106,10 +106,10 @@ const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa
   }
 });
 let data = response.data.traits
-for(let i = 0 ; i<data.length;i++){
+for(let i = 0 ; i<data.length;i++){ 
   await client.query(
-    queryenum.INSERT_TRAIT_DATA,
-    [data[i].trait_id,data[i].name,data[i].value,data[i].floor_price,data[i].score],
+    queryenum.UPDATE_TRAIT_DATA,
+    [data[i].floor_price,data[i].trait_id],
     (error: any, response:any) => {
       if (error) {
         throw error;
@@ -119,7 +119,6 @@ for(let i = 0 ; i<data.length;i++){
   );
 }
 }
-
 
 let page = 1;
 let totalpage;
@@ -139,14 +138,20 @@ do{
   });
   data.push.apply(data,response.data.nfts)
   totalpage = response.data.total_page
-  console.log(totalpage)
   console.log(page)
   page++
-  console.log(page)
-  console.log(data.length)
   await new Promise(resolve => setTimeout(resolve, 13000));
 }
 while(page <= totalpage)
+
+let idArray = await getHatchedEggsId()
+let newidArray = idArray
+.map((obj: { id: any; }) => obj.id)
+.filter((value: undefined) => {
+  return value !== undefined;
+});
+data = data.filter(ob=>!newidArray.includes(Number(ob.token_id)))
+console.log(data.length)
   for(let i = 0;i<data.length;i++){
     await client.query(
       queryenum.INSERT_WALLETS,
@@ -202,6 +207,17 @@ while(page <= totalpage)
     }
     
   }
-
+  synchTraitDatabase()
 }
-export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase};
+
+
+
+async function getTraits(){
+  let res = await client.query(queryenum.SELECT_TRAITS)
+  return res.rows
+}
+
+
+
+
+export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits};
