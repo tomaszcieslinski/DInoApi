@@ -90,4 +90,108 @@ async function synchDatabase() {
   }
 }
 
-export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList};
+
+
+
+
+async function synchTraitDatabase(){
+const axios = require('axios');
+const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa6d94743723e8ac0d28e2f89e465ce7399db640c/traits', {
+  params: {
+    'include_prices': 'true'
+  },
+  headers: {
+    'accept': 'application/json',
+    'x-ts-api-key': '656325fd-6b80-40dc-8bbb-761d2397d172'
+  }
+});
+let data = response.data.traits
+for(let i = 0 ; i<data.length;i++){
+  await client.query(
+    queryenum.INSERT_TRAIT_DATA,
+    [data[i].trait_id,data[i].name,data[i].value,data[i].floor_price,data[i].score],
+    (error: any, response:any) => {
+      if (error) {
+        throw error;
+        console.log(error);
+      }
+    }
+  );
+}
+}
+
+
+let page = 1;
+let data;
+async function synchNFTDataBase(){
+do{
+  const response = await axios.get('https://api.traitsniper.com/v1/collections/0xa6d94743723e8ac0d28e2f89e465ce7399db640c/nfts', {
+    params: {
+      'page': page,
+      'limit': '100'
+    },
+    headers: {
+      'accept': 'application/json',
+      'x-ts-api-key': '656325fd-6b80-40dc-8bbb-761d2397d172'
+    }
+  });
+  data = response.data;
+  page = data.page
+  for(let i = 0;i<data.nfts.length;i++){
+    await client.query(
+      queryenum.INSERT_WALLETS,
+      [data.nfts[i].owner],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+    );
+    await client.query(
+      queryenum.INSERT_NFT_OWNERS,
+      [data.nfts[i].id,data.nfts[i].owner],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+    );
+    await client.query(
+      queryenum.UPDATE_NFT_DATA,
+      [data.nfts[i].id,data.nfts[i].name,data.nfts[i].image,data.nfts[i].rarity_score,data.nfts[i].token_id],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+    );
+    for(let j =0;j<data.nfts[i].traits.length;j++){
+      await client.query(
+        queryenum.INESRT_NFT_TRAITS,
+        [data.nfts[i].traits[j].trait_id,data.nfts[i].id],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
+        }
+      );
+    }
+    
+  }
+
+
+
+
+
+
+
+  page++
+  await new Promise(resolve => setTimeout(resolve, 13000));
+}
+while(page <= data.total_page)
+}
+export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase};

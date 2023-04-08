@@ -38,6 +38,10 @@ const INSERT_BURN_DATA =
 const INSERT_STAKE_DATA =
   "INSERT INTO staking (hash,walletaddress,stakedammount,timestamp) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING";
 
+
+const INSERT_TRAIT_DATA = 
+"INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING"
+
 const GET_TRANSACTIONS = `with ranks as(select walletaddress as address,SUM(ethervalue) as ammount,count("timestamp")AS Value, RANK() over (order by SUM(ethervalue)desc) as rank 
     From wallettransactions 
     where ("timestamp" >= ($1) and "timestamp" <= ($2))
@@ -110,8 +114,30 @@ where address = ($3)`
 
 const GET_HATCHED =  `select id as ammount, hatchtx as transactionhash, hatchedby as address from nftdata s where hatchedby = ($1)
 and (hatchdate >= ($2) and hatchdate <= ($3) )`;
+// Insert NFT data from traitsniper
 
+
+const INSERT_NFT_OWNERS =
+"INSERT INTO nftowners (nftid,owner) VALUES ($1,$2) ON CONFLICT DO NOTHING "
+
+
+const UPDATE_NFT_DATA =
+`UPDATE nftdata
+SET nftid = ($1), name = ($2), imgurl = ($3), rarity = ($4)
+WHERE id = ($5);`
+
+
+const INESRT_NFT_TRAITS =
+`INSERT INTO nfttraits (traitid,nftid) VALUES ($1,$2) ON CONFLICT (traitid,nftid) DO NOTHING`
+
+
+const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
 export default {
+  SELECT_DISTINCT_TRAITS,
+  INESRT_NFT_TRAITS,
+  UPDATE_NFT_DATA,
+  INSERT_NFT_OWNERS,
+  INSERT_TRAIT_DATA,
   GET_HATCH_RANKING,
   GET_HATCH_WALLET_RANKING,
   GET_HATCHED,
