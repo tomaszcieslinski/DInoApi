@@ -167,16 +167,18 @@ console.log(data.length)
 console.log(data[0].media[0])
 console.log(data[0].rawMetadata.attributes[0])
   for(let i = 0;i<data.length;i++){
-    await client.query(
-      queryenum.UPDATE_NFT_DATA,
-      [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
-      (error: any, response:any) => {
-        if (error) {
-          throw error;
-          console.log(error);
+    if(data[i].media[0]!=undefined){
+      await client.query(
+        queryenum.UPDATE_NFT_DATA,
+        [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
         }
-      }
-    );
+      );
+    }
     let attributes = data[i].rawMetadata.attributes
     for(let j =0;j<attributes.length;j++){
       await client.query(
