@@ -9,6 +9,7 @@ import cronworker from './cronjobs/cronworker'
 import Web3 from "web3";
 import { Network, Alchemy, AssetTransfersCategory, fromHex } from "alchemy-sdk";
 import nftservice from "./services/nftservice";
+import { N } from "ethers";
 
 const router: Express = express();
 
@@ -50,10 +51,11 @@ router.use((req, res, next) => {
 /** Server */
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
-cronworker.worker()
+//cronworker.worker()
 //transactions.listen()
+nftservice.synchDatabase()
+//nftservice.synchNFTDataBase()
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
 );
-
 

@@ -10,7 +10,7 @@ const settings = {
   network: Network.ETH_MAINNET,
 };
 const alchemy = new Alchemy(settings);
-
+const secret="dino"
 const { Client } = require("pg");
 const client = new Client();
 client.connect((err: { stack: any }) => {
@@ -20,7 +20,7 @@ client.connect((err: { stack: any }) => {
     console.log("connected");
   }
 });
-
+var md5 = require('md5');
 let nftContract: String | undefined
 async function getNftOwnerList(){
   
@@ -51,6 +51,7 @@ async function getHatchedEggsId(){
   return res.rows
 }
 async function synchDatabase() {
+  
   let arr: any[]= []
   let pageKey = undefined;
   let data;
@@ -68,6 +69,7 @@ async function synchDatabase() {
     pageKey = data.pageKey;
     arr.push.apply(arr,data.transfers)
   } while (pageKey != undefined);
+  
   let idArray = await getHatchedEggsId()
   let newidArray = idArray
   .map((obj: { id: any; }) => obj.id)
@@ -77,6 +79,29 @@ async function synchDatabase() {
   arr = arr.filter(ob=>!newidArray.includes(Number(ob.tokenId)))
   console.log(arr.length)
   for (let i = 0; i < arr.length; i++) {
+
+    await client.query(
+      queryenum.INSERT_WALLETS,
+      [arr[i].to],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+    );
+
+    await client.query(
+      queryenum.INSERT_NFT_OWNERS,
+      [md5(Number(arr[i].tokenId)+secret),arr[i].to],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+    );
+
     await client.query(
       queryenum.INSERT_EGG_HATCHERS,
       [Number(arr[i].tokenId),arr[i].to,new Date(arr[i].metadata.blockTimestamp),arr[i].hash],
@@ -125,57 +150,26 @@ let totalpage;
 async function synchNFTDataBase(){
   console.log("syncstart")
   let data: any[]= []
-do{
-  const response = await axios.get(`https://api.traitsniper.com/v1/collections/${String(process.env.NFT_CONTRACT)}/nfts`, {
-    params: {
-      'page': page,
-      'limit': '200'
-    },
-    headers: {
-      'accept': 'application/json',
-      'x-ts-api-key': `${String(process.env.TRAITSNIPER_API)}`
-    }
-  });
-  data.push.apply(data,response.data.nfts)
-  totalpage = response.data.total_page
-  console.log(page)
-  page++
-  await new Promise(resolve => setTimeout(resolve, 13000));
-}
-while(page <= totalpage)
 
+  const contractAddress = String(process.env.NFT_CONTRACT);
+  const nftsIterable = alchemy.nft.getNftsForContractIterator(contractAddress);  
+    for await (const nft of nftsIterable) {
+        data.push(nft);
+    }
 let idArray = await getHatchedEggsId()
 let newidArray = idArray
 .map((obj: { id: any; }) => obj.id)
 .filter((value: undefined) => {
   return value !== undefined;
 });
-data = data.filter(ob=>!newidArray.includes(Number(ob.token_id)))
+data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
 console.log(data.length)
+console.log(data[0].media[0])
+console.log(data[0].rawMetadata.attributes[0])
   for(let i = 0;i<data.length;i++){
     await client.query(
-      queryenum.INSERT_WALLETS,
-      [data[i].owner],
-      (error: any, response:any) => {
-        if (error) {
-          throw error;
-          console.log(error);
-        }
-      }
-    );
-    await client.query(
-      queryenum.INSERT_NFT_OWNERS,
-      [data[i].id,data[i].owner],
-      (error: any, response:any) => {
-        if (error) {
-          throw error;
-          console.log(error);
-        }
-      }
-    );
-    await client.query(
       queryenum.UPDATE_NFT_DATA,
-      [data[i].id,data[i].name,data[i].image,data[i].rarity_score,data[i].token_id],
+      [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
       (error: any, response:any) => {
         if (error) {
           throw error;
@@ -183,20 +177,21 @@ console.log(data.length)
         }
       }
     );
-    for(let j =0;j<data[i].traits.length;j++){
+    let attributes = data[i].rawMetadata.attributes
+    for(let j =0;j<attributes.length;j++){
       await client.query(
         queryenum.INSERT_TRAIT_DATA,
-        [data[i].traits[j].trait_id,data[i].traits[j].name,data[i].traits[j].value,0,data[i].traits[j].score],
+        [md5(attributes[j].value+attributes[j].trait_type+secret),attributes[j].trait_type,attributes[j].value,0,0],
         (error: any, response:any) => {
           if (error) {
             throw error;
             console.log(error);
           }
         }
-      );
+     );
       await client.query(
         queryenum.INESRT_NFT_TRAITS,
-        [data[i].traits[j].trait_id,data[i].id],
+        [md5(attributes[j].value+attributes[j].trait_type+secret),md5(Number(data[i].tokenId)+secret)],
         (error: any, response:any) => {
           if (error) {
             throw error;
@@ -207,7 +202,7 @@ console.log(data.length)
     }
     
   }
-  synchTraitDatabase()
+  //synchTraitDatabase()
 }
 
 
