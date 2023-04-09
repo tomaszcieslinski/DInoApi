@@ -215,9 +215,41 @@ console.log(data.length)
 async function getTraits(){
   let res = await client.query(queryenum.SELECT_TRAITS)
   return res.rows
+} 
+
+async function returnFiltered(body:any) {
+  let letQuerryBody = `SELECT distinct n.id ,n.nftid,convert_from( cast(n.imgurl as bytea),'UTF8'),n.rarity 
+  FROM nfttraits t1
+  join nftdata n ON n.nftid = t1.nftid 
+  join traits tr on t1.traitid = tr.traitid`
+  let marker = 2;
+  let arr = Object.values(body.data) as any
+  for(let i =0; i< arr.length;i++){
+    letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
+    marker++
+  }
+  letQuerryBody += " where "
+  marker=2;
+  for (let i = 0; i < arr.length; i++) {
+    letQuerryBody += "(";
+    arr[i].forEach((element: any, index: number) => {
+      letQuerryBody += `t${marker - 1}.traitid = '${element}'`;
+      if (index < arr[i].length - 1) {
+        letQuerryBody += " or ";
+      }
+    });
+    letQuerryBody += ")";
+    if (i < arr.length - 1) {
+      letQuerryBody += " and ";
+    }
+    marker++;
+  }
+  let res = await client.query(letQuerryBody)
+  return res.rows
 }
 
+// WHERE t1.traitid = '9798087'
+//       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
-
-
-export default { synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits};
+export default {returnFiltered,
+   synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits};

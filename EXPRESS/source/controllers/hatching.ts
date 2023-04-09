@@ -40,5 +40,11 @@ const getNftTraits = async (req: Request, response: Response)=>{
   return response.status(200).json(res)
 }
 
+const postNftFilter = async(req: Request,response:Response)=>{
+  let data = req.body;
+  let res =  await nftservice.returnFiltered(data)
+  return response.status(200).json(res)
+}
 
-export default { getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits};
+
+export default { getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits,postNftFilter};
