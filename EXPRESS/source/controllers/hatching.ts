@@ -30,13 +30,11 @@ const getHatchByWallet = async(req: Request, response: Response)=>{
 
 const getNftOwners = async(req: Request, response: Response)=>{
   let res = await nftservice.getNftOwnerList()
-  console.log(res)
   return response.status(200).json(res)
 }
 
 const getNftTraits = async (req: Request, response: Response)=>{
   let res = await nftservice.getTraits()
-  console.log(res)
   return response.status(200).json(res)
 }
 

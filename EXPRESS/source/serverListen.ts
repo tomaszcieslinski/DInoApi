@@ -54,7 +54,7 @@ const PORT: any = process.env.PORT ?? 6060;
 //cronworker.worker()
 //transactions.listen()
 //nftservice.synchDatabase()
-nftservice.synchNFTDataBase()
+//nftservice.synchNFTDataBase()
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
 );
