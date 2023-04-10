@@ -140,7 +140,7 @@ const INESRT_NFT_TRAITS =
 
 const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
 
-const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice, t.rarity, MAX(n2.imgurl)
+const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice, t.rarity, MAX(n2.imgurl) as imgurl
 FROM nfttraits n
 JOIN traits t ON n.traitid = t.traitid
 JOIN nftdata n2 ON n2.nftid = n.nftid
