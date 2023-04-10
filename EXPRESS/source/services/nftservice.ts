@@ -163,22 +163,33 @@ let newidArray = idArray
   return value !== undefined;
 });
 data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
-console.log(data.length)
-console.log(data[0].media[0])
-console.log(data[0].rawMetadata.attributes[0])
   for(let i = 0;i<data.length;i++){
     if(data[i].media[0]!=undefined){
-      await client.query(
-        queryenum.UPDATE_NFT_DATA,
-        [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
-        (error: any, response:any) => {
-          if (error) {
-            throw error;
-            console.log(error);
+      if(data[i].contract.openSea!=undefined){
+        await client.query(
+          queryenum.UPDATE_NFT_DATA,
+          [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
+          (error: any, response:any) => {
+            if (error) {
+              throw error;
+              console.log(error);
+            }
           }
-        }
-      );
+        );
+      }else{
+        await client.query(
+          queryenum.UPDATE_NFT_DATA,
+          [md5(Number(data[i].tokenId)+secret),data[i].contract.name+data[i].title,data[i].media[0].raw,0,data[i].tokenId],
+          (error: any, response:any) => {
+            if (error) {
+              throw error;
+              console.log(error);
+            }
+          }
+        );
+      }
     }
+    
     if(data[i].rawMetadata.attributes!=undefined){
           let attributes = data[i].rawMetadata.attributes
           for(let j =0;j<attributes.length;j++){
@@ -205,7 +216,6 @@ console.log(data[0].rawMetadata.attributes[0])
           }
     }
   }
-  //synchTraitDatabase()
 }
 
 
@@ -214,6 +224,57 @@ async function getTraits(){
   let res = await client.query(queryenum.SELECT_TRAITS)
   return res.rows
 } 
+
+
+async function updateTraitsData(){
+  const response = await (await alchemy.nft.summarizeNftAttributes(String(process.env.NFT_CONTRACT))).summary
+  let arr = []
+  let data: any[]= []
+  for(const [key,value1] of Object.entries(response)){
+    for(const [key2,value2] of Object.entries(value1)){
+      console.log(md5(key2.toString()+key.toString()+secret), 1/value2*10000)
+      let id = md5(key2.toString()+key.toString()+secret)
+      let val =  1/value2*10000
+      await client.query(
+        queryenum.UPDATE_TRAITS_DATA,
+        [id,val.toFixed(2)],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
+        }
+     );
+    }
+  }
+
+  const res = await axios.get(`https://api.reservoir.tools/collections/${String(process.env.NFT_CONTRACT)}/attributes/all/v4`, {
+  headers: {
+    'accept': '*/*',
+    'x-api-key': '300e8508-f946-538e-8d4f-29dc8ddcd697'
+  }
+});
+let attr = res.data.attributes
+  for(let i =0 ;i<attr.length;i++){
+    for(let j =0;j<attr[i].values.length;j++){
+      if(attr[i].values[j].floorAskPrice!=undefined){
+        await client.query(
+          queryenum.UPDATE_TRAITS_PRICE_DATA,
+          [md5(attr[i].values[j].value+attr[i].key+secret),attr[i].values[j].floorAskPrice.amount.decimal],
+          (error: any, response:any) => {
+            if (error) {
+              throw error;
+              console.log(error);
+            }
+          }
+       );
+      }  
+    }
+  }
+}
+
+
+
 
 async function returnFiltered(body:any) {
   let letQuerryBody = `SELECT distinct n.id ,n.nftid,convert_from( cast(n.imgurl as bytea),'UTF8'),n.rarity 
@@ -250,4 +311,4 @@ async function returnFiltered(body:any) {
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
 export default {returnFiltered,
-   synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits};
+   synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits,updateTraitsData};
