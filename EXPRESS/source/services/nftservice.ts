@@ -179,30 +179,31 @@ console.log(data[0].rawMetadata.attributes[0])
         }
       );
     }
-    let attributes = data[i].rawMetadata.attributes
-    for(let j =0;j<attributes.length;j++){
-      await client.query(
-        queryenum.INSERT_TRAIT_DATA,
-        [md5(attributes[j].value+attributes[j].trait_type+secret),attributes[j].trait_type,attributes[j].value,0,0],
-        (error: any, response:any) => {
-          if (error) {
-            throw error;
-            console.log(error);
+    if(data[i].rawMetadata.attributes!=undefined){
+          let attributes = data[i].rawMetadata.attributes
+          for(let j =0;j<attributes.length;j++){
+            await client.query(
+              queryenum.INSERT_TRAIT_DATA,
+              [md5(attributes[j].value+attributes[j].trait_type+secret),attributes[j].trait_type,attributes[j].value,0,0],
+              (error: any, response:any) => {
+                if (error) {
+                  throw error;
+                  console.log(error);
+                }
+              }
+           );
+            await client.query(
+              queryenum.INESRT_NFT_TRAITS,
+              [md5(attributes[j].value+attributes[j].trait_type+secret),md5(Number(data[i].tokenId)+secret)],
+              (error: any, response:any) => {
+                if (error) {
+                  throw error;
+                  console.log(error);
+                }
+              }
+            );
           }
-        }
-     );
-      await client.query(
-        queryenum.INESRT_NFT_TRAITS,
-        [md5(attributes[j].value+attributes[j].trait_type+secret),md5(Number(data[i].tokenId)+secret)],
-        (error: any, response:any) => {
-          if (error) {
-            throw error;
-            console.log(error);
-          }
-        }
-      );
     }
-    
   }
   //synchTraitDatabase()
 }
