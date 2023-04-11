@@ -286,7 +286,8 @@ async function returnFiltered(body:any) {
   join nftdata n ON n.nftid = t1.nftid 
   join traits tr on t1.traitid = tr.traitid`
   let marker = 2;
-  let arr = Object.values(body.data) as any
+  if(Object.keys(body.data).length >1){
+    let arr = Object.values(body.data) as any
   for(let i =0; i< arr.length;i++){
     letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
     marker++
@@ -307,6 +308,8 @@ async function returnFiltered(body:any) {
     }
     marker++;
   }
+  }
+
   let res = await client.query(letQuerryBody)
   return res.rows
 }
