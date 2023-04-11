@@ -225,6 +225,10 @@ async function getTraits(){
   return res.rows
 } 
 
+async function getTraitsByAttribute(name:any){
+  let res = await client.query(queryenum.SELECT_TRAITS_BY_ATTRIBUTE,[name])
+  return res.rows
+}
 
 async function updateTraitsData(){
   const response = await (await alchemy.nft.summarizeNftAttributes(String(process.env.NFT_CONTRACT))).summary
@@ -310,5 +314,5 @@ async function returnFiltered(body:any) {
 // WHERE t1.traitid = '9798087'
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
-export default {returnFiltered,
+export default {returnFiltered,getTraitsByAttribute,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits,updateTraitsData};

@@ -20,6 +20,7 @@ router.get("/nft/list",nftholders.getHatchByWallet)
 router.get("/nft/nftOwners",nftholders.getNftOwners)
 router.get("/nft/traits",nftholders.getNftTraits)
 router.post("/nft/traits",nftholders.postNftFilter)
+router.get("/nft/attributes",nftholders.getNftTraitsByAttr)
 
 //BurnRanking
 router.get("/burn",burn.getBurnRanking)

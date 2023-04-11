@@ -146,10 +146,19 @@ JOIN traits t ON n.traitid = t.traitid
 JOIN nftdata n2 ON n2.nftid = n.nftid
 GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity;`
 
+const SELECT_TRAITS_BY_ATTRIBUTE =
+`SELECT DISTINCT n.traitid, t."type", t."name", MAX(n2.imgurl)
+FROM nfttraits n
+JOIN traits t ON n.traitid = t.traitid
+JOIN nftdata n2 ON n2.nftid = n.nftid
+where t."type"  =($1)
+GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity`
+
 const UPDATE_TRAITS_DATA =`UPDATE traits SET rarity  = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 
 const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 export default {
+  SELECT_TRAITS_BY_ATTRIBUTE,
   UPDATE_TRAITS_PRICE_DATA,
   UPDATE_TRAITS_DATA,
   SELECT_TRAITS,
