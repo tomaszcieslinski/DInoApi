@@ -281,6 +281,7 @@ let attr = res.data.attributes
 
 
 async function returnFiltered(body:any) {
+  console.log(body)
   let letQuerryBody = `SELECT distinct n.id ,n.nftid,convert_from( cast(n.imgurl as bytea),'UTF8'),n.rarity 
   FROM nfttraits t1
   join nftdata n ON n.nftid = t1.nftid 
