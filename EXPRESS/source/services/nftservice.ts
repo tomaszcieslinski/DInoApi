@@ -218,7 +218,22 @@ data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
   }
 }
 
-
+async function test() {
+  const resp = await axios.post(
+    'https://dinoapi-production-8b23.up.railway.app/nft/traits',
+    {
+        data: {
+            Body: [
+                '46663a61cbc9334bc3807d2c7276911e',
+                '6056509a8bae83c57493ec53deb82e3a',
+            ],
+            Eyes: ['ad46d7a9c2439315b7052e5786c466f0'],
+            Background: ['07225db0434494bec007eac7e92b275d'],
+        },
+    }
+)
+console.log(resp)
+}
 
 async function getTraits(){
   let res = await client.query(queryenum.SELECT_TRAITS)
@@ -287,30 +302,31 @@ async function returnFiltered(body:any) {
   join nftdata n ON n.nftid = t1.nftid 
   join traits tr on t1.traitid = tr.traitid`
   let marker = 2;
-  if(Object.keys(body.data).length >1){
-    let arr = Object.values(body.data) as any
-  for(let i =0; i< arr.length;i++){
-    letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
-    marker++
-  }
-  letQuerryBody += " where "
-  marker=2;
-  for (let i = 0; i < arr.length; i++) {
-    letQuerryBody += "(";
-    arr[i].forEach((element: any, index: number) => {
-      letQuerryBody += `t${marker - 1}.traitid = '${element}'`;
-      if (index < arr[i].length - 1) {
-        letQuerryBody += " or ";
-      }
-    });
-    letQuerryBody += ")";
-    if (i < arr.length - 1) {
-      letQuerryBody += " and ";
+  if(body.data!=undefined){
+    if(Object.keys(body.data).length >=1){
+      let arr = Object.values(body.data) as any
+    for(let i =0; i< arr.length;i++){
+      letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
+      marker++
     }
-    marker++;
+    letQuerryBody += " where "
+    marker=2;
+    for (let i = 0; i < arr.length; i++) {
+      letQuerryBody += "(";
+      arr[i].forEach((element: any, index: number) => {
+        letQuerryBody += `t${marker - 1}.traitid = '${element}'`;
+        if (index < arr[i].length - 1) {
+          letQuerryBody += " or ";
+        }
+      });
+      letQuerryBody += ")";
+      if (i < arr.length - 1) {
+        letQuerryBody += " and ";
+      }
+      marker++;
+    }
+    }
   }
-  }
-
   let res = await client.query(letQuerryBody)
   return res.rows
 }
@@ -318,5 +334,5 @@ async function returnFiltered(body:any) {
 // WHERE t1.traitid = '9798087'
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
-export default {returnFiltered,getTraitsByAttribute,
+export default {returnFiltered,getTraitsByAttribute,test,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits,updateTraitsData};
