@@ -115,36 +115,6 @@ async function synchDatabase() {
   }
 }
 
-
-
-
-
-async function synchTraitDatabase(){
-const axios = require('axios');
-const response = await axios.get(`https://api.traitsniper.com/v1/collections/${String(process.env.NFT_CONTRACT)}/traits`, {
-  params: {
-    'include_prices': 'true'
-  },
-  headers: {
-    'accept': 'application/json',
-    'x-ts-api-key': '656325fd-6b80-40dc-8bbb-761d2397d172'
-  }
-});
-let data = response.data.traits
-for(let i = 0 ; i<data.length;i++){ 
-  await client.query(
-    queryenum.UPDATE_TRAIT_DATA,
-    [data[i].floor_price,data[i].trait_id],
-    (error: any, response:any) => {
-      if (error) {
-        throw error;
-        console.log(error);
-      }
-    }
-  );
-}
-}
-
 let page = 1;
 let totalpage;
 async function synchNFTDataBase(){
@@ -216,23 +186,6 @@ data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
           }
     }
   }
-}
-
-async function test() {
-  const resp = await axios.post(
-    'https://dinoapi-production-8b23.up.railway.app/nft/traits',
-    {
-        data: {
-            Body: [
-                '46663a61cbc9334bc3807d2c7276911e',
-                '6056509a8bae83c57493ec53deb82e3a',
-            ],
-            Eyes: ['ad46d7a9c2439315b7052e5786c466f0'],
-            Background: ['07225db0434494bec007eac7e92b275d'],
-        },
-    }
-)
-console.log(resp)
 }
 
 async function getTraits(){
@@ -334,5 +287,5 @@ async function returnFiltered(body:any) {
 // WHERE t1.traitid = '9798087'
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
-export default {returnFiltered,getTraitsByAttribute,test,
-   synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchTraitDatabase,synchNFTDataBase,getTraits,updateTraitsData};
+export default {returnFiltered,getTraitsByAttribute,
+   synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchNFTDataBase,getTraits,updateTraitsData};

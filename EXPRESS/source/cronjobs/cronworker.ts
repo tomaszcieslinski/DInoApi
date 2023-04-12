@@ -4,7 +4,7 @@ import nftservice from "../services/nftservice"
 var cron = require('node-cron');
 let currentDate = new Date(Date.now()).toString()
 function worker(){ 
-    cron.schedule('*/30 * * * *', () => {
+    cron.schedule('30 * * * *', () => {
         console.log("Executing hatch table synchronization", currentDate)
         nftservice.synchDatabase()
         console.log("Executing burn table synchronization", currentDate)
@@ -14,10 +14,18 @@ function worker(){
     });
 }
 
-function worker2(){ 
+function nftworker(){ 
     cron.schedule('0 * * * *', () => {
         console.log("Executing NFT tables synchronization", currentDate)
         nftservice.synchNFTDataBase()
     });
 }
-export default {worker,worker2}
+
+function traitsworker(){
+cron.schedule('15 * * * *', () => {
+    console.log("Executing traits table synchronization", currentDate)
+    nftservice.updateTraitsData()
+});
+
+}
+export default {worker,nftworker,traitsworker}

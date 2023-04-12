@@ -51,11 +51,10 @@ router.use((req, res, next) => {
 /** Server */
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
-//cronworker.worker()
-//transactions.listen()
-// nftservice.test()
-//nftservice.updateTraitsData()
-//nftservice.synchNFTDataBase()
+transactions.listen()
+cronworker.worker()
+cronworker.nftworker()
+cronworker.traitsworker()
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
 );
