@@ -21,6 +21,8 @@ router.use(express.urlencoded({ extended: false }));
 router.use(express.json());
 //router.use(cors())
 /** RULES OF OUR API */
+router.use(cors())
+router.options('*', cors())
 router.use((req, res, next) => {
   // set the CORS policy
   res.header("Access-Control-Allow-Origin", req.header("origin"));
