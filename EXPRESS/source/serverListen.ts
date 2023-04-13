@@ -4,7 +4,7 @@ import express, { Express } from "express";
 import morgan from "morgan";
 import routes from "./routes/posts";
 import transactions from "./controllers/transactions";
-
+var cors = require('cors')
 import cronworker from './cronjobs/cronworker'
 import Web3 from "web3";
 import { Network, Alchemy, AssetTransfersCategory, fromHex } from "alchemy-sdk";
@@ -51,6 +51,7 @@ router.use((req, res, next) => {
 /** Server */
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
+router.use(cors())
 transactions.listen()
 cronworker.worker()
 cronworker.nftworker()
