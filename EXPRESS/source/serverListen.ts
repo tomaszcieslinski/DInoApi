@@ -23,6 +23,7 @@ router.use(express.json());
 /** RULES OF OUR API */
 router.use((req, res, next) => {
   // set the CORS policy
+  res.header("Access-Control-Allow-Origin", req.header("origin"));
   res.header("Access-Control-Allow-Origin", "*");
   // set the CORS headers
   res.header(
@@ -52,13 +53,6 @@ router.use((req, res, next) => {
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
 //enables cors
-router.use(cors({
-  'allowedHeaders': ['sessionId', 'Content-Type'],
-  'exposedHeaders': ['sessionId'],
-  'origin': '*',
-  'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  'preflightContinue': false
-}));
 transactions.listen()
 cronworker.worker()
 cronworker.nftworker()
