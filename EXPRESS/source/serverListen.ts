@@ -19,7 +19,7 @@ router.use(morgan("dev"));
 router.use(express.urlencoded({ extended: false }));
 /** Takes care of JSON data */
 router.use(express.json());
-router.use(cors())
+//router.use(cors())
 /** RULES OF OUR API */
 router.use((req, res, next) => {
   // set the CORS policy
