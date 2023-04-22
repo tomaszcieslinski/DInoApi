@@ -226,13 +226,14 @@ async function updateTraitsData(){
     'x-api-key': '300e8508-f946-538e-8d4f-29dc8ddcd697'
   }
 });
+
 let attr = res.data.attributes
   for(let i =0 ;i<attr.length;i++){
     for(let j =0;j<attr[i].values.length;j++){
       if(attr[i].values[j].floorAskPrice!=undefined){
         await client.query(
           queryenum.UPDATE_TRAITS_PRICE_DATA,
-          [md5(attr[i].values[j].value+attr[i].key+secret),attr[i].values[j].floorAskPrice.amount.decimal],
+          [md5(attr[i].values[j].value+attr[i].key+secret),attr[i].values[j].floorAskPrice.amount.decimal,attr[i].values[j].count],
           (error: any, response:any) => {
             if (error) {
               throw error;

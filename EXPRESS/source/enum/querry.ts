@@ -140,7 +140,7 @@ const INESRT_NFT_TRAITS =
 
 const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
 
-const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice, t.rarity, MAX(n2.imgurl) as imgurl
+const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice, t.rarity, MAX(n2.imgurl) as imgurl, t.count
 FROM nfttraits n
 JOIN traits t ON n.traitid = t.traitid
 JOIN nftdata n2 ON n2.nftid = n.nftid
@@ -156,7 +156,7 @@ GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity`
 
 const UPDATE_TRAITS_DATA =`UPDATE traits SET rarity  = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 
-const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
+const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) , count = ($3) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 export default {
   SELECT_TRAITS_BY_ATTRIBUTE,
   UPDATE_TRAITS_PRICE_DATA,
