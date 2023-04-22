@@ -144,7 +144,7 @@ const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice
 FROM nfttraits n
 JOIN traits t ON n.traitid = t.traitid
 JOIN nftdata n2 ON n2.nftid = n.nftid
-GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity;`
+GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity,t.count;`
 
 const SELECT_TRAITS_BY_ATTRIBUTE =
 `SELECT DISTINCT n.traitid, t."type", t."name", MAX(n2.imgurl)
