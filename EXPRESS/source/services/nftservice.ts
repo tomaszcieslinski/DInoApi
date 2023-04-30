@@ -353,11 +353,12 @@ async function saveUnmintedDatabase(){
 const jsonsInDir = fs.readdirSync('./source/jsons/dino').filter((file: any) => path.extname(file) === '.json');
 let counter = 0
 jsonsInDir.forEach(async (file: any) => {
+  let id = file.split('.')[0]
   const fileData = fs.readFileSync(path.join('./source/jsons/dino', file));
   const json = JSON.parse(fileData.toString());
   await client.query(
     queryenum.INSERT_OEGG_HATCHERS,
-    [json.edition,json.dna,json.name,json.image,false],
+    [id,md5(id+secret),json.name,json.image,false],
     (error: any, response:any) => {
       if (error) {
         throw error;
@@ -366,28 +367,28 @@ jsonsInDir.forEach(async (file: any) => {
     }
   );
   counter++
-  for(let j =0;j<json.attributes.length;j++){
-    await client.query(
-      queryenum.INSERT_oTRAIT_DATA,
-      [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.attributes[j].trait_type,json.attributes[j].value,0,0],
-      (error: any, response:any) => {
-        if (error) {
-          throw error;
-          console.log(error);
-        }
-      }
-   );
-  //  await client.query(
-  //   queryenum.INESRT_ONFT_TRAITS,
-  //   [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
-  //   (error: any, response:any) => {
-  //     if (error) {
-  //       throw error;
-  //       console.log(error);
+  // for(let j =0;j<json.attributes.length;j++){
+  //   await client.query(
+  //     queryenum.INSERT_oTRAIT_DATA,
+  //     [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.attributes[j].trait_type,json.attributes[j].value,0,0],
+  //     (error: any, response:any) => {
+  //       if (error) {
+  //         throw error;
+  //         console.log(error);
+  //       }
   //     }
-  //   }
-  // );
-  }
+  //  );
+  // //  await client.query(
+  // //   queryenum.INESRT_ONFT_TRAITS,
+  // //   [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
+  // //   (error: any, response:any) => {
+  // //     if (error) {
+  // //       throw error;
+  // //       console.log(error);
+  // //     }
+  // //   }
+  // // );
+  // }
 });
 console.log(counter)
 }
