@@ -377,16 +377,16 @@ jsonsInDir.forEach(async (file: any) => {
         }
       }
    );
-  //  await client.query(
-  //   queryenum.INESRT_ONFT_TRAITS,
-  //   [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
-  //   (error: any, response:any) => {
-  //     if (error) {
-  //       throw error;
-  //       console.log(error);
-  //     }
-  //   }
-  // );
+   await client.query(
+    queryenum.INESRT_ONFT_TRAITS,
+    [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
+    (error: any, response:any) => {
+      if (error) {
+        throw error;
+        console.log(error);
+      }
+    }
+  );
   }
 });
 console.log(counter)
