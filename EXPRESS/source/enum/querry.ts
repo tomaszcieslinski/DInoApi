@@ -147,7 +147,7 @@ const INESRT_NFT_TRAITS =
 
 
 const INESRT_ONFT_TRAITS =
-`INSERT INTO nfttraits (traitid,nftid) VALUES ($1,$2) ON CONFLICT (traitid,nftid) DO NOTHING`
+`INSERT INTO onfttraits (traitid,nftid) VALUES ($1,$2) ON CONFLICT (traitid,nftid) DO NOTHING`
 
 
 const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
