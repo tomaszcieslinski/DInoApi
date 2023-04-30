@@ -366,17 +366,17 @@ jsonsInDir.forEach(async (file: any) => {
     }
   );
   counter++
-  // for(let j =0;j<json.attributes.length;j++){
-  //   await client.query(
-  //     queryenum.INSERT_oTRAIT_DATA,
-  //     [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.attributes[j].trait_type,json.attributes[j].value,0,0],
-  //     (error: any, response:any) => {
-  //       if (error) {
-  //         throw error;
-  //         console.log(error);
-  //       }
-  //     }
-  //  );
+  for(let j =0;j<json.attributes.length;j++){
+    await client.query(
+      queryenum.INSERT_oTRAIT_DATA,
+      [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.attributes[j].trait_type,json.attributes[j].value,0,0],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+   );
   //  await client.query(
   //   queryenum.INESRT_ONFT_TRAITS,
   //   [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
@@ -387,7 +387,7 @@ jsonsInDir.forEach(async (file: any) => {
   //     }
   //   }
   // );
-  // }
+  }
 });
 console.log(counter)
 }
