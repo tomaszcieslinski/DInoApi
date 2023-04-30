@@ -285,6 +285,43 @@ async function returnFiltered(body:any) {
   return res.rows
 }
 
+
+
+async function returnFilteredo(body:any) {
+  console.log(body)
+  let letQuerryBody = `SELECT distinct n.id ,n.nftid,n.imgurl
+  FROM nfttraits t1
+  join nftdata n ON n.nftid = t1.nftid 
+  join traits tr on t1.traitid = tr.traitid`
+  let marker = 2;
+  if(body.data!=undefined){
+    if(Object.keys(body.data).length >=1){
+      let arr = Object.values(body.data) as any
+    for(let i =0; i< arr.length;i++){
+      letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
+      marker++
+    }
+    letQuerryBody += " where "
+    marker=2;
+    for (let i = 0; i < arr.length; i++) {
+      letQuerryBody += "(";
+      arr[i].forEach((element: any, index: number) => {
+        letQuerryBody += `t${marker - 1}.traitid = '${element}'`;
+        if (index < arr[i].length - 1) {
+          letQuerryBody += " or ";
+        }
+      });
+      letQuerryBody += ")";
+      if (i < arr.length - 1) {
+        letQuerryBody += " and ";
+      }
+      marker++;
+    }
+    }
+  }
+  let res = await client.query(letQuerryBody)
+  return res.rows
+}
 // WHERE t1.traitid = '9798087'
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
@@ -340,16 +377,16 @@ jsonsInDir.forEach(async (file: any) => {
         }
       }
    );
-   await client.query(
-    queryenum.INESRT_ONFT_TRAITS,
-    [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
-    (error: any, response:any) => {
-      if (error) {
-        throw error;
-        console.log(error);
-      }
-    }
-  );
+  //  await client.query(
+  //   queryenum.INESRT_ONFT_TRAITS,
+  //   [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
+  //   (error: any, response:any) => {
+  //     if (error) {
+  //       throw error;
+  //       console.log(error);
+  //     }
+  //   }
+  // );
   }
 });
 console.log(counter)
