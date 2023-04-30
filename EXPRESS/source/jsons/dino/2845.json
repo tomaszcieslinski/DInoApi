@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #845",
+  "description": "Pirate Class",
+  "image": "ipfs://DinoLFG/845.png",
+  "dna": "3217f2029336848843b891de70661d048c77f302",
+  "edition": 845,
+  "date": 1682453334128,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Riffle"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Pirate"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Dragon"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Bat"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Headphones"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Pilot"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

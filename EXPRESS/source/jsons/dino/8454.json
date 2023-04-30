@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #454",
+  "description": "Wizard Class",
+  "image": "ipfs://DinoLFG/454.png",
+  "dna": "87b2b4c0052e37986adee63e7398f3a426f6e2d6",
+  "edition": 454,
+  "date": 1682174143922,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smirk"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Farmer"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Headphones"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Party"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

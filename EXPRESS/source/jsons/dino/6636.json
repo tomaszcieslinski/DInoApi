@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #636",
+  "description": "Warrior Class",
+  "image": "ipfs://DinoLFG/636.png",
+  "dna": "e90bdc5639a8ade9223ad7453799ead7002951f7",
+  "edition": 636,
+  "date": 1682171466496,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Hammer"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Warrior"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Bored"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Jacket"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Blindfold"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

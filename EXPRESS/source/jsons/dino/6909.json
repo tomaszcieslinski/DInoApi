@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #909",
+  "description": "Warrior Class",
+  "image": "ipfs://DinoLFG/909.png",
+  "dna": "c7a97d6f9b71d4c539a424c40b772f1f0265dad8",
+  "edition": 909,
+  "date": 1682171718633,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Spear"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Warrior"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smirk"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Suit"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Flame"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Monocle"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

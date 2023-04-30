@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #114",
+  "description": "Archer Class",
+  "image": "ipfs://DinoLFG/114.png",
+  "dna": "8f97228759319b467c772650f9c517d32d323c56",
+  "edition": 114,
+  "date": 1682177059045,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bow"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Robe"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "3D"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

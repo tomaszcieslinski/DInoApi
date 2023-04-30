@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #544",
+  "description": "Archer Class",
+  "image": "ipfs://DinoLFG/544.png",
+  "dna": "e52fad713cf6d792cceacac68f9595a421c63de8",
+  "edition": 544,
+  "date": 1682177449476,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Crossbow"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Tongue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Wolf"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Squared"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

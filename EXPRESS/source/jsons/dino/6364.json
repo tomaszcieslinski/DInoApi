@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #364",
+  "description": "Warrior Class",
+  "image": "ipfs://DinoLFG/364.png",
+  "dna": "21dfa41c1e6e57f0281592e278dd45be6659ebc4",
+  "edition": 364,
+  "date": 1682171219614,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Sword"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Warrior"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smirk"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Vagabond"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "None"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Party"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

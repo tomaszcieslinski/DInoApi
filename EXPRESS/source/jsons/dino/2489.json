@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #489",
+  "description": "Pirate Class",
+  "image": "ipfs://DinoLFG/489.png",
+  "dna": "9279ac6379b95de6c0762ef573347e84b2efa390",
+  "edition": 489,
+  "date": 1682453018693,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Handgun"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Pirate"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Tongue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Sweater"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Scientist"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

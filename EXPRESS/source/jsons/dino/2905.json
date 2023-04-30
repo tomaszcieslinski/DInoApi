@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #905",
+  "description": "Pirate Class",
+  "image": "ipfs://DinoLFG/905.png",
+  "dna": "4de38808aa091074b23314654ddf2520b5b6622c",
+  "edition": 905,
+  "date": 1682453388442,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Riffle"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Pirate"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Sweater"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Scientist"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

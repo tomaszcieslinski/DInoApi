@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #926",
+  "description": "Archer Class",
+  "image": "ipfs://DinoLFG/926.png",
+  "dna": "2f7f5c1e0d6f03f67abd1a8a1ef9563e68c4fed7",
+  "edition": 926,
+  "date": 1682177771659,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bow"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Tongue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Vagabond"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Eyepatch"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

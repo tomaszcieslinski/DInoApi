@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #1734",
+  "description": "Wizard Class",
+  "image": "ipfs://DinoLFG/1734.png",
+  "dna": "813520d3133fdcb8b2abd4785316f18269811462",
+  "edition": 1734,
+  "date": 1682175301488,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Wand"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Vagabond"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Zeus"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Eyepatch"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

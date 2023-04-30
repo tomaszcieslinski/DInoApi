@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #1732",
+  "description": "Pirate Class",
+  "image": "ipfs://DinoLFG/1732.png",
+  "dna": "f1be8b111c63df05a358fb5d3e73e23c5e69d4ce",
+  "edition": 1732,
+  "date": 1682454131367,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Riffle"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Pirate"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Wolf"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Blindfold"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

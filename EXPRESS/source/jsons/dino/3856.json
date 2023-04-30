@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #1856",
+  "description": "Pirate Class",
+  "image": "ipfs://DinoLFG/1856.png",
+  "dna": "47f4eeba7d058ae96a0f25cb86df0c7463e9f7a2",
+  "edition": 1856,
+  "date": 1682454240737,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Riffle"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Pirate"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Robe"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Librarian"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

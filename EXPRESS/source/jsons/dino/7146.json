@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #1146",
+  "description": "Warrior Class",
+  "image": "ipfs://DinoLFG/1146.png",
+  "dna": "162c53e56f5e893978c865a36d0b82794f302b4d",
+  "edition": 1146,
+  "date": 1682171932348,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Sword"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Warrior"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Dragon"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Meteor"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Baseball"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Squared"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

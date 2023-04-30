@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #150",
+  "description": "Archer Class",
+  "image": "ipfs://DinoLFG/150.png",
+  "dna": "9d66f67c96cee5f8d2fa86b70353cdad6ee10e52",
+  "edition": 150,
+  "date": 1682177091650,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Bow"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Meteor"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Crown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "3D"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

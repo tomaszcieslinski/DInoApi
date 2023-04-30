@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #1768",
+  "description": "Wizard Class",
+  "image": "ipfs://DinoLFG/1768.png",
+  "dna": "8cb5c4e691c399d899cc909948efe59e5d5aade6",
+  "edition": 1768,
+  "date": 1682175332836,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Wand"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Farmer"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Bat"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Gentleman"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Eyepatch"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

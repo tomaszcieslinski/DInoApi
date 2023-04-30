@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #853",
+  "description": "Wizard Class",
+  "image": "ipfs://DinoLFG/853.png",
+  "dna": "c2f0cf7022f67cbf2f9fc6add3ed2f5b2ddd7f74",
+  "edition": 853,
+  "date": 1682174497603,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Hero"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "Zeus"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Halo"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Phantom"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

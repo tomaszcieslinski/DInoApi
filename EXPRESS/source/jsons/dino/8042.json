@@ -1,0 +1,47 @@
+{
+  "name": "Dino LFG Collection #42",
+  "description": "Wizard Class",
+  "image": "ipfs://DinoLFG/42.png",
+  "dna": "2f1a3037835b1098605eb9c7088f09c512f4ee50",
+  "edition": 42,
+  "date": 1682173749152,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Wizard"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Smile"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Dragon"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Baseball"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Scientist"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

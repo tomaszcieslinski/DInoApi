@@ -11,6 +11,7 @@ import { Network, Alchemy, AssetTransfersCategory, fromHex } from "alchemy-sdk";
 import nftservice from "./services/nftservice";
 import { N } from "ethers";
 
+
 const router: Express = express();
 
 /** Logging */
@@ -55,10 +56,15 @@ router.use((req, res, next) => {
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
 //enables cors
-transactions.listen()
-cronworker.worker()
-cronworker.nftworker()
-cronworker.traitsworker()
+// transactions.listen()
+// cronworker.worker()
+// cronworker.nftworker()
+// cronworker.traitsworker()
+//nftservice.updateTraitsData()
+nftservice.saveUnmintedDatabase()
+
+
+
 httpServer.listen(PORT, () =>
   console.log(`The server is running on port ${PORT}`)
 );

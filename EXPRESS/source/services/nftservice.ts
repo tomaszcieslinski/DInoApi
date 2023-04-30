@@ -288,5 +288,74 @@ async function returnFiltered(body:any) {
 // WHERE t1.traitid = '9798087'
 //       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
 
-export default {returnFiltered,getTraitsByAttribute,
+// {
+//   name: 'Dino LFG Collection #401',
+//   description: 'Pirate Class',
+//   image: 'ipfs://DinoLFG/401.png',
+//   dna: '79c2331a9638e4610f7772a74d2bf55bf6ce0167',
+//   edition: 401,
+//   date: 1682181760589,
+//   attributes: [
+//     { trait_type: 'Background', value: 'Rare' },
+//     { trait_type: 'Weapon', value: 'Silex' },
+//     { trait_type: 'Class', value: 'Pirate' },
+//     { trait_type: 'Mouth', value: 'Branch' },
+//     { trait_type: 'Body', value: 'Pirate' },
+//     { trait_type: 'Pet', value: 'None' },
+//     { trait_type: 'Hat', value: 'Beanie' },
+//     { trait_type: 'Eyes', value: 'Blindfold' },
+//     { trait_type: 'First Edition', value: 'First' }
+//   ],
+//   compiler: 'HashLips Art Engine'
+// }
+
+const fs = require('fs');
+const path = require('path')
+async function saveUnmintedDatabase(){
+
+const jsonsInDir = fs.readdirSync('./source/jsons/dino').filter((file: any) => path.extname(file) === '.json');
+let counter = 0
+jsonsInDir.forEach(async (file: any) => {
+  const fileData = fs.readFileSync(path.join('./source/jsons/dino', file));
+  const json = JSON.parse(fileData.toString());
+  await client.query(
+    queryenum.INSERT_OEGG_HATCHERS,
+    [json.edition,json.dna,json.name,json.image,false],
+    (error: any, response:any) => {
+      if (error) {
+        throw error;
+        console.log(error);
+      }
+    }
+  );
+  counter++
+  for(let j =0;j<json.attributes.length;j++){
+    await client.query(
+      queryenum.INSERT_oTRAIT_DATA,
+      [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.attributes[j].trait_type,json.attributes[j].value,0,0],
+      (error: any, response:any) => {
+        if (error) {
+          throw error;
+          console.log(error);
+        }
+      }
+   );
+   await client.query(
+    queryenum.INESRT_ONFT_TRAITS,
+    [md5(json.attributes[j].value+json.attributes[j].trait_type+secret),json.dna],
+    (error: any, response:any) => {
+      if (error) {
+        throw error;
+        console.log(error);
+      }
+    }
+  );
+  }
+});
+console.log(counter)
+}
+
+
+
+export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchNFTDataBase,getTraits,updateTraitsData};

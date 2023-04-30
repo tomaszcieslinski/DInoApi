@@ -26,6 +26,11 @@ const UNISWAP_TOKEN_QUERRY = `{
 
 const INSERT_EGG_HATCHERS =
   "INSERT INTO nftdata (id,hatchedby,hatchdate,hatchtx) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING";
+
+
+  const INSERT_OEGG_HATCHERS =
+  "INSERT INTO onftdata (id,nftid,name,imgurl,isminted) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING";
+
 const INSERT_WALLET_TRANSACTIONS =
   "INSERT INTO wallettransactions (walletaddress,transactionhash,timestamp,value,ethervalue) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING";
 
@@ -41,6 +46,9 @@ const INSERT_STAKE_DATA =
 
 const INSERT_TRAIT_DATA = 
 "INSERT INTO traits (traitid,type,name,ethprice,rarity) VALUES ($1,$2,$3,$4,$5) ON CONFLICT(traitid) DO UPDATE SET rarity = ($5)"
+
+const INSERT_oTRAIT_DATA = 
+"INSERT INTO otraits (traitid,type,name,rarity,count) VALUES ($1,$2,$3,$4,$5) ON CONFLICT(traitid) DO UPDATE SET rarity = ($5)"
 
 
 const UPDATE_TRAIT_DATA =
@@ -138,6 +146,10 @@ const INESRT_NFT_TRAITS =
 `INSERT INTO nfttraits (traitid,nftid) VALUES ($1,$2) ON CONFLICT (traitid,nftid) DO NOTHING`
 
 
+const INESRT_ONFT_TRAITS =
+`INSERT INTO nfttraits (traitid,nftid) VALUES ($1,$2) ON CONFLICT (traitid,nftid) DO NOTHING`\
+
+
 const SELECT_DISTINCT_TRAITS = `select distinct traitid  from nfttraits n `
 
 const SELECT_TRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.ethprice, t.rarity, MAX(n2.imgurl) as imgurl, t.count
@@ -158,6 +170,9 @@ const UPDATE_TRAITS_DATA =`UPDATE traits SET rarity  = ($2) WHERE traitid=($1) a
 
 const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) , count = ($3) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 export default {
+  INESRT_ONFT_TRAITS,
+  INSERT_oTRAIT_DATA,
+  INSERT_OEGG_HATCHERS,
   SELECT_TRAITS_BY_ATTRIBUTE,
   UPDATE_TRAITS_PRICE_DATA,
   UPDATE_TRAITS_DATA,
