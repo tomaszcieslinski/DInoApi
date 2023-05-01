@@ -158,6 +158,21 @@ JOIN traits t ON n.traitid = t.traitid
 JOIN nftdata n2 ON n2.nftid = n.nftid
 GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity,t.count;`
 
+
+const SELECT_OTRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.rarity, MAX(n2.imgurl) as imgurl, t.count
+FROM onfttraits n
+JOIN otraits t ON n.traitid = t.traitid
+JOIN onftdata n2 ON n2.nftid = n.nftid
+GROUP BY n.traitid, t."type", t."name", t.rarity,t.count;`
+
+const SELECT_OTRAITS_BY_ATTRIBUTE =
+`SELECT DISTINCT n.traitid, t."type", t."name", MAX(n2.imgurl)
+FROM onfttraits n
+JOIN otraits t ON n.traitid = t.traitid
+JOIN onftdata n2 ON n2.nftid = n.nftid
+where t."type"  =($1)
+GROUP BY n.traitid, t."type", t."name", t.rarity`
+
 const SELECT_TRAITS_BY_ATTRIBUTE =
 `SELECT DISTINCT n.traitid, t."type", t."name", MAX(n2.imgurl)
 FROM nfttraits n
@@ -170,6 +185,8 @@ const UPDATE_TRAITS_DATA =`UPDATE traits SET rarity  = ($2) WHERE traitid=($1) a
 
 const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) , count = ($3) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 export default {
+  SELECT_OTRAITS,
+  SELECT_OTRAITS_BY_ATTRIBUTE,
   INESRT_ONFT_TRAITS,
   INSERT_oTRAIT_DATA,
   INSERT_OEGG_HATCHERS,

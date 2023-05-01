@@ -198,6 +198,18 @@ async function getTraitsByAttribute(name:any){
   return res.rows
 }
 
+async function getoTraits(){
+  let res = await client.query(queryenum.SELECT_OTRAITS)
+  return res.rows
+} 
+
+async function getoTraitsByAttribute(name:any){
+  let res = await client.query(queryenum.SELECT_OTRAITS_BY_ATTRIBUTE,[name])
+  return res.rows
+}
+
+
+
 async function updateTraitsData(){
   const response = await (await alchemy.nft.summarizeNftAttributes(String(process.env.NFT_CONTRACT))).summary
   let arr = []
@@ -290,15 +302,15 @@ async function returnFiltered(body:any) {
 async function returnFilteredo(body:any) {
   console.log(body)
   let letQuerryBody = `SELECT distinct n.id ,n.nftid,n.imgurl
-  FROM nfttraits t1
-  join nftdata n ON n.nftid = t1.nftid 
-  join traits tr on t1.traitid = tr.traitid`
+  FROM onfttraits t1
+  join onftdata n ON n.nftid = t1.nftid 
+  join otraits tr on t1.traitid = tr.traitid`
   let marker = 2;
   if(body.data!=undefined){
     if(Object.keys(body.data).length >=1){
       let arr = Object.values(body.data) as any
     for(let i =0; i< arr.length;i++){
-      letQuerryBody += ` JOIN nfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
+      letQuerryBody += ` JOIN onfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
       marker++
     }
     letQuerryBody += " where "
@@ -322,29 +334,6 @@ async function returnFilteredo(body:any) {
   let res = await client.query(letQuerryBody)
   return res.rows
 }
-// WHERE t1.traitid = '9798087'
-//       AND (t2.traitid = '9797943' OR t2.traitid = '9797924') and (t3.traitid ='9797961')
-
-// {
-//   name: 'Dino LFG Collection #401',
-//   description: 'Pirate Class',
-//   image: 'ipfs://DinoLFG/401.png',
-//   dna: '79c2331a9638e4610f7772a74d2bf55bf6ce0167',
-//   edition: 401,
-//   date: 1682181760589,
-//   attributes: [
-//     { trait_type: 'Background', value: 'Rare' },
-//     { trait_type: 'Weapon', value: 'Silex' },
-//     { trait_type: 'Class', value: 'Pirate' },
-//     { trait_type: 'Mouth', value: 'Branch' },
-//     { trait_type: 'Body', value: 'Pirate' },
-//     { trait_type: 'Pet', value: 'None' },
-//     { trait_type: 'Hat', value: 'Beanie' },
-//     { trait_type: 'Eyes', value: 'Blindfold' },
-//     { trait_type: 'First Edition', value: 'First' }
-//   ],
-//   compiler: 'HashLips Art Engine'
-// }
 
 const fs = require('fs');
 const path = require('path')
@@ -395,5 +384,6 @@ console.log(counter)
 
 
 
-export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,
+export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,returnFilteredo,getoTraits,
+  getoTraitsByAttribute,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchNFTDataBase,getTraits,updateTraitsData};

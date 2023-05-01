@@ -33,6 +33,25 @@ const getNftOwners = async(req: Request, response: Response)=>{
   return response.status(200).json(res)
 }
 
+
+
+const getoNftTraits = async (req: Request, response: Response)=>{
+  let res = await nftservice.getoTraits()
+  return response.status(200).json(res)
+}
+const getoNftTraitsByAttr = async (req: Request, response: Response)=>{
+  let attr = req.query.attrName
+  let res = await nftservice.getoTraitsByAttribute(attr)
+  return response.status(200).json(res)
+}
+
+const postoNftFilter = async(req: Request,response:Response)=>{
+  let data = req.body;
+  let res =  await nftservice.returnFilteredo(data)
+  return response.status(200).json(res)
+}
+
+
 const getNftTraits = async (req: Request, response: Response)=>{
   let res = await nftservice.getTraits()
   return response.status(200).json(res)
@@ -50,4 +69,5 @@ const postNftFilter = async(req: Request,response:Response)=>{
 }
 
 
-export default {getNftTraitsByAttr, getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits,postNftFilter};
+export default {getNftTraitsByAttr,getoNftTraits,getoNftTraitsByAttr,postoNftFilter,
+   getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits,postNftFilter};
