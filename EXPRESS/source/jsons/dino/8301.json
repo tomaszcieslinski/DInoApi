@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #19",
-    "description": "Wizard Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "19"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #20",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/20.png",
+  "dna": "d53a83aa4f3f59cb7edc972458611685fbc42bab",
+  "edition": 20,
+  "date": 1683666676766,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "The Seeker"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #15",
-    "description": "Warrior Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "15"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #16",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/16.png",
+  "dna": "bc1ad931218e9a4de63985b54f8260c73b2d5639",
+  "edition": 16,
+  "date": 1683666656926,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "Robin Hood"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #8",
-    "description": "Pirate Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "8"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #9",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/9.png",
+  "dna": "6383703b1dfc2c5912b1aeffba84292dd29eaeab",
+  "edition": 9,
+  "date": 1683666623170,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "Jack"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

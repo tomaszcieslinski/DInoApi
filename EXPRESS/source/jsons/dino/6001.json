@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #13",
-    "description": "Warrior Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "13"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #14",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/14.png",
+  "dna": "51e055a17c945ca5c6d707371289706660648326",
+  "edition": 14,
+  "date": 1683666646397,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "Thief Boss"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

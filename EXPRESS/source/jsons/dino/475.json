@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #2",
-    "description": "Archer Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "2"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #2",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/2.png",
+  "dna": "6e144bcb3b8de0650596059affb5c0eaabd0f11a",
+  "edition": 2,
+  "date": 1683666590528,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "Rex"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

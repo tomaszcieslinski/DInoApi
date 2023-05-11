@@ -1,14 +1,15 @@
 {
-    "name": "Dino LFG Unique #10",
-    "description": "Thief Class",
-    "image": "ipfs://DinoLFG/3.png",
-    "edition": 1,
-    "date": 1682181388413,
-    "attributes": [
-      {
-        "trait_type": "Unique",
-        "value": "10"
-      }
-    ],
-    "compiler": "DinoLFG"
-  }
+  "name": "Dino LFG Collection #11",
+  "description": "1/1s",
+  "image": "ipfs://DinoLFG/11.png",
+  "dna": "c5402d4b614ec544280053277c9bf2fee6f75c6d",
+  "edition": 11,
+  "date": 1683666632845,
+  "attributes": [
+    {
+      "trait_type": "1 : 1",
+      "value": "Dinofield"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}
