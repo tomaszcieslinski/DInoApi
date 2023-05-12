@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #527",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/527.png",
-  "dna": "06099bab682a689a5904b75ad2a7b07f3dd83dcc",
+  "dna": "a922f98a0372cf55bffdba6d756bbd823eff014e",
   "edition": 527,
-  "date": 1682181869649,
+  "date": 1682453053916,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Pistol"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",

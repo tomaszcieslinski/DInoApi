@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1271",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1271.png",
-  "dna": "2789af1df0d216481f57c6026645a444d8f7a7fa",
-  "edition": 1271,
-  "date": 1682182522100,
+  "name": "Dino LFG Collection #345",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/345.png",
+  "dna": "62d0a2d649f018744c749e8ba1e73a2f7cec1e6c",
+  "edition": 345,
+  "date": 1682179352693,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,19 +12,19 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Shuriken"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

@@ -2,9 +2,9 @@
   "name": "Dino LFG Collection #1051",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1051.png",
-  "dna": "93d88a29070d6b0ca72f244df67a15e037c8a125",
+  "dna": "dd77a454331fd484ec3df6d8d41379e188a17bed",
   "edition": 1051,
-  "date": 1682182326979,
+  "date": 1682453521849,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Pirate"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",

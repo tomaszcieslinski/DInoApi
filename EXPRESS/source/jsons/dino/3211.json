@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #1211",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1211.png",
-  "dna": "63aa8cb654e3a07a7f5af9a47b964f9c906bb8d6",
+  "dna": "9de4f8b2dd75906505fd866d69147f21fb7d09e9",
   "edition": 1211,
-  "date": 1682182469136,
+  "date": 1682453665139,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Mousquet"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",

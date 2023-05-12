@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #620",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/620.png",
-  "dna": "db8d42c50d3929a0643aa4e97cee5283a7b88d58",
+  "dna": "62afe2e15eb710f1f22449890e5fbfe01dc18f8b",
   "edition": 620,
-  "date": 1682181950565,
+  "date": 1682453135831,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

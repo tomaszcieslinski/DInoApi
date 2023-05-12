@@ -2,9 +2,9 @@
   "name": "Dino LFG Collection #47",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/47.png",
-  "dna": "72c2a55b46a5821b0bfe6b4b6394465be3ed9666",
+  "dna": "ed02ae9d13f385ab85912c140cf9566dff8782b2",
   "edition": 47,
-  "date": 1682181427143,
+  "date": 1682452623714,
   "attributes": [
     {
       "trait_type": "Background",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

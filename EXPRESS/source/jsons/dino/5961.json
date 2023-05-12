@@ -1,42 +1,42 @@
 {
-  "name": "Dino LFG Collection #1961",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1961.png",
-  "dna": "c41a1f581410c0bdd2be50614808195fc6ce3649",
-  "edition": 1961,
-  "date": 1682183134029,
+  "name": "Dino LFG Collection #967",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/967.png",
+  "dna": "5558e751d9f8f3586ce0675c0dac58f412719f7f",
+  "edition": 967,
+  "date": 1682179887609,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Mousquet"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

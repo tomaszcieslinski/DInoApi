@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #1784",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1784.png",
-  "dna": "aed1e153a3c3abda71eeeb13bced6e11799f086b",
+  "dna": "c925b96743405785d1c333e4e96c06cbf8838e19",
   "edition": 1784,
-  "date": 1682182975794,
+  "date": 1682454177189,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Pirate"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

@@ -1,22 +1,22 @@
 {
-  "name": "Dino LFG Collection #484",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/484.png",
-  "dna": "0ce1ece163e01201689da81d4c1dcb278bf69dae",
-  "edition": 484,
-  "date": 1682181832578,
+  "name": "Dino LFG Collection #1433",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/1433.png",
+  "dna": "adaeb529d979f9408d009a4d5179cc6b28dc269b",
+  "edition": 1433,
+  "date": 1682180296028,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "3D"
     },
     {
       "trait_type": "First Edition",

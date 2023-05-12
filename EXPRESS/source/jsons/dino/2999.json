@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #998",
+  "name": "Dino LFG Collection #999",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/998.png",
-  "dna": "25bbe944dcc2ac289b7ed4ac5a0a7743a86fc8ba",
-  "edition": 998,
-  "date": 1682182280054,
+  "image": "ipfs://DinoLFG/999.png",
+  "dna": "858ea458b0cb5f293da48bd47845011c21fb696a",
+  "edition": 999,
+  "date": 1682453473767,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Pistol"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

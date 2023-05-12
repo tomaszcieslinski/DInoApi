@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #1988",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1988.png",
-  "dna": "dfad819f145a563f47194c500a9bc50d6960d305",
+  "dna": "df942d6e1089b0e18ee278d83fd7bd08867eea65",
   "edition": 1988,
-  "date": 1682183157956,
+  "date": 1682454360491,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",

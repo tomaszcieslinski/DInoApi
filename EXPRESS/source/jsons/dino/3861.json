@@ -2,9 +2,9 @@
   "name": "Dino LFG Collection #1861",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1861.png",
-  "dna": "f838afe4812a644fe0c9e8bff35f6f23ffe18682",
+  "dna": "5d05faeae88439ad570de9e1cb363decee11d12c",
   "edition": 1861,
-  "date": 1682183043628,
+  "date": 1682454245098,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",
-      "value": "Pirate"
+      "value": "Gentleman"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

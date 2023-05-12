@@ -1,26 +1,26 @@
 {
-  "name": "Dino LFG Collection #948",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/948.png",
-  "dna": "2e49c45d229efbe6b543a91f8aa06816e95b21a4",
-  "edition": 948,
-  "date": 1682182235951,
+  "name": "Dino LFG Collection #1851",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/1851.png",
+  "dna": "f9fdda74d0faf250e8d0259de36298f3741c1e66",
+  "edition": 1851,
+  "date": 1682180692239,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Mousquet"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Zeus"
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

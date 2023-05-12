@@ -1,42 +1,42 @@
 {
-  "name": "Dino LFG Collection #2",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/2.png",
-  "dna": "b9ee68899880e98c7d924174719511ade7b385bb",
-  "edition": 2,
-  "date": 1682181387458,
+  "name": "Dino LFG Collection #10",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/10.png",
+  "dna": "92f0e28820dfe15e9e7a6290b8c5aa826c2505ac",
+  "edition": 10,
+  "date": 1682179031442,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

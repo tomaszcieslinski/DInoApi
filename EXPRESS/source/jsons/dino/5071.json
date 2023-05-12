@@ -1,30 +1,30 @@
 {
-  "name": "Dino LFG Collection #1071",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1071.png",
-  "dna": "26503a50bc0c65bf2066870fc845e855548104f6",
-  "edition": 1071,
-  "date": 1682182344539,
+  "name": "Dino LFG Collection #1962",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/1962.png",
+  "dna": "7a331ee24660ca88d0fc3088666a87b7973a9648",
+  "edition": 1962,
+  "date": 1682180787232,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Thief"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

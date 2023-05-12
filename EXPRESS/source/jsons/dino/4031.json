@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #31",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/31.png",
-  "dna": "0b6e2b2f6e252b40ae368d078b689cdefe11d749",
-  "edition": 31,
-  "date": 1682181413202,
+  "name": "Dino LFG Collection #1025",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/1025.png",
+  "dna": "23657da08bafd9b1759b7e0945b8f1453c4f06f6",
+  "edition": 1025,
+  "date": 1682179938337,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,19 +12,19 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

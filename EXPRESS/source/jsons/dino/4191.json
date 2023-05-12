@@ -1,22 +1,22 @@
 {
-  "name": "Dino LFG Collection #191",
-  "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/191.png",
-  "dna": "bd6afd9746d18051897ebdea8837d861b61f46bd",
-  "edition": 191,
-  "date": 1682181572058,
+  "name": "Dino LFG Collection #117",
+  "description": "Thief Class",
+  "image": "ipfs://DinoLFG/117.png",
+  "dna": "0470c04b29d444abf51d5121a998132efef5a376",
+  "edition": 117,
+  "date": 1682179139426,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
-      "value": "Pirate"
+      "value": "Thief"
     },
     {
       "trait_type": "Mouth",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

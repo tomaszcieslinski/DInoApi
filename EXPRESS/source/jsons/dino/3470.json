@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #1470",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/1470.png",
-  "dna": "9db15ca56271bdfc1e04411b6b778ec427c75946",
+  "dna": "3ba2dd87c2e1afd6893d50302eec94d75f469990",
   "edition": 1470,
-  "date": 1682182697652,
+  "date": 1682453894695,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Mousquet"
+      "value": "Pistol"
     },
     {
       "trait_type": "Class",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

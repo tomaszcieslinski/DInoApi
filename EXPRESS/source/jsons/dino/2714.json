@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #714",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/714.png",
-  "dna": "773c9befc3c518d9a3937544d8120af78caa505c",
+  "dna": "6606d3865a44b133f09ecaf2e9544a3976caec70",
   "edition": 714,
-  "date": 1682182031875,
+  "date": 1682453217838,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Pirate"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

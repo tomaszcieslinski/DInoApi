@@ -2,9 +2,9 @@
   "name": "Dino LFG Collection #454",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/454.png",
-  "dna": "986102379aa04bc98cf7c2cfb75c597fe5f18507",
+  "dna": "451c0a90fec53bccc62c701b78ef21d9d88a2f16",
   "edition": 454,
-  "date": 1682181806720,
+  "date": 1682452987081,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Pistol"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
-    },
-    {
-      "trait_type": "Pet",
-      "value": "None"
-    },
-    {
-      "trait_type": "Hat",
       "value": "Pirate"
     },
     {
+      "trait_type": "Pet",
+      "value": "Zeus"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Gentleman"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

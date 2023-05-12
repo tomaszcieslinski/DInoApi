@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #825",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/825.png",
-  "dna": "aea52a7082ed3deb4a7b7bea9a4d3c9f8a2b5fab",
+  "dna": "ad139cb8cde1c7ad8a1e1b3b959cb9d222b3742d",
   "edition": 825,
-  "date": 1682182127927,
+  "date": 1682453316427,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Headphones"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

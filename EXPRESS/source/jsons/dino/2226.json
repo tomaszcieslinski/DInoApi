@@ -2,13 +2,13 @@
   "name": "Dino LFG Collection #226",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/226.png",
-  "dna": "eb0ced422518ed12044363fe02e59c60455e9dad",
+  "dna": "2ce80ff922a13ef4532892fc3bccf374b32ab3a7",
   "edition": 226,
-  "date": 1682181606096,
+  "date": 1682452783021,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

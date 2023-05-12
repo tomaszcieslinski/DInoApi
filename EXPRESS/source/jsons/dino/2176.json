@@ -2,9 +2,9 @@
   "name": "Dino LFG Collection #176",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/176.png",
-  "dna": "66f69334bc603b6072c37852a0be6f6100f85dea",
+  "dna": "0a73ebf5a30118ddb8f05ce2146c66d3c4bde77c",
   "edition": 176,
-  "date": 1682181556634,
+  "date": 1682452739994,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Halo"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Squared"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",
