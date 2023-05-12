@@ -61,7 +61,7 @@ const PORT: any = process.env.PORT ?? 6060;
 // cronworker.nftworker()
 // cronworker.traitsworker()
 //nftservice.updateTraitsData()
-nftservice.saveUnmintedDatabase()
+//nftservice.saveUnmintedDatabase()
 
 
 
