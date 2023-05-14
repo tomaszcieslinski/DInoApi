@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #928",
+  "name": "Dino LFG Collection #925",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/928.png",
-  "dna": "e7b8c0742631d6e6f99281a083e31e6d0a393f07",
-  "edition": 928,
-  "date": 1682453408921,
+  "image": "ipfs://DinoLFG/2928.jpg",
+  "dna": "b704b5069367bb9164999c01ed241077035ce2f3",
+  "edition": 925,
+  "date": 1682182215487,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Gentleman"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

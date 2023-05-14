@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #10",
+  "name": "Dino LFG Collection #8",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/10.png",
-  "dna": "d94e84b5c23f5a2323f743333994b27e3f675860",
-  "edition": 10,
-  "date": 1682452591057,
+  "image": "ipfs://DinoLFG/2009.jpg",
+  "dna": "3bc387a2fcf9485e22ff90e0ff69a35bf4d8ceeb",
+  "edition": 8,
+  "date": 1682181392812,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

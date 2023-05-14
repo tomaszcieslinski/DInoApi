@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #168",
+  "name": "Dino LFG Collection #166",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/168.png",
-  "dna": "26c2ffd86990d01066fa7d4cab3d58a924944387",
-  "edition": 168,
-  "date": 1682173870999,
+  "image": "ipfs://DinoLFG/8168.jpg",
+  "dna": "8c5ad34eea2e2a6c882d49e7639fd6150d0d4470",
+  "edition": 166,
+  "date": 1682173869132,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Wand"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Wizard"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

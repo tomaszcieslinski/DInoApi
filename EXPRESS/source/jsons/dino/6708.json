@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #708",
+  "name": "Dino LFG Collection #705",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/708.png",
-  "dna": "3175dc12035fafb1988b0a6503dfcf8d5f67417f",
-  "edition": 708,
-  "date": 1682171535119,
+  "image": "ipfs://DinoLFG/6708.jpg",
+  "dna": "9d36103569c93229d1b3920a51d37cdb0a00efa1",
+  "edition": 705,
+  "date": 1682171532476,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Hammer"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Warrior"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Zeus"
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Warrior"
     },
     {
       "trait_type": "Eyes",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #675",
+  "name": "Dino LFG Collection #672",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/675.png",
-  "dna": "932782ed79b2fecad6ccb97745c4969eb545f701",
-  "edition": 675,
-  "date": 1682174340101,
+  "image": "ipfs://DinoLFG/8675.jpg",
+  "dna": "8506f6b0ad5dade15bec8dce723eecb6ea080094",
+  "edition": 672,
+  "date": 1682174337466,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Wand"
     },
     {
       "trait_type": "Class",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Wizard"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Halo"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1440",
+  "name": "Dino LFG Collection #1437",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1440.png",
-  "dna": "95ced2049ca07246d71d6538f82e8e5236434140",
-  "edition": 1440,
-  "date": 1682453867418,
+  "image": "ipfs://DinoLFG/3440.jpg",
+  "dna": "ddcd8f78bf6ef6ed5ee8781c1e72d1e277d8ff54",
+  "edition": 1437,
+  "date": 1682182668607,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Legendary"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",

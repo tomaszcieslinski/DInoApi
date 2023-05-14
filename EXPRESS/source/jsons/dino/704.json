@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #704",
+  "name": "Dino LFG Collection #702",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/704.png",
-  "dna": "5e2646fb75906b6c65e0bf78bd2a2b210d77cc0d",
-  "edition": 704,
-  "date": 1682177584069,
+  "image": "ipfs://DinoLFG/704.jpg",
+  "dna": "fa793c88eb979050397bc40f762c14cbd84ed9a5",
+  "edition": 702,
+  "date": 1682177582393,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",

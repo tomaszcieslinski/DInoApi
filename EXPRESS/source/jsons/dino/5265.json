@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #34",
+  "name": "Dino LFG Collection #1262",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/34.png",
-  "dna": "efcdfbf258401ba2fdcf357eb931bd0fd8c23839",
-  "edition": 34,
-  "date": 1682179052778,
+  "image": "ipfs://DinoLFG/5265.jpg",
+  "dna": "89f014363eb9aec56337a3f7091d2d5d7e6ba65c",
+  "edition": 1262,
+  "date": 1682180145628,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -28,11 +28,11 @@
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Thief"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1900",
+  "name": "Dino LFG Collection #1897",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1900.png",
-  "dna": "53edfa1aadafff4f1d3f1bd6e4e95126cc4bfeb7",
-  "edition": 1900,
-  "date": 1682454280240,
+  "image": "ipfs://DinoLFG/3900.jpg",
+  "dna": "1bac95d4e76be7fafffdef66642036d376e74a83",
+  "edition": 1897,
+  "date": 1682183077141,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

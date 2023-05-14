@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1994",
+  "name": "Dino LFG Collection #1990",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1994.png",
-  "dna": "ddfaf6ec8904a49830f6d3a8c1d093dbf911477b",
-  "edition": 1994,
-  "date": 1682172705744,
+  "image": "ipfs://DinoLFG/7994.jpg",
+  "dna": "0f1179ad12d69774024849e10bf1dcb3652f0531",
+  "edition": 1990,
+  "date": 1682172701980,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Sword"
     },
     {
       "trait_type": "Class",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "3D"
     },
     {
       "trait_type": "First Edition",

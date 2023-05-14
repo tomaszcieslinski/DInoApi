@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1170",
+  "name": "Dino LFG Collection #1167",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1170.png",
-  "dna": "495aa260c604e6283a80da60b59bf1876c04d0d8",
-  "edition": 1170,
-  "date": 1682174783423,
+  "image": "ipfs://DinoLFG/9170.jpg",
+  "dna": "a032eb33ae8b41c6bf28133df3c8749c17ab1921",
+  "edition": 1167,
+  "date": 1682174780631,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

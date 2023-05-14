@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #383",
+  "name": "Dino LFG Collection #380",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/383.png",
-  "dna": "19183420a5eb6bbcfc14d5490bb4f025b63e85d4",
-  "edition": 383,
-  "date": 1682174066452,
+  "image": "ipfs://DinoLFG/8383.jpg",
+  "dna": "4f9dcab01b54f6a6476b09144cff1ba037a8f8d9",
+  "edition": 380,
+  "date": 1682174063701,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Party"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

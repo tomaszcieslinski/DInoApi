@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #113",
+  "name": "Dino LFG Collection #112",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/113.png",
-  "dna": "abc65ca5c0d09445e7c829b0d0d689850a188f92",
-  "edition": 113,
-  "date": 1682452683805,
+  "image": "ipfs://DinoLFG/2113.jpg",
+  "dna": "941957ada747fd4d0fc14277b35d303be5f5132a",
+  "edition": 112,
+  "date": 1682181491027,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

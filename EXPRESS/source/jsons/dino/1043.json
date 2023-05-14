@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1043",
+  "name": "Dino LFG Collection #1041",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1043.png",
-  "dna": "8104d859cb1802760a670893f45af5c6d04da73a",
-  "edition": 1043,
-  "date": 1682177869183,
+  "image": "ipfs://DinoLFG/1043.jpg",
+  "dna": "a5049400eb29851e2e40ed87a507546029d7a65d",
+  "edition": 1041,
+  "date": 1682177867510,
   "attributes": [
     {
       "trait_type": "Background",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Archer"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #560",
+  "name": "Dino LFG Collection #1507",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/560.png",
-  "dna": "62e1d6f2883b22834a9c0347ec984545e4799daf",
-  "edition": 560,
-  "date": 1682179534475,
+  "image": "ipfs://DinoLFG/5510.jpg",
+  "dna": "42355ee5f8fd155bb9c4a4ad27739881d8e2d770",
+  "edition": 1507,
+  "date": 1682180360906,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Kunai"
+      "value": "Shuriken"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",

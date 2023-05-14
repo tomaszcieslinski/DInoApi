@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1299",
+  "name": "Dino LFG Collection #332",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1299.png",
-  "dna": "8686fa270f169bfe5a6b5617a2a31a96b9dbadfe",
-  "edition": 1299,
-  "date": 1682180178099,
+  "image": "ipfs://DinoLFG/4334.jpg",
+  "dna": "abcf35c427ad001bcd83ec13158d8994a69fbd14",
+  "edition": 332,
+  "date": 1682179341534,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

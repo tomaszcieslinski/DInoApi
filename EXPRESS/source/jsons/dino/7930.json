@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1930",
+  "name": "Dino LFG Collection #1926",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1930.png",
-  "dna": "b5ba7bd9ebaf9dba1eb209898a3d416f9b830da5",
-  "edition": 1930,
-  "date": 1682172646485,
+  "image": "ipfs://DinoLFG/7930.jpg",
+  "dna": "eb7f736d4abe785d88a1e4ac0949aee5eec3a504",
+  "edition": 1926,
+  "date": 1682172642755,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Hammer"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Warrior"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Headphones"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1192",
+  "name": "Dino LFG Collection #1190",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1192.png",
-  "dna": "06704092713a59b222f6779baf8a346de4e2d8ef",
-  "edition": 1192,
-  "date": 1682177995772,
+  "image": "ipfs://DinoLFG/1192.jpg",
+  "dna": "eff9fd994ad7f2baf53b5939df569f2cac90cdd5",
+  "edition": 1190,
+  "date": 1682177994090,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "Flame"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Gentleman"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

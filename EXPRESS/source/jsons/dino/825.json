@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #825",
+  "name": "Dino LFG Collection #823",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/825.png",
-  "dna": "15fdf4353c34ae4d1093ea244b8ae3fd9104b91e",
-  "edition": 825,
-  "date": 1682177685159,
+  "image": "ipfs://DinoLFG/825.jpg",
+  "dna": "2195bc7f9ce849d0fd253c5c174ec6d0b3ee0f2e",
+  "edition": 823,
+  "date": 1682177683491,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

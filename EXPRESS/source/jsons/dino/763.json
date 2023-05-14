@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #763",
+  "name": "Dino LFG Collection #761",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/763.png",
-  "dna": "0c8132e32846f2044bd555bf6c1b7f749bb0cfa7",
-  "edition": 763,
-  "date": 1682177634009,
+  "image": "ipfs://DinoLFG/763.jpg",
+  "dna": "7efe9beb7521808e8265822e4344b67ef1b9db98",
+  "edition": 761,
+  "date": 1682177632371,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Bow"
+      "value": "Crossbow"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Meteor"
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1518",
+  "name": "Dino LFG Collection #1515",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1518.png",
-  "dna": "ac9d222bdceab380efb6763bcce10d6ba6ad02e9",
-  "edition": 1518,
-  "date": 1682453938151,
+  "image": "ipfs://DinoLFG/3518.jpg",
+  "dna": "1f7db0c6793b8586f7d3fd50f19de3fdddc5c1a5",
+  "edition": 1515,
+  "date": 1682182737543,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Pirate"
     },
     {
       "trait_type": "Eyes",

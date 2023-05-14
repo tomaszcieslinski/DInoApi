@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #446",
+  "name": "Dino LFG Collection #443",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/446.png",
-  "dna": "2e25177229154160fa9f3d126919f3bb99a23019",
-  "edition": 446,
-  "date": 1682174136664,
+  "image": "ipfs://DinoLFG/8446.jpg",
+  "dna": "906d70140b725409c65a242fdf826111603829aa",
+  "edition": 443,
+  "date": 1682174134000,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Wizard"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Wizard"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",

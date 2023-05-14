@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1717",
+  "name": "Dino LFG Collection #1714",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1717.png",
-  "dna": "2b1370970ae8fef9d019db16b204cf6b9cb4f04b",
-  "edition": 1717,
-  "date": 1682175286009,
+  "image": "ipfs://DinoLFG/9717.jpg",
+  "dna": "c917d6338b465c7591b68b10a370621989304593",
+  "edition": 1714,
+  "date": 1682175283250,
   "attributes": [
     {
       "trait_type": "Background",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Headphones"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #133",
+  "name": "Dino LFG Collection #132",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/133.png",
-  "dna": "78ce8b3c49fc4e2188e02874f684d1bc5d828ec9",
-  "edition": 133,
-  "date": 1682452701729,
+  "image": "ipfs://DinoLFG/2133.jpg",
+  "dna": "86ecc5b9fbc1fd4ebca4618c4c41c5cb18478991",
+  "edition": 132,
+  "date": 1682181512124,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

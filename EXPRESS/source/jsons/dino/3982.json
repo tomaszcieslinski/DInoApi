@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1982",
+  "name": "Dino LFG Collection #1978",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1982.png",
-  "dna": "c0400eb11e2e532f75daaefe4741433c6c21142d",
-  "edition": 1982,
-  "date": 1682454355012,
+  "image": "ipfs://DinoLFG/3982.jpg",
+  "dna": "43d54326462b0489264329b6535236ef9ba466df",
+  "edition": 1978,
+  "date": 1682183148943,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Squared"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1505",
+  "name": "Dino LFG Collection #1502",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1505.png",
-  "dna": "944f8ea73e43f15e04587a2ea5824088e5bb4859",
-  "edition": 1505,
-  "date": 1682453926034,
+  "image": "ipfs://DinoLFG/3505.jpg",
+  "dna": "a4eca31525bc25d746a8a0beb6fba9446cd96b6a",
+  "edition": 1502,
+  "date": 1682182726030,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Pirate"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

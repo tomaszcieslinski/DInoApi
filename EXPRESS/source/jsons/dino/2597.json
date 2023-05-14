@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #597",
+  "name": "Dino LFG Collection #595",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/597.png",
-  "dna": "6119d5b05f1d35f1087568a6f5f192e3938d5a2f",
-  "edition": 597,
-  "date": 1682453115904,
+  "image": "ipfs://DinoLFG/2597.jpg",
+  "dna": "336b7934a567b4d727ecc520c2c2e7ff4df841fb",
+  "edition": 595,
+  "date": 1682181928921,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

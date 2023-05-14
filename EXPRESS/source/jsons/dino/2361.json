@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #361",
+  "name": "Dino LFG Collection #360",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/361.png",
-  "dna": "af7fd9077b0aaa987fff4d31bd2148f8096f4f6f",
-  "edition": 361,
-  "date": 1682452901646,
+  "image": "ipfs://DinoLFG/2361.jpg",
+  "dna": "a4bb69dc14eda4572812039a9438e1a759ab324c",
+  "edition": 360,
+  "date": 1682181725263,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Baseball"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

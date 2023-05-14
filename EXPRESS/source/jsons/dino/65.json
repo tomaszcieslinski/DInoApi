@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #65",
+  "name": "Dino LFG Collection #64",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/65.png",
-  "dna": "3f1e428246a1f20ff35ee72b20fa0e8859c0cf6b",
-  "edition": 65,
-  "date": 1682177017505,
+  "image": "ipfs://DinoLFG/65.jpg",
+  "dna": "f56ec6551e9bbaa815a14bf809f73ba6cb83eb36",
+  "edition": 64,
+  "date": 1682177016695,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Wolf"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

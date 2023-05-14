@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1013",
+  "name": "Dino LFG Collection #1010",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1013.png",
-  "dna": "eaae3edba3d0ad80a6fe47a517d4b52448e22819",
-  "edition": 1013,
-  "date": 1682171812052,
+  "image": "ipfs://DinoLFG/7013.jpg",
+  "dna": "695c0c60b5f11696e86cd3900d1de96029e5e151",
+  "edition": 1010,
+  "date": 1682171809423,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Sword"
     },
     {
       "trait_type": "Class",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
-      "value": "Flame"
+      "value": "None"
     },
     {
       "trait_type": "Hat",

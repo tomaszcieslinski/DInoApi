@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1227",
+  "name": "Dino LFG Collection #1224",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1227.png",
-  "dna": "b49e8d15bc3a216f353bff7e310c62f5e8037c00",
-  "edition": 1227,
-  "date": 1682174835666,
+  "image": "ipfs://DinoLFG/9227.jpg",
+  "dna": "55ad7cdc35f68d60ead2c8bc395f5a1c6386ed1f",
+  "edition": 1224,
+  "date": 1682174832926,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",

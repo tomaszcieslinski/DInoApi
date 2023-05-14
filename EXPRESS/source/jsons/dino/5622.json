@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #661",
+  "name": "Dino LFG Collection #1619",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/661.png",
-  "dna": "f68895ebca3851e6a442c8fa1d1d7eec83de9ddc",
-  "edition": 661,
-  "date": 1682179619847,
+  "image": "ipfs://DinoLFG/5622.jpg",
+  "dna": "2ddd8857c399c13822aaad49eff9c2766de54f10",
+  "edition": 1619,
+  "date": 1682180457925,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Dagger"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Wolf"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

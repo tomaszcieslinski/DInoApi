@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1980",
+  "name": "Dino LFG Collection #1976",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1980.png",
-  "dna": "351c13a697b7994a7df2c63cc465f09f802371fe",
-  "edition": 1980,
-  "date": 1682178658088,
+  "image": "ipfs://DinoLFG/1980.jpg",
+  "dna": "f2c690f087b381b593ebfc8cca295ae63a546c78",
+  "edition": 1976,
+  "date": 1682178654566,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

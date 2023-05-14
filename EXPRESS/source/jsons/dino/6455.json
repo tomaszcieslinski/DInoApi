@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #455",
+  "name": "Dino LFG Collection #453",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/455.png",
-  "dna": "6bd8d11cd05e136446c7eb1f59555c4be0204ff8",
-  "edition": 455,
-  "date": 1682171304578,
+  "image": "ipfs://DinoLFG/6455.jpg",
+  "dna": "f6d19ba4f691a68d9e8294f31250060ebb1fe04f",
+  "edition": 453,
+  "date": 1682171302548,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Spear"
+      "value": "Sword"
     },
     {
       "trait_type": "Class",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",

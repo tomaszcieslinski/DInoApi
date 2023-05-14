@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1004",
+  "name": "Dino LFG Collection #8",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1004.png",
-  "dna": "edbb7f72cae55494108335e03924fc728bae4d86",
-  "edition": 1004,
-  "date": 1682179919921,
+  "image": "ipfs://DinoLFG/4008.jpg",
+  "dna": "efbeb4a4ffb7b2ee9a6f501d729cabed14742265",
+  "edition": 8,
+  "date": 1682179029657,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Shuriken"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",

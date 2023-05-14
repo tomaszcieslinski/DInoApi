@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1952",
+  "name": "Dino LFG Collection #1948",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1952.png",
-  "dna": "71bb53645f5951a0d03fd02b2245936dd0fb3ded",
-  "edition": 1952,
-  "date": 1682454327858,
+  "image": "ipfs://DinoLFG/3952.jpg",
+  "dna": "4abad84b1feb55faa46303fc51b48b80fea8226e",
+  "edition": 1948,
+  "date": 1682183122460,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

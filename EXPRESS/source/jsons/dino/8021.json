@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #21",
+  "name": "Dino LFG Collection #20",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/21.png",
-  "dna": "1718c5fb06702fa1a93b797ce98865a96d9af81d",
-  "edition": 21,
-  "date": 1682173730023,
+  "image": "ipfs://DinoLFG/8021.jpg",
+  "dna": "998fef9deb874dcaf07f6cd62bcec6afef307cb9",
+  "edition": 20,
+  "date": 1682173729125,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Bat"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

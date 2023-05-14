@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #354",
+  "name": "Dino LFG Collection #352",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/354.png",
-  "dna": "4ff52f6051e9aea1a38abc70b28188e05be350c7",
-  "edition": 354,
-  "date": 1682171210215,
+  "image": "ipfs://DinoLFG/6354.jpg",
+  "dna": "7e561a24f23c2dd457729def73b5daae6f04ede9",
+  "edition": 352,
+  "date": 1682171208365,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Sword"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

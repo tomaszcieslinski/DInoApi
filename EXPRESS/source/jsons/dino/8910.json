@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #910",
+  "name": "Dino LFG Collection #907",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/910.png",
-  "dna": "dc0f28c3597f9758190ba19f138c5ddcb8c8f461",
-  "edition": 910,
-  "date": 1682174547936,
+  "image": "ipfs://DinoLFG/8910.jpg",
+  "dna": "05327f47e52cec36be343d01eeb491164e95ced4",
+  "edition": 907,
+  "date": 1682174545279,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Wizard"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

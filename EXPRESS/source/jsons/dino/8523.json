@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #523",
+  "name": "Dino LFG Collection #520",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/523.png",
-  "dna": "717aa1469052e1594d929b7a06ad7a37cd06794f",
-  "edition": 523,
-  "date": 1682174205003,
+  "image": "ipfs://DinoLFG/8523.jpg",
+  "dna": "007ab22b8c975991994b4d14259be1e4598e8fc3",
+  "edition": 520,
+  "date": 1682174202375,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Zeus"
     },
     {
       "trait_type": "Hat",

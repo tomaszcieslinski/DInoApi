@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1961",
+  "name": "Dino LFG Collection #1957",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1961.png",
-  "dna": "2b1769f2f1561f19172b7408fbc169672ceb07e8",
-  "edition": 1961,
-  "date": 1682175510763,
+  "image": "ipfs://DinoLFG/9961.jpg",
+  "dna": "4ed508a223579c2e12eafcec75c4354356bbbc9f",
+  "edition": 1957,
+  "date": 1682175506963,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Staff"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1950",
+  "name": "Dino LFG Collection #1946",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1950.png",
-  "dna": "9649f095984d167839fd739496e46c2cf42f93f1",
-  "edition": 1950,
-  "date": 1682454326043,
+  "image": "ipfs://DinoLFG/3950.jpg",
+  "dna": "598bbb015d21e66cb2fc10c674780687ed46be56",
+  "edition": 1946,
+  "date": 1682183120652,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",

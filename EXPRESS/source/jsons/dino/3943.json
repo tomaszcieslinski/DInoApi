@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1943",
+  "name": "Dino LFG Collection #1939",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1943.png",
-  "dna": "39e0c24a597656f6df601ea2241d7c577264ac37",
-  "edition": 1943,
-  "date": 1682454319660,
+  "image": "ipfs://DinoLFG/3943.jpg",
+  "dna": "5fac31d278bb3d6941fe37a130125590ea328bac",
+  "edition": 1939,
+  "date": 1682183114440,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Pirate"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

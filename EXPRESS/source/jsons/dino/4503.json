@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1450",
+  "name": "Dino LFG Collection #500",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1450.png",
-  "dna": "17d6b1aa469f48523a18e4b04a1c5be9c34f4a13",
-  "edition": 1450,
-  "date": 1682180310970,
+  "image": "ipfs://DinoLFG/4503.jpg",
+  "dna": "b963abb0b47813098a92cbad11294b9292a61f18",
+  "edition": 500,
+  "date": 1682179483807,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",

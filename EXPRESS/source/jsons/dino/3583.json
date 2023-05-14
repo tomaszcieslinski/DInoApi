@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1583",
+  "name": "Dino LFG Collection #1580",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1583.png",
-  "dna": "910dabb9ac472de3f079332c5470f71828db1301",
-  "edition": 1583,
-  "date": 1682453997016,
+  "image": "ipfs://DinoLFG/3583.jpg",
+  "dna": "f99432d10f6a9f0a96933de39e44e2ae421bd306",
+  "edition": 1580,
+  "date": 1682182794995,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

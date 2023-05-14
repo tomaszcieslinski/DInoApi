@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1131",
+  "name": "Dino LFG Collection #1128",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1131.png",
-  "dna": "9bbb2183277852b64e6a86a24f5bf499df08a65e",
-  "edition": 1131,
-  "date": 1682174746114,
+  "image": "ipfs://DinoLFG/9131.jpg",
+  "dna": "7075110d7b67857e8b99c11a0246633639ae54ca",
+  "edition": 1128,
+  "date": 1682174743291,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

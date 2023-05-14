@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1985",
+  "name": "Dino LFG Collection #1981",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1985.png",
-  "dna": "02f36d73f7696881b4fea03ed7c437faf3d7db52",
-  "edition": 1985,
-  "date": 1682178662436,
+  "image": "ipfs://DinoLFG/1985.jpg",
+  "dna": "7207be028db2fddb5efa499ac3e55aaa39e883ac",
+  "edition": 1981,
+  "date": 1682178658941,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Archer"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Archer"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

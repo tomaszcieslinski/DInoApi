@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #888",
+  "name": "Dino LFG Collection #885",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/888.png",
-  "dna": "c4bb680f8e2710112d944a4dea51daa2f47d9f70",
-  "edition": 888,
-  "date": 1682453373133,
+  "image": "ipfs://DinoLFG/2888.jpg",
+  "dna": "ecee7c1b5299338b2cf0b775489d6d8c04f687d3",
+  "edition": 885,
+  "date": 1682182179614,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

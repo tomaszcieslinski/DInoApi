@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1003",
+  "name": "Dino LFG Collection #1000",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1003.png",
-  "dna": "ad8f83c9a462d8b619695aa2ad21e83d8b1593b5",
-  "edition": 1003,
-  "date": 1682174630012,
+  "image": "ipfs://DinoLFG/9003.jpg",
+  "dna": "63f6452d546de3c7a763b22087758d0a19dbf5b4",
+  "edition": 1000,
+  "date": 1682174627325,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Staff"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Wizard"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

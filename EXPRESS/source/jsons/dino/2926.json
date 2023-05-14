@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #926",
+  "name": "Dino LFG Collection #923",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/926.png",
-  "dna": "e1c930c6385a12ef57583768400bd7051b1df2b9",
-  "edition": 926,
-  "date": 1682453407084,
+  "image": "ipfs://DinoLFG/2926.jpg",
+  "dna": "8baea58ed07f7d99f977f2d691b28bd5b142294e",
+  "edition": 923,
+  "date": 1682182213765,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Wolf"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
+      "value": "None"
     },
     {
       "trait_type": "Hat",

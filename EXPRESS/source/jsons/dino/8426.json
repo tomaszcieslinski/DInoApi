@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #426",
+  "name": "Dino LFG Collection #423",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/426.png",
-  "dna": "e4a3dfcea4b462aa5adffe5313a78060691413a6",
-  "edition": 426,
-  "date": 1682174112997,
+  "image": "ipfs://DinoLFG/8426.jpg",
+  "dna": "6de1e6c15657086d08e36bb47f51109f34ef54ae",
+  "edition": 423,
+  "date": 1682174108985,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
-      "value": "Zeus"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

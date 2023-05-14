@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1879",
+  "name": "Dino LFG Collection #1876",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1879.png",
-  "dna": "de3964a90facfcb4780949096ffeb60b100d1667",
-  "edition": 1879,
-  "date": 1682175434721,
+  "image": "ipfs://DinoLFG/9879.jpg",
+  "dna": "7fe3a0c563808f76be571d71231d7addb17c825e",
+  "edition": 1876,
+  "date": 1682175432025,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Wizard"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Faceless"
     },
     {
       "trait_type": "Hat",
-      "value": "Headphones"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

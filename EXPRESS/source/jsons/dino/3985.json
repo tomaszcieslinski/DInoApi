@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1985",
+  "name": "Dino LFG Collection #1981",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1985.png",
-  "dna": "2c310ba3decaacd73967b7cc330f49660c197bb0",
-  "edition": 1985,
-  "date": 1682454357773,
+  "image": "ipfs://DinoLFG/3985.jpg",
+  "dna": "3bdf58680358f386ed09e34177f6bdc6976b4876",
+  "edition": 1981,
+  "date": 1682183151567,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Pirate"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

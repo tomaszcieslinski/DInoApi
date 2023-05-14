@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #726",
+  "name": "Dino LFG Collection #1691",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/726.png",
-  "dna": "36b7ecd30832e886ecca862f6d06f0f57d250336",
-  "edition": 726,
-  "date": 1682179676389,
+  "image": "ipfs://DinoLFG/5694.jpg",
+  "dna": "787fcd3b6a541507d80e90b8838c16dfef1fcd2b",
+  "edition": 1691,
+  "date": 1682180528980,
   "attributes": [
     {
       "trait_type": "Background",
@@ -24,15 +24,15 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Flame"
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Thief"
     },
     {
       "trait_type": "Eyes",

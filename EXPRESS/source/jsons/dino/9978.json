@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1978",
+  "name": "Dino LFG Collection #1974",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1978.png",
-  "dna": "d9f2103a9602118deede5001f9bed7a9fb12e1bd",
-  "edition": 1978,
-  "date": 1682175526205,
+  "image": "ipfs://DinoLFG/9978.jpg",
+  "dna": "26875da18840055596127b0cb5c5502a1120c53e",
+  "edition": 1974,
+  "date": 1682175522555,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Wizard"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #998",
+  "name": "Dino LFG Collection #995",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/998.png",
-  "dna": "1bf037d48a55f4fc561db26d30ab8b3b99ef0542",
-  "edition": 998,
-  "date": 1682174625522,
+  "image": "ipfs://DinoLFG/8998.jpg",
+  "dna": "0a5c7847bc21fcd5e0b425fd3ca9131365cf2704",
+  "edition": 995,
+  "date": 1682174622880,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

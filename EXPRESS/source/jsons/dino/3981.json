@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1981",
+  "name": "Dino LFG Collection #1977",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1981.png",
-  "dna": "8b6fb0f4e11015e51f07dc51bdc32aa85ed9e117",
-  "edition": 1981,
-  "date": 1682454354039,
+  "image": "ipfs://DinoLFG/3981.jpg",
+  "dna": "d1b836410b9ad94f97e1cc394da35c0026b83ae2",
+  "edition": 1977,
+  "date": 1682183148078,
   "attributes": [
     {
       "trait_type": "Background",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

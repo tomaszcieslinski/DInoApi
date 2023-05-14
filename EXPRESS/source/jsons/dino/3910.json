@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1910",
+  "name": "Dino LFG Collection #1907",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1910.png",
-  "dna": "5b148d33afee01fdd41a5004d4d3cf7ffb637c02",
-  "edition": 1910,
-  "date": 1682454289473,
+  "image": "ipfs://DinoLFG/3910.jpg",
+  "dna": "9b2920248100b52daf3b77fb68f6419a6c22b7c6",
+  "edition": 1907,
+  "date": 1682183086026,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",

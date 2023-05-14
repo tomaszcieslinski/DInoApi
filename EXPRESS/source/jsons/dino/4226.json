@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1200",
+  "name": "Dino LFG Collection #225",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1200.png",
-  "dna": "167cca83251ae1954c0b098f1a8c9aa945bed7bc",
-  "edition": 1200,
-  "date": 1682180091076,
+  "image": "ipfs://DinoLFG/4226.jpg",
+  "dna": "f4d7798c4e7d12e09f24162029dd83b50d543b39",
+  "edition": 225,
+  "date": 1682179247146,
   "attributes": [
     {
       "trait_type": "Background",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

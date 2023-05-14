@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1913",
+  "name": "Dino LFG Collection #1910",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1913.png",
-  "dna": "a76579add38054255ced720c22c6e70a71b29fcd",
-  "edition": 1913,
-  "date": 1682172631209,
+  "image": "ipfs://DinoLFG/7913.jpg",
+  "dna": "325b1dfd7bc55efa468e4f3e79c9a479b7a0d878",
+  "edition": 1910,
+  "date": 1682172628441,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Sword"
+      "value": "Hammer"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
+      "value": "Zeus"
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

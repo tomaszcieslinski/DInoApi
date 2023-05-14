@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #54",
+  "name": "Dino LFG Collection #53",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/54.png",
-  "dna": "070b347fea2882bc888c71afe7d278b1dfef289c",
-  "edition": 54,
-  "date": 1682452629946,
+  "image": "ipfs://DinoLFG/2054.jpg",
+  "dna": "e8523e2abbab4c80109768adfcd6ff3f09c92dea",
+  "edition": 53,
+  "date": 1682181432800,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #602",
+  "name": "Dino LFG Collection #599",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/602.png",
-  "dna": "7b38ee1e7a584364a5ff8a4b2d31710c3c12c72d",
-  "edition": 602,
-  "date": 1682174274315,
+  "image": "ipfs://DinoLFG/8602.jpg",
+  "dna": "1ec9b1fa82adb24941b32724d3dcf3576abe375d",
+  "edition": 599,
+  "date": 1682174271598,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Ice"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Wizard"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",

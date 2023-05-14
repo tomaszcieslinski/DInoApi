@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1150",
+  "name": "Dino LFG Collection #169",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1150.png",
-  "dna": "3aaf64d5ff2e590a6cffc9e5751c689b7feaad22",
-  "edition": 1150,
-  "date": 1682180047566,
+  "image": "ipfs://DinoLFG/4170.jpg",
+  "dna": "719dacb6f9163e52b2c484855b4d7bcd29beaedf",
+  "edition": 169,
+  "date": 1682179194473,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

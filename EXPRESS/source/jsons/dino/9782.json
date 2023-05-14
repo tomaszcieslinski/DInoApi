@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1782",
+  "name": "Dino LFG Collection #1779",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1782.png",
-  "dna": "9df64c191755a1028233ad61e597a165220f6ff2",
-  "edition": 1782,
-  "date": 1682175345708,
+  "image": "ipfs://DinoLFG/9782.jpg",
+  "dna": "f6838c4f36b83eca7938f93e0abe4eb3e1b4bf92",
+  "edition": 1779,
+  "date": 1682175342935,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Wizard"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "3D"
     },
     {
       "trait_type": "First Edition",

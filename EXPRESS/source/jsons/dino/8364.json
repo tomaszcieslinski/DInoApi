@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #364",
+  "name": "Dino LFG Collection #361",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/364.png",
-  "dna": "787d5f91f3a8ed5f3bb45a6c8a03c316ea895b7c",
-  "edition": 364,
-  "date": 1682174049280,
+  "image": "ipfs://DinoLFG/8364.jpg",
+  "dna": "ffa042fd9451c3c5f6b5e928d5d3d9dc0403800d",
+  "edition": 361,
+  "date": 1682174046584,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Ice"
     },
     {
       "trait_type": "Class",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Wizard"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",

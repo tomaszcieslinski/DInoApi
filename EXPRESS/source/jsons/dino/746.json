@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #746",
+  "name": "Dino LFG Collection #744",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/746.png",
-  "dna": "c23289072226f8c6cdba27be1226437c3e23ea53",
-  "edition": 746,
-  "date": 1682177619854,
+  "image": "ipfs://DinoLFG/746.jpg",
+  "dna": "1441ad689d372f5239909df6cc11e2bf2440a334",
+  "edition": 744,
+  "date": 1682177618147,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Archer"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

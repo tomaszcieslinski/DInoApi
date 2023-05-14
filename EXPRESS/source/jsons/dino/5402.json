@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #463",
+  "name": "Dino LFG Collection #1399",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/463.png",
-  "dna": "6fef5004cd177bcb9b65fabf9ff0c5866fb01088",
-  "edition": 463,
-  "date": 1682179452742,
+  "image": "ipfs://DinoLFG/5402.jpg",
+  "dna": "7a74c35bf8a22758fcffe98e0501c652d83cdb3e",
+  "edition": 1399,
+  "date": 1682180266236,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Thief"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Thief"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Eyepatch"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

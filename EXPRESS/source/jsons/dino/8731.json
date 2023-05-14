@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #731",
+  "name": "Dino LFG Collection #728",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/731.png",
-  "dna": "36d3f8588bc32077616e3d2f4b298dd601c5c2e5",
-  "edition": 731,
-  "date": 1682174389390,
+  "image": "ipfs://DinoLFG/8731.jpg",
+  "dna": "b7b4d9b96aadc23e10d871cca5b742986ca39104",
+  "edition": 728,
+  "date": 1682174386734,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Ice"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",

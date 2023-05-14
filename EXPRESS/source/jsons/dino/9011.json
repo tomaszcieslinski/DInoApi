@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1011",
+  "name": "Dino LFG Collection #1008",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1011.png",
-  "dna": "0f194d87bcd1ab70a576f3e632473ffeb24a04ca",
-  "edition": 1011,
-  "date": 1682174637215,
+  "image": "ipfs://DinoLFG/9011.jpg",
+  "dna": "48e6da91fea5db3b50786100a280270072d9f6a6",
+  "edition": 1008,
+  "date": 1682174634546,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Legendary"
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1758",
+  "name": "Dino LFG Collection #1755",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1758.png",
-  "dna": "d894055029f402482d50f472f83db98b94bf8098",
-  "edition": 1758,
-  "date": 1682175323572,
+  "image": "ipfs://DinoLFG/9758.jpg",
+  "dna": "b67c6a91d162b723e0d369269fcfbf75e020bf3b",
+  "edition": 1755,
+  "date": 1682175320734,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Wand"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
-      "value": "Flame"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #700",
+  "name": "Dino LFG Collection #1663",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/700.png",
-  "dna": "c719a9dd4cf1e0feb197f7ceac064b3558671083",
-  "edition": 700,
-  "date": 1682179653276,
+  "image": "ipfs://DinoLFG/5666.jpg",
+  "dna": "4934d6da3eeda30632bf85c8e83c92515415b58f",
+  "edition": 1663,
+  "date": 1682180504821,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Beanie"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

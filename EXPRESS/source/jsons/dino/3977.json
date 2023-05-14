@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1977",
+  "name": "Dino LFG Collection #1973",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1977.png",
-  "dna": "fa16547efb2bb3972732677d567108c605bf4fcc",
-  "edition": 1977,
-  "date": 1682454350404,
+  "image": "ipfs://DinoLFG/3977.jpg",
+  "dna": "0334d32ca2ef51d5c0e445f0b4c224ec95ff62f4",
+  "edition": 1973,
+  "date": 1682183144591,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Cowboy"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1910",
+  "name": "Dino LFG Collection #1011",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1910.png",
-  "dna": "081ed7734d583dc298a8d57ec82eaab6c113245e",
-  "edition": 1910,
-  "date": 1682180742785,
+  "image": "ipfs://DinoLFG/5014.jpg",
+  "dna": "53ea7135be57de4175147dc4fc9b5edc6ab7c0e0",
+  "edition": 1011,
+  "date": 1682179926025,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Shuriken"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Thief"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

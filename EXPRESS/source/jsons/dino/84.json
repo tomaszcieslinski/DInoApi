@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #84",
+  "name": "Dino LFG Collection #83",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/84.png",
-  "dna": "ddd45c5642a2707f2ed6e5a256c1d537a23109e4",
-  "edition": 84,
-  "date": 1682177033366,
+  "image": "ipfs://DinoLFG/84.jpg",
+  "dna": "c9128334a41aa6f1f51085ca556e16738e68d861",
+  "edition": 83,
+  "date": 1682177032481,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Wolf"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Archer"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

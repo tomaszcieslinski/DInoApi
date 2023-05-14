@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1952",
+  "name": "Dino LFG Collection #1948",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1952.png",
-  "dna": "77fea786d5b9ee20eae93c3afe36d68a1b9dbf8d",
-  "edition": 1952,
-  "date": 1682172666453,
+  "image": "ipfs://DinoLFG/7952.jpg",
+  "dna": "df08aa2bb437758c0ab1e47a3b2b9ec49a99f0aa",
+  "edition": 1948,
+  "date": 1682172662867,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Axe"
+      "value": "Hammer"
     },
     {
       "trait_type": "Class",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Warrior"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Bat"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1652",
+  "name": "Dino LFG Collection #1649",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1652.png",
-  "dna": "9f0cb98d90621c7c81d428f5d775b3f4274a4441",
-  "edition": 1652,
-  "date": 1682178380292,
+  "image": "ipfs://DinoLFG/1652.jpg",
+  "dna": "2f47d4d55efe1b8c6ff710d689378d2f5fca33d9",
+  "edition": 1649,
+  "date": 1682178377826,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
-      "value": "Zeus"
+      "value": "None"
     },
     {
       "trait_type": "Hat",

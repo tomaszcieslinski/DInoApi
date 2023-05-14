@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #222",
+  "name": "Dino LFG Collection #220",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/222.png",
-  "dna": "73ee17fa02d6484292db2a9f960581d1fc9fd262",
-  "edition": 222,
-  "date": 1682173920327,
+  "image": "ipfs://DinoLFG/8222.jpg",
+  "dna": "1872883071a7acfdbd8de236ea62a0e9a781c6b8",
+  "edition": 220,
+  "date": 1682173918509,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Halo"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

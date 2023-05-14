@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1979",
+  "name": "Dino LFG Collection #1086",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1979.png",
-  "dna": "44e8894f15f60574ae0059819aa589a6f31ffd8c",
-  "edition": 1979,
-  "date": 1682180802211,
+  "image": "ipfs://DinoLFG/5089.jpg",
+  "dna": "a142ce8dd3c9246d97b005b91398b1be14034cc8",
+  "edition": 1086,
+  "date": 1682179992053,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Kunai"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Flame"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",

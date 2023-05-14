@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1600",
+  "name": "Dino LFG Collection #667",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1600.png",
-  "dna": "c2538007c1dd050af8afc05de24be19cd074c8a4",
-  "edition": 1600,
-  "date": 1682180441714,
+  "image": "ipfs://DinoLFG/4670.jpg",
+  "dna": "7be7cf44a4166a16bd3503c32213329b7192ea79",
+  "edition": 667,
+  "date": 1682179624937,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Dagger"
+      "value": "Kunai"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1216",
+  "name": "Dino LFG Collection #1214",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1216.png",
-  "dna": "b0ee10ee824a6b417e3d967ab72fe60211d324cf",
-  "edition": 1216,
-  "date": 1682178016055,
+  "image": "ipfs://DinoLFG/1216.jpg",
+  "dna": "579939659cc3cb0f899998f57da8af3b44f427d7",
+  "edition": 1214,
+  "date": 1682178014412,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",

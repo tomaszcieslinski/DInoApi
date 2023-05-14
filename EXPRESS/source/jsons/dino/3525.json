@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1525",
+  "name": "Dino LFG Collection #1522",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1525.png",
-  "dna": "7ae32876aa08bb4b908bd440eb193d41701985dc",
-  "edition": 1525,
-  "date": 1682453944547,
+  "image": "ipfs://DinoLFG/3525.jpg",
+  "dna": "f2e033d25ddcd42944e78978f59548a3c263bda4",
+  "edition": 1522,
+  "date": 1682182743673,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "Meteor"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

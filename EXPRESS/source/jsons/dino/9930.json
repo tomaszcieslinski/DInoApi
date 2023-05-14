@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1930",
+  "name": "Dino LFG Collection #1926",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1930.png",
-  "dna": "f4a12aea56a982a1edd8f19244ea9f23a014e0ba",
-  "edition": 1930,
-  "date": 1682175481819,
+  "image": "ipfs://DinoLFG/9930.jpg",
+  "dna": "a86525f2b1904699e880a1336f6d268ec42164d1",
+  "edition": 1926,
+  "date": 1682175478032,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

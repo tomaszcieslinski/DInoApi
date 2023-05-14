@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #874",
+  "name": "Dino LFG Collection #871",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/874.png",
-  "dna": "0e471776d544e7c3c1296f48522b0956b10c3ca8",
-  "edition": 874,
-  "date": 1682174516077,
+  "image": "ipfs://DinoLFG/8874.jpg",
+  "dna": "a9be4d5b3376f825542eebce18b7ff2da2f3f0f3",
+  "edition": 871,
+  "date": 1682174513427,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Ice"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1881",
+  "name": "Dino LFG Collection #1878",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1881.png",
-  "dna": "8d80f812cfb04bf7f9634b22e78926cfc7b2840e",
-  "edition": 1881,
-  "date": 1682175436529,
+  "image": "ipfs://DinoLFG/9881.jpg",
+  "dna": "02866c7f402423d0223128d5fd7113bda4fbdc41",
+  "edition": 1878,
+  "date": 1682175433820,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Fire"
+      "value": "Wand"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "Wizard"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

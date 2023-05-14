@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #324",
+  "name": "Dino LFG Collection #323",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/324.png",
-  "dna": "cb7cff3dc78b0720733a089990b40b661c0c8f46",
-  "edition": 324,
-  "date": 1682452868358,
+  "image": "ipfs://DinoLFG/2324.jpg",
+  "dna": "46089edabbdb1acd1c223cf4b1cfe64183932a63",
+  "edition": 323,
+  "date": 1682181693156,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Pirate"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",

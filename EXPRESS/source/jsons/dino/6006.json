@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #6",
+  "name": "Dino LFG Collection #5",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/6.png",
-  "dna": "b7cf8a92c71aef2fbcff01cabd1a8d555938cc37",
-  "edition": 6,
-  "date": 1682170884686,
+  "image": "ipfs://DinoLFG/6006.jpg",
+  "dna": "5e2910e46555d7b4633f18665f786d4f96ca0c6e",
+  "edition": 5,
+  "date": 1682170883727,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Hammer"
+      "value": "Spear"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

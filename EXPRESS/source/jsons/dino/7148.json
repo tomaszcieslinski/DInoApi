@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1148",
+  "name": "Dino LFG Collection #1145",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1148.png",
-  "dna": "2f9160be91c930250cefcb69a97172709babd3a9",
-  "edition": 1148,
-  "date": 1682171934177,
+  "image": "ipfs://DinoLFG/7148.jpg",
+  "dna": "f7975ae72a1a94186aaad9f3c69e4afa82eb07eb",
+  "edition": 1145,
+  "date": 1682171931473,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Sword"
+      "value": "Spear"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -28,15 +28,15 @@
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "None"
+      "value": "Gentleman"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

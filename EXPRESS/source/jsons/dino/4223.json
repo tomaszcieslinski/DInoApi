@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1199",
+  "name": "Dino LFG Collection #222",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1199.png",
-  "dna": "a5f30896d79f28ab3fd9febec1c08ba1441454bc",
-  "edition": 1199,
-  "date": 1682180090232,
+  "image": "ipfs://DinoLFG/4223.jpg",
+  "dna": "f9b7be9bf9131b368294e2e1347a42eb8556c863",
+  "edition": 222,
+  "date": 1682179244354,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Thief"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Thief"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1506",
+  "name": "Dino LFG Collection #1503",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1506.png",
-  "dna": "0e1712546904381c67ff53b60a13a9515b4396c8",
-  "edition": 1506,
-  "date": 1682453926935,
+  "image": "ipfs://DinoLFG/3506.jpg",
+  "dna": "66becd34e245b3f5d9282b6b5cca210959d8a72e",
+  "edition": 1503,
+  "date": 1682182726897,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
-      "value": "Zeus"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Cowboy"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

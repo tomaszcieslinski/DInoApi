@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1467",
+  "name": "Dino LFG Collection #518",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1467.png",
-  "dna": "3d94652ece22f6ee20664ceb0fabda992ccabd0f",
-  "edition": 1467,
-  "date": 1682180325890,
+  "image": "ipfs://DinoLFG/4521.jpg",
+  "dna": "ad32df2f51d5fb499529edecf894847a194cfddf",
+  "edition": 518,
+  "date": 1682179498960,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Shuriken"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Parrot"
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1966",
+  "name": "Dino LFG Collection #1962",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1966.png",
-  "dna": "d576139ab8e765b5cb486e13cdcc3929b2367a1d",
-  "edition": 1966,
-  "date": 1682178645919,
+  "image": "ipfs://DinoLFG/1966.jpg",
+  "dna": "da5cf3ef43ac9106f125e30985fd3274b1f31308",
+  "edition": 1962,
+  "date": 1682178642465,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
-      "value": "Zeus"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

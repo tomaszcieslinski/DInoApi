@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1723",
+  "name": "Dino LFG Collection #803",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1723.png",
-  "dna": "8f67584a7ff2d93145dbd2bc86a2d823dd6b2b59",
-  "edition": 1723,
-  "date": 1682180556572,
+  "image": "ipfs://DinoLFG/4806.jpg",
+  "dna": "59544e2fc620220489b2e70bca79f58f2129a9c5",
+  "edition": 803,
+  "date": 1682179743651,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
-      "value": "Zeus"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Beanie"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

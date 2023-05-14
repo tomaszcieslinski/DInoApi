@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #8",
+  "name": "Dino LFG Collection #7",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/8.png",
-  "dna": "bdc52f3b99dbbfb11047f2d5173c4e76a21b1c1b",
-  "edition": 8,
-  "date": 1682452589261,
+  "image": "ipfs://DinoLFG/2008.jpg",
+  "dna": "d562a07e932b34643cd2d24e6c6b723a8fef7722",
+  "edition": 7,
+  "date": 1682181391928,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",

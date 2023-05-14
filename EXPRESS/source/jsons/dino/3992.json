@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1992",
+  "name": "Dino LFG Collection #1988",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1992.png",
-  "dna": "f3f99c61fcaa7d2a23738ba7f3329eef0d7ab4b7",
-  "edition": 1992,
-  "date": 1682454364089,
+  "image": "ipfs://DinoLFG/3992.jpg",
+  "dna": "dfad819f145a563f47194c500a9bc50d6960d305",
+  "edition": 1988,
+  "date": 1682183157956,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Crown"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

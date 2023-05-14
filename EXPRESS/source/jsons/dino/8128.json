@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #128",
+  "name": "Dino LFG Collection #126",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/128.png",
-  "dna": "6720f4251033d4303a48903a9cf1c364c0e7a6d5",
-  "edition": 128,
-  "date": 1682173828450,
+  "image": "ipfs://DinoLFG/8128.jpg",
+  "dna": "7548c4ca3ff0a0ad6e24143c448de3de6e7ea4ad",
+  "edition": 126,
+  "date": 1682173825776,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Staff"
+      "value": "Ice"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",

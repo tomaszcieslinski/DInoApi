@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1829",
+  "name": "Dino LFG Collection #1826",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1829.png",
-  "dna": "9d93f438e52d3fab9368e60f0c446862de9744d6",
-  "edition": 1829,
-  "date": 1682454216507,
+  "image": "ipfs://DinoLFG/3829.jpg",
+  "dna": "e422a699f8fdc4fee2a9d2cca06184e53cee5cdd",
+  "edition": 1826,
+  "date": 1682183013052,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Gentleman"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

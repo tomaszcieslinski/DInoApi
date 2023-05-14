@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1420",
+  "name": "Dino LFG Collection #467",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1420.png",
-  "dna": "7b3c877bc26ac73598492eea94da3824ddfc64d8",
-  "edition": 1420,
-  "date": 1682180284716,
+  "image": "ipfs://DinoLFG/4470.jpg",
+  "dna": "5d0d02e58e75cac7d8d0e2d51d67b03fff6bb379",
+  "edition": 467,
+  "date": 1682179456154,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Kunai"
+      "value": "Shuriken"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Thief"
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

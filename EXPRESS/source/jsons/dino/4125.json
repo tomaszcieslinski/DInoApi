@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #111",
+  "name": "Dino LFG Collection #124",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/111.png",
-  "dna": "07756bfabbd36ca317800bb05ee0c9d17a62239d",
-  "edition": 111,
-  "date": 1682179132813,
+  "image": "ipfs://DinoLFG/4125.jpg",
+  "dna": "cba14ec8e2d9af0fd9fe1181832f0d66028ce57a",
+  "edition": 124,
+  "date": 1682179146753,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Kunai"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Suit"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Squared"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

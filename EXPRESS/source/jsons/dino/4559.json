@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1500",
+  "name": "Dino LFG Collection #556",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1500.png",
-  "dna": "66abf3122b91b1e4246ba1715f993de33de061a1",
-  "edition": 1500,
-  "date": 1682180354907,
+  "image": "ipfs://DinoLFG/4559.jpg",
+  "dna": "947372a6611914c567942c7a8eed695f5fd32c8e",
+  "edition": 556,
+  "date": 1682179531050,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Dagger"
+      "value": "Shuriken"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Baseball"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

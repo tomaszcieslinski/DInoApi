@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #484",
+  "name": "Dino LFG Collection #482",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/484.png",
-  "dna": "01b092c9155be555869946cf3540f3c4586733a1",
-  "edition": 484,
-  "date": 1682177386607,
+  "image": "ipfs://DinoLFG/484.jpg",
+  "dna": "8dc9fd4aa7ed87d7c1f1f46d953e4d4ab74d7757",
+  "edition": 482,
+  "date": 1682177384489,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Archer"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Blindfold"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #967",
+  "name": "Dino LFG Collection #964",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/967.png",
-  "dna": "a795b5f44391caf00a5d50ab21ed3d63ac23f5ff",
-  "edition": 967,
-  "date": 1682453444633,
+  "image": "ipfs://DinoLFG/2967.jpg",
+  "dna": "b89a466759130edd1184f7dcfe0b34268b74a115",
+  "edition": 964,
+  "date": 1682182249947,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Crown"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",

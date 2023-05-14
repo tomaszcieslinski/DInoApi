@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1000",
+  "name": "Dino LFG Collection #4",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1000.png",
-  "dna": "0522059a085b647ef6d389bd5748d9e06eabfd6a",
-  "edition": 1000,
-  "date": 1682179916422,
+  "image": "ipfs://DinoLFG/4004.jpg",
+  "dna": "535f8cca817842523ddc1cac8f503846959bac1c",
+  "edition": 4,
+  "date": 1682179026156,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

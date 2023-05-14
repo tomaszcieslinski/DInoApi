@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1115",
+  "name": "Dino LFG Collection #1112",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1115.png",
-  "dna": "99f05dc581e76a93050eaa63fd72451a4b1ca713",
-  "edition": 1115,
-  "date": 1682453579605,
+  "image": "ipfs://DinoLFG/3115.jpg",
+  "dna": "60fc85fdf716559145f7582a885ff10db50d8189",
+  "edition": 1112,
+  "date": 1682182380853,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Pilot"
     },
     {
       "trait_type": "First Edition",

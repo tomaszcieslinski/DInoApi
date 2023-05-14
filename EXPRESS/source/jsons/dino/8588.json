@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #588",
+  "name": "Dino LFG Collection #585",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/588.png",
-  "dna": "fcaac67210b0ef15fc5a15fb1836b5f0f1d7e384",
-  "edition": 588,
-  "date": 1682174261987,
+  "image": "ipfs://DinoLFG/8588.jpg",
+  "dna": "70a84c885294f46116d2dbded0ed5f2dbd3c6312",
+  "edition": 585,
+  "date": 1682174259391,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Wand"
+      "value": "Staff"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Robe"
+      "value": "Coat"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Headphones"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

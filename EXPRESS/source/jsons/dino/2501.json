@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #501",
+  "name": "Dino LFG Collection #500",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/501.png",
-  "dna": "103bc490d7ef1a14b19556a859d83380feb5d17b",
-  "edition": 501,
-  "date": 1682453029773,
+  "image": "ipfs://DinoLFG/2501.jpg",
+  "dna": "e5b5949fb493e3d24f9fc2b9d1483fa0883560e4",
+  "edition": 500,
+  "date": 1682181846352,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Pistol"
+      "value": "Riffle"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",

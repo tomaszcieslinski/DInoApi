@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1971",
+  "name": "Dino LFG Collection #1967",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1971.png",
-  "dna": "02a15d72a5e26e1f924d195e617c0c23a6ef7659",
-  "edition": 1971,
-  "date": 1682178650319,
+  "image": "ipfs://DinoLFG/1971.jpg",
+  "dna": "9d64558f5887e07a04b0e361c959851cdd609c76",
+  "edition": 1967,
+  "date": 1682178646773,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
-      "value": "None"
+      "value": "Flame"
     },
     {
       "trait_type": "Hat",
-      "value": "Halo"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",

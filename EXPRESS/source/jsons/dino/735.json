@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #735",
+  "name": "Dino LFG Collection #733",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/735.png",
-  "dna": "3f47a26cc41f266eee825be1dc1a2e6ba4843f11",
-  "edition": 735,
-  "date": 1682177610634,
+  "image": "ipfs://DinoLFG/735.jpg",
+  "dna": "b2ff1bd0830b091057f679635e7d32e6b64124cd",
+  "edition": 733,
+  "date": 1682177608966,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Archer"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Phantom"
     },
     {
       "trait_type": "First Edition",

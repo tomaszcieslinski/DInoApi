@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1040",
+  "name": "Dino LFG Collection #47",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1040.png",
-  "dna": "d69cc15c7d3234a6cc17c81540649a33656c3d8c",
-  "edition": 1040,
-  "date": 1682179951668,
+  "image": "ipfs://DinoLFG/4048.jpg",
+  "dna": "b87e006aa3924f653eeaa3bb944b76a034631cf8",
+  "edition": 47,
+  "date": 1682179065246,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Thief"
     },
     {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

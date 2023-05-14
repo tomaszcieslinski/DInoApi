@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #45",
+  "name": "Dino LFG Collection #44",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/45.png",
-  "dna": "cb2c045fd5c4035a8b06036ff30802859cb9d848",
-  "edition": 45,
-  "date": 1682173751943,
+  "image": "ipfs://DinoLFG/8045.jpg",
+  "dna": "8e9ba1ebb333c603f0859af1f28f6bde6d3795c1",
+  "edition": 44,
+  "date": 1682173751042,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Staff"
+      "value": "Ice"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Wizard"
+      "value": "Hero"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "Party"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1032",
+  "name": "Dino LFG Collection #1029",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/1032.png",
-  "dna": "6af9c4d77939f04bb67229dac54592f92d6ffdea",
-  "edition": 1032,
-  "date": 1682174655620,
+  "image": "ipfs://DinoLFG/9032.jpg",
+  "dna": "15e8dacbe41448c34acb308dee7d64caecdd81e4",
+  "edition": 1029,
+  "date": 1682174652970,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Dragon"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",

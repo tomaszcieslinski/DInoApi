@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #401",
+  "name": "Dino LFG Collection #400",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/401.png",
-  "dna": "4983301691f225cfa160b034d287d7ed3f5d7d29",
-  "edition": 401,
-  "date": 1682177309935,
+  "image": "ipfs://DinoLFG/401.jpg",
+  "dna": "b2a39c2ac26771762864748aec838fe3d7556971",
+  "edition": 400,
+  "date": 1682177309117,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Crossbow"
+      "value": "Bow"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Monocle"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

@@ -1,14 +1,14 @@
 {
-  "name": "Dino LFG Collection #1446",
+  "name": "Dino LFG Collection #1444",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1446.png",
-  "dna": "d04870765535791bf177180f5bccbbf937142e1f",
-  "edition": 1446,
-  "date": 1682178206153,
+  "image": "ipfs://DinoLFG/1446.jpg",
+  "dna": "5cd2a79d328a743dfd3d23f8efff8db9c3807470",
+  "edition": 1444,
+  "date": 1682178204470,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Branch"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "3D"
     },
     {
       "trait_type": "First Edition",

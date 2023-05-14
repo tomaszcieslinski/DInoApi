@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1940",
+  "name": "Dino LFG Collection #1044",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1940.png",
-  "dna": "4a16cf960ee8371f9c4f748f1ffee57211a70ee7",
-  "edition": 1940,
-  "date": 1682180768418,
+  "image": "ipfs://DinoLFG/5047.jpg",
+  "dna": "b247d96f43bb7c0ab111b6b1a9e80bd802a25b6f",
+  "edition": 1044,
+  "date": 1682179955185,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Epic"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Dagger"
+      "value": "Shuriken"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Jacket"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Baseball"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

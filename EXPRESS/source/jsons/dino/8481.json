@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #481",
+  "name": "Dino LFG Collection #478",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/481.png",
-  "dna": "ecc089aff7a85ff62fc15ce00138d75251520159",
-  "edition": 481,
-  "date": 1682174167973,
+  "image": "ipfs://DinoLFG/8481.jpg",
+  "dna": "34ab936689f0761b7249d22f7a0f8ee6c5313d8f",
+  "edition": 478,
+  "date": 1682174165301,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
-    },
-    {
-      "trait_type": "Pet",
-      "value": "Zeus"
-    },
-    {
-      "trait_type": "Hat",
       "value": "Wizard"
     },
     {
+      "trait_type": "Pet",
+      "value": "Bat"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Gentleman"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Phantom"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

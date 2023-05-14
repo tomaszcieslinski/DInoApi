@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1935",
+  "name": "Dino LFG Collection #1931",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/1935.png",
-  "dna": "db3ce327bb3726764dfba234f5eac2d14843a989",
-  "edition": 1935,
-  "date": 1682172651023,
+  "image": "ipfs://DinoLFG/7935.jpg",
+  "dna": "335cbb0e9491b83b95837b39853c19fd29906e5b",
+  "edition": 1931,
+  "date": 1682172647397,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Spear"
+      "value": "Axe"
     },
     {
       "trait_type": "Class",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Coat"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Eyepatch"
     },
     {
       "trait_type": "First Edition",

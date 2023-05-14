@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #724",
+  "name": "Dino LFG Collection #722",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/724.png",
-  "dna": "7f197320749b131c7f903334bf394b1f59ec52a4",
-  "edition": 724,
-  "date": 1682453226467,
+  "image": "ipfs://DinoLFG/2724.jpg",
+  "dna": "a54216baeb0959ff59b23f4c841e16932f9c258a",
+  "edition": 722,
+  "date": 1682182038768,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Mousquet"
     },
     {
       "trait_type": "Class",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Pirate"
     },
     {
       "trait_type": "Pet",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "Cowboy"
     },
     {
       "trait_type": "Eyes",
-      "value": "3D"
+      "value": "None"
     },
     {
       "trait_type": "First Edition",

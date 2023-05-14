@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #8",
+  "name": "Dino LFG Collection #7",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/8.png",
-  "dna": "527d4a7297281d7ca268653d855b4da4c735981a",
-  "edition": 8,
-  "date": 1682170886510,
+  "image": "ipfs://DinoLFG/6008.jpg",
+  "dna": "184045c3fae4ff45debf5567265fb854e007ed71",
+  "edition": 7,
+  "date": 1682170885588,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Jacket"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
-      "value": "Parrot"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Scientist"
+      "value": "Monocle"
     },
     {
       "trait_type": "First Edition",

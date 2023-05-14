@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #263",
+  "name": "Dino LFG Collection #261",
   "description": "Wizard Class",
-  "image": "ipfs://DinoLFG/263.png",
-  "dna": "cf5b5a5d07f1bfda3795bd6beb9cf5612963af25",
-  "edition": 263,
-  "date": 1682173957255,
+  "image": "ipfs://DinoLFG/8263.jpg",
+  "dna": "e007d47ff02c81d82dd0a017f3b82854756dc5c4",
+  "edition": 261,
+  "date": 1682173955496,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Staff"
+      "value": "Fire"
     },
     {
       "trait_type": "Class",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Gentleman"
+      "value": "None"
     },
     {
       "trait_type": "Eyes",

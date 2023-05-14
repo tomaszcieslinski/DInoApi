@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1994",
+  "name": "Dino LFG Collection #1990",
   "description": "Pirate Class",
-  "image": "ipfs://DinoLFG/1994.png",
-  "dna": "4d0112916cbf1ec366bb44a12ba95d5850ae0995",
-  "edition": 1994,
-  "date": 1682454365922,
+  "image": "ipfs://DinoLFG/3994.jpg",
+  "dna": "35474a69a2551d9f54d15f1c60e4e794308c1d3c",
+  "edition": 1990,
+  "date": 1682183159717,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Weapon",
-      "value": "Handgun"
+      "value": "Silex"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Tongue"
+      "value": "Smirk"
     },
     {
       "trait_type": "Body",
-      "value": "Hero"
+      "value": "Vagabond"
     },
     {
       "trait_type": "Pet",
-      "value": "Flame"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Pirate"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Librarian"
     },
     {
       "trait_type": "First Edition",

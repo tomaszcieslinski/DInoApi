@@ -1,10 +1,10 @@
 {
-  "name": "Dino LFG Collection #1907",
+  "name": "Dino LFG Collection #1904",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/1907.png",
-  "dna": "50b30c01780d7a5224ef65c27bb6d20686612f1d",
-  "edition": 1907,
-  "date": 1682178596001,
+  "image": "ipfs://DinoLFG/1907.jpg",
+  "dna": "2403a40c66af21e8b6837e522cbdbdc633503b05",
+  "edition": 1904,
+  "date": 1682178593446,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,19 +20,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smile"
+      "value": "Tongue"
     },
     {
       "trait_type": "Body",
-      "value": "Wolf"
+      "value": "Dragon"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Baseball"
     },
     {
       "trait_type": "Eyes",

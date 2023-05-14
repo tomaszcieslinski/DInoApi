@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #663",
+  "name": "Dino LFG Collection #660",
   "description": "Warrior Class",
-  "image": "ipfs://DinoLFG/663.png",
-  "dna": "02e4e5939ee69ec8bd2fdc73d7ebe0079104463b",
-  "edition": 663,
-  "date": 1682171492081,
+  "image": "ipfs://DinoLFG/6663.jpg",
+  "dna": "9fa7fb869bc1c79483e0533acafce292a8d5ef7a",
+  "edition": 660,
+  "date": 1682171488782,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Epic"
     },
     {
       "trait_type": "Weapon",
-      "value": "Spear"
+      "value": "Axe"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Smirk"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Suit"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
-      "value": "Meteor"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Warrior"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Pilot"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

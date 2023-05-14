@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #221",
+  "name": "Dino LFG Collection #220",
   "description": "Archer Class",
-  "image": "ipfs://DinoLFG/221.png",
-  "dna": "78fe460332267c4c20131742777604b03fa3664a",
-  "edition": 221,
-  "date": 1682177150953,
+  "image": "ipfs://DinoLFG/221.jpg",
+  "dna": "c0eb91ba6e979e64b27015607e87ace0d6a49543",
+  "edition": 220,
+  "date": 1682177150111,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Legendary"
     },
     {
       "trait_type": "Weapon",
-      "value": "Bow"
+      "value": "Crossbow"
     },
     {
       "trait_type": "Class",
@@ -24,19 +24,19 @@
     },
     {
       "trait_type": "Body",
-      "value": "Sweater"
+      "value": "Robe"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
-      "value": "Party"
+      "value": "Beanie"
     },
     {
       "trait_type": "Eyes",
-      "value": "None"
+      "value": "Party"
     },
     {
       "trait_type": "First Edition",

@@ -1,18 +1,18 @@
 {
-  "name": "Dino LFG Collection #1943",
+  "name": "Dino LFG Collection #1047",
   "description": "Thief Class",
-  "image": "ipfs://DinoLFG/1943.png",
-  "dna": "568f2e4755c796acaea533549ac6763c0329d440",
-  "edition": 1943,
-  "date": 1682180770937,
+  "image": "ipfs://DinoLFG/5050.jpg",
+  "dna": "09fd6855176601d368f19147fe0f6f4a11cce591",
+  "edition": 1047,
+  "date": 1682179957805,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Kunai"
+      "value": "Dagger"
     },
     {
       "trait_type": "Class",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Branch"
+      "value": "Bored"
     },
     {
       "trait_type": "Body",
@@ -32,11 +32,11 @@
     },
     {
       "trait_type": "Hat",
-      "value": "Beanie"
+      "value": "Party"
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Squared"
     },
     {
       "trait_type": "First Edition",
