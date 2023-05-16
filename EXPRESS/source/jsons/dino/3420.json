@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #1417",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/3420.jpg",
-  "dna": "06a2f6f230cd29d293f8f06c3d3e87d1da4f1aef",
+  "dna": "dacf1140c8712ce999b99cd42a4f6a57b65823e7",
   "edition": 1417,
-  "date": 1682182651174,
+  "date": 1684170632634,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Common"
+      "value": "Rare"
     },
     {
       "trait_type": "Weapon",
-      "value": "Riffle"
+      "value": "Handgun"
     },
     {
       "trait_type": "Class",
@@ -20,23 +20,23 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "Bored"
+      "value": "Smile"
     },
     {
       "trait_type": "Body",
-      "value": "Vagabond"
+      "value": "Farmer"
     },
     {
       "trait_type": "Pet",
-      "value": "Bat"
-    },
-    {
-      "trait_type": "Hat",
       "value": "None"
     },
     {
+      "trait_type": "Hat",
+      "value": "Pirate"
+    },
+    {
       "trait_type": "Eyes",
-      "value": "Librarian"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",

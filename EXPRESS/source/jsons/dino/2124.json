@@ -2,17 +2,17 @@
   "name": "Dino LFG Collection #123",
   "description": "Pirate Class",
   "image": "ipfs://DinoLFG/2124.jpg",
-  "dna": "97e6e34e2ca22143a93c5631bc076906062496cb",
+  "dna": "40498276d5dfbc3c824eb641e36ae5ce81067692",
   "edition": 123,
-  "date": 1682181502718,
+  "date": 1684169466786,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Rare"
+      "value": "Common"
     },
     {
       "trait_type": "Weapon",
-      "value": "Silex"
+      "value": "Pistol"
     },
     {
       "trait_type": "Class",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Body",
-      "value": "Farmer"
+      "value": "Sweater"
     },
     {
       "trait_type": "Pet",
-      "value": "Faceless"
+      "value": "None"
     },
     {
       "trait_type": "Hat",
@@ -36,7 +36,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "Blindfold"
+      "value": "Scientist"
     },
     {
       "trait_type": "First Edition",
