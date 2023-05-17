@@ -133,7 +133,6 @@ let newidArray = idArray
   return value !== undefined;
 });
 data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
-console.log(data)
   for(let i = 0;i<data.length;i++){
     if(data[i].media[0]!=undefined){
       if(data[i].contract.openSea!=undefined){
