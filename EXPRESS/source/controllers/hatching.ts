@@ -48,9 +48,8 @@ const getoNftTraitsByAttr = async (req: Request, response: Response)=>{
 const postoNftFilter = async(req: Request,response:Response)=>{
   let data = req.body;
   let res =  await nftservice.returnFilteredo(data)
-  return response.status(200).json(res)
+  return response.status(200).json(res.sort(() => Math.random() - 0.5))
 }
-
 
 const getNftTraits = async (req: Request, response: Response)=>{
   let res = await nftservice.getTraits()
@@ -65,7 +64,7 @@ const getNftTraitsByAttr = async (req: Request, response: Response)=>{
 const postNftFilter = async(req: Request,response:Response)=>{
   let data = req.body;
   let res =  await nftservice.returnFiltered(data)
-  return response.status(200).json(res)
+  return response.status(200).json(res.sort(() => Math.random() - 0.5))
 }
 
 
