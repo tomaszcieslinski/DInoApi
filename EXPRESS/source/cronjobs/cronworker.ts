@@ -25,6 +25,7 @@ function traitsworker(){
 cron.schedule('15 * * * *', () => {
     console.log("Executing traits table synchronization", currentDate)
     nftservice.updateTraitsData()
+    nftservice.synchMintedToUnminted()
 });
 
 }

@@ -312,7 +312,7 @@ async function returnFiltered(body:any) {
 
 async function returnFilteredo(body:any) {
   console.log(body)
-  let letQuerryBody = `SELECT distinct n.id ,n.nftid,n.imgurl
+  let letQuerryBody = `SELECT distinct n.id ,n.nftid,n.imgurl,n.isminted
   FROM onfttraits t1
   join onftdata n ON n.nftid = t1.nftid 
   join otraits tr on t1.traitid = tr.traitid`
@@ -342,6 +342,7 @@ async function returnFilteredo(body:any) {
     }
     }
   }
+  letQuerryBody+= "and n.isminted is false"
   let res = await client.query(letQuerryBody)
   return res.rows
 }
@@ -393,8 +394,26 @@ jsonsInDir.forEach(async (file: any) => {
 console.log(counter)
 }
 
+async function synchMintedToUnminted(){
+    let res = await client.query("select id from nftdata")
+    let arr = []
+    let querry = `UPDATE onftdata SET isminted  = true WHERE id=($1) and EXISTS (SELECT 1 FROM onftdata WHERE id  = ($1));`
+    for(let i = 0; i < res.rows.length;i++){
+      arr.push(res.rows[i].id)
+      await client.query(
+        querry,
+        [res.rows[i].id],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
+        }
+      );
+    }
+}
 
 
-export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,returnFilteredo,getoTraits,
+export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,returnFilteredo,getoTraits,synchMintedToUnminted,
   getoTraitsByAttribute,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchNFTDataBase,getTraits,updateTraitsData};
