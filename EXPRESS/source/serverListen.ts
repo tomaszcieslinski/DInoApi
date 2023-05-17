@@ -62,7 +62,7 @@ cronworker.nftworker()
 cronworker.traitsworker()
 //nftservice.synchDatabase()
 //nftservice.updateTraitsData()
-//nftservice.saveUnmintedDatabase()
+nftservice.saveUnmintedDatabase()
 
 
 httpServer.listen(PORT, () =>
