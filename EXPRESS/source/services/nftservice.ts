@@ -324,7 +324,7 @@ async function returnFilteredo(body:any) {
       letQuerryBody += ` JOIN onfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
       marker++
     }
-    letQuerryBody += " where "
+    letQuerryBody += " where n.isminted is false and "
     marker=2;
     for (let i = 0; i < arr.length; i++) {
       letQuerryBody += "(";
@@ -342,7 +342,6 @@ async function returnFilteredo(body:any) {
     }
     }
   }
-  letQuerryBody+= "and n.isminted is false"
   let res = await client.query(letQuerryBody)
   return res.rows
 }
