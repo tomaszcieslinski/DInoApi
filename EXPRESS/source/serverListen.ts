@@ -57,11 +57,12 @@ const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
 //enables cors
 // transactions.listen()
-// cronworker.worker()
-// cronworker.nftworker()
-// cronworker.traitsworker()
+cronworker.worker()
+cronworker.nftworker()
+cronworker.traitsworker()
+//nftservice.synchDatabase()
 //nftservice.updateTraitsData()
-nftservice.saveUnmintedDatabase()
+//nftservice.saveUnmintedDatabase()
 
 
 httpServer.listen(PORT, () =>

@@ -182,9 +182,10 @@ where t."type"  =($1)
 GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity`
 
 const UPDATE_TRAITS_DATA =`UPDATE traits SET rarity  = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
-
+const UPDATE_COUNTS =`UPDATE traits SET count = ($2) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 const UPDATE_TRAITS_PRICE_DATA =`UPDATE traits SET ethprice  = ($2) , count = ($3) WHERE traitid=($1) and EXISTS (SELECT 1 FROM traits WHERE traitid  = ($1));`
 export default {
+  UPDATE_COUNTS,
   SELECT_OTRAITS,
   SELECT_OTRAITS_BY_ATTRIBUTE,
   INESRT_ONFT_TRAITS,

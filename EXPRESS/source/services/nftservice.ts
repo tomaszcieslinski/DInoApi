@@ -133,6 +133,7 @@ let newidArray = idArray
   return value !== undefined;
 });
 data = data.filter(ob=>newidArray.includes(Number(ob.tokenId)))
+console.log(data)
   for(let i = 0;i<data.length;i++){
     if(data[i].media[0]!=undefined){
       if(data[i].contract.openSea!=undefined){
@@ -242,6 +243,16 @@ async function updateTraitsData(){
 let attr = res.data.attributes
   for(let i =0 ;i<attr.length;i++){
     for(let j =0;j<attr[i].values.length;j++){
+      await client.query(
+        queryenum.UPDATE_COUNTS,
+        [md5(attr[i].values[j].value+attr[i].key+secret),attr[i].values[j].count],
+        (error: any, response:any) => {
+          if (error) {
+            throw error;
+            console.log(error);
+          }
+        }
+     );
       if(attr[i].values[j].floorAskPrice!=undefined){
         await client.query(
           queryenum.UPDATE_TRAITS_PRICE_DATA,
