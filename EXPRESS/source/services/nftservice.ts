@@ -118,7 +118,7 @@ async function synchDatabase() {
 let page = 1;
 let totalpage;
 async function synchNFTDataBase(){
-  console.log("syncstart")
+  console.log("syncstart1")
   let data: any[]= []
 
   const contractAddress = String(process.env.NFT_CONTRACT);
