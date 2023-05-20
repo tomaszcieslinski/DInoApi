@@ -149,9 +149,52 @@ const postNftFilter = async(req: Request,response:Response)=>{
       res[i].bonus = "none"
     }
   }
+  
   return response.status(200).json(res.sort(() => Math.random() - 0.5))
 }
 
+const postwNftFilter = async(req: Request,response:Response)=>{
+  let data = req.body;
+  let res =  await nftservice.returnFiltered(data)
+  for(let i =0;i<res.length;i++){
+    if(mysteryegg1.includes(Number(res[i].id))){
+      res[i].bonus = "1x Dino Mystery Egg"
+    }
+    else if(hoodie.includes(Number(res[i].id))){
+      res[i].bonus = "1x DinoLFG Hoodie"
+    }
+    else if(nft.includes(Number(res[i].id))){
+      res[i].bonus = "1x DINOsaur NFT "
+    }
+    else if(k50.includes(Number(res[i].id))){
+      res[i].bonus = "50,000 $DINO + 10 Dino Mystery Eggs + 1x DinoLFG Hoodie"
+    }
+    else if(ps5.includes(Number(res[i].id))){
+      res[i].bonus = "1x PS5 or 1x Nintendo Switch"
+    }
+    else if(iphone.includes(Number(res[i].id))){
+      res[i].bonus = "1x iPhone 14 "
+    }
+    else if(doge.includes(Number(res[i].id))){
+      res[i].bonus = "1x Signed Dogecoin by Dogecoin creator Billy Markus "
+    }
+    else if(k500.includes(Number(res[i].id))){
+      res[i].bonus = "500,000 $DINO + 100 Dino Mystery Eggs + 1x DinoLFG Hoodie"
+    }
+    else{
+      res[i].bonus = "none"
+    }
+  }
+  const filteredArray = res.filter((obj: {
+    bonus: any;  }) => obj.bonus !="none");
+  return response.status(200).json(filteredArray.sort(() => Math.random() - 0.5))
+}
 
-export default {getNftTraitsByAttr,getoNftTraits,getoNftTraitsByAttr,postoNftFilter,
+const getwNftTraits = async (req: Request, response: Response)=>{
+  let res = await nftservice.getwTraits()
+  return response.status(200).json(res)
+}
+
+
+export default {getNftTraitsByAttr,getoNftTraits,getoNftTraitsByAttr,postoNftFilter,postwNftFilter,getwNftTraits,
    getHatchRanking, getHatchWalletRank,getHatchByWallet,getNftOwners,getNftTraits,postNftFilter};

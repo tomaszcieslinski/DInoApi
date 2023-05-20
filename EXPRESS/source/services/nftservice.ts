@@ -203,6 +203,11 @@ async function getoTraits(){
   return res.rows
 } 
 
+async function getwTraits(){
+  let res = await client.query(queryenum.SELECT_WINNERS)
+  return res.rows
+} 
+
 async function getoTraitsByAttribute(name:any){
   let res = await client.query(queryenum.SELECT_OTRAITS_BY_ATTRIBUTE,[name])
   return res.rows
@@ -267,10 +272,6 @@ let attr = res.data.attributes
     }
   }
 }
-
-
-
-
 async function returnFiltered(body:any) {
   console.log(body)
   let letQuerryBody = `SELECT distinct n.id ,n.nftid,convert_from( cast(n.imgurl as bytea),'UTF8'),n.rarity 
@@ -310,7 +311,6 @@ async function returnFiltered(body:any) {
 
 
 async function returnFilteredo(body:any) {
-  console.log(body)
   let letQuerryBody = `SELECT distinct n.id ,n.nftid,n.imgurl,n.isminted
   FROM onfttraits t1
   join onftdata n ON n.nftid = t1.nftid 
@@ -413,5 +413,5 @@ async function synchMintedToUnminted(){
 
 
 export default {returnFiltered,getTraitsByAttribute,saveUnmintedDatabase,returnFilteredo,getoTraits,synchMintedToUnminted,
-  getoTraitsByAttribute,
+  getoTraitsByAttribute,getwTraits,
    synchDatabase,getRanking,getWalletRank,getHatched,getNftOwnerList,synchNFTDataBase,getTraits,updateTraitsData};
