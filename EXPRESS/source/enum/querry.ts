@@ -163,6 +163,7 @@ const SELECT_OTRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.rarity,
 FROM onfttraits n
 JOIN otraits t ON n.traitid = t.traitid
 JOIN onftdata n2 ON n2.nftid = n.nftid
+where n2.isminted is false
 GROUP BY n.traitid, t."type", t."name", t.rarity,t.count;`
 
 const SELECT_OTRAITS_BY_ATTRIBUTE =
