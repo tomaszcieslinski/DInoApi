@@ -155,7 +155,7 @@ const postNftFilter = async(req: Request,response:Response)=>{
 
 const postwNftFilter = async(req: Request,response:Response)=>{
   let data = req.body;
-  let res =  await nftservice.returnFiltered(data)
+  let res =  await nftservice.returnFilteredo(data)
   for(let i =0;i<res.length;i++){
     if(mysteryegg1.includes(Number(res[i].id))){
       res[i].bonus = "1x Dino Mystery Egg"
