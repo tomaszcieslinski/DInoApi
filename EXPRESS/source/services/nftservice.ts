@@ -323,7 +323,7 @@ async function returnFilteredo(body:any) {
       letQuerryBody += ` JOIN onfttraits t${marker} ON t${marker-1}.nftid = t${marker}.nftid`
       marker++
     }
-    letQuerryBody += "and "
+    letQuerryBody += " where "
     marker=2;
     for (let i = 0; i < arr.length; i++) {
       letQuerryBody += "(";
