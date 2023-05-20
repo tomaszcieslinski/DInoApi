@@ -159,12 +159,19 @@ JOIN nftdata n2 ON n2.nftid = n.nftid
 GROUP BY n.traitid, t."type", t."name", t.ethprice, t.rarity,t.count;`
 
 
-const SELECT_OTRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.rarity, MAX(n2.imgurl) as imgurl, t.count
-FROM onfttraits n
-JOIN otraits t ON n.traitid = t.traitid
-JOIN onftdata n2 ON n2.nftid = n.nftid
-where n2.isminted is false
-GROUP BY n.traitid, t."type", t."name", t.rarity,t.count;`
+// const SELECT_OTRAITS = `SELECT DISTINCT n.traitid, t."type", t."name", t.rarity, MAX(n2.imgurl) as imgurl, t.count
+// FROM onfttraits n
+// JOIN otraits t ON n.traitid = t.traitid
+// JOIN onftdata n2 ON n2.nftid = n.nftid
+// where n2.isminted is false
+// GROUP BY n.traitid, t."type", t."name", t.rarity,t.count;`
+
+
+const SELECT_OTRAITS = `select o3.traitid,o3."type" ,o3."name" ,count(o2.traitid) from onftdata o 
+join onfttraits o2 on o.nftid = o2.nftid 
+join otraits o3 on o3.traitid  = o2.traitid  
+where o.isminted is false
+group by o3.traitid ;`
 
 const SELECT_OTRAITS_BY_ATTRIBUTE =
 `SELECT DISTINCT n.traitid, t."type", t."name", MAX(n2.imgurl)
