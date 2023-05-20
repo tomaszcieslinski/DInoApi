@@ -103,7 +103,8 @@ const postoNftFilter = async(req: Request,response:Response)=>{
       res[i].bonus = "none"
     }
   }
-  return response.status(200).json(res.sort(() => Math.random() - 0.5))
+  const filteredArray = res.filter((obj: { isminted: boolean; }) => !obj.isminted === true);
+  return response.status(200).json(filteredArray.sort(() => Math.random() - 0.5))
 }
 
 const getNftTraits = async (req: Request, response: Response)=>{
