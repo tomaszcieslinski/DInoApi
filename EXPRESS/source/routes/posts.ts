@@ -1,10 +1,10 @@
 /** source/routes/posts.ts */
+import express from "express";
 import controller from "../controllers/transactions";
 import nftholders from "../controllers/hatching"
 import burn from "../controllers/burn";
 import staking from "../controllers/staking";
 import nftservice from "../services/nftservice";
-import express, {Express, Request, Response, NextFunction } from 'express';
 const router = express.Router();
 
 //TransactionRoutes
@@ -38,43 +38,4 @@ router.get("/burn/list",burn.getBurnedByWallet)
 router.get("/staking",staking.getStakingRanking)
 router.get("/staking/walletRank",staking.getStakingWalletRank)
 router.get("/staking/list",staking.getStakedByWallet)
-
-
-import jwt from "jsonwebtoken"
-
-const SECRET_KEY = process.env.SECRET_KEY || 'DinoBetSecret20239988';
-
-
-function authenticateToken(req: Request, res: Response, next: NextFunction) {
-  const token = req.header('Authorization');
-
-  if (token === undefined) {
-    return res.status(401).json({ message: 'Unauthorized' });
-  }
-
-  jwt.verify(token.replace('Bearer ', ''), SECRET_KEY, (err, user) => {
-    if (err) {
-      return res.status(403).json({ message: 'Forbidden' });
-    }
-    req.user = user;
-  });
-}
-
-router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
-  res.json({ message: 'Protected route accessed successfully' });
-});
-
-router.post('/dinobetapi/login', (req: Request, res: Response) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  const expiresIn = 3650 * 24 * 60 * 60; // 10 years in seconds
-
-  if (username == "dinobet" && password == "DinoBetSecret20239988") {
-    const user = { name: username };
-    const token = jwt.sign(user, SECRET_KEY, { expiresIn });
-    res.json({ token });
-  } else {
-    res.status(401).json({ message: "Check Username or password" });
-  }
-});
 export = router;
