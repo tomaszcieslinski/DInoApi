@@ -14,12 +14,10 @@ declare global {
       }
     }
   }
-
 //TransactionRoutes
 router.get("/transactions", controller.getTransactions);
 router.get("/transactions/walletRank", controller.getWalletRank);
 router.get("/transactions/list",controller.getBuys)
-router.get("/transactions/count",staking.getTransactionCount)
 
 //NFT
 
@@ -47,18 +45,13 @@ router.get("/staking",staking.getStakingRanking)
 router.get("/staking/walletRank",staking.getStakingWalletRank)
 router.get("/staking/list",staking.getStakedByWallet)
 
-
 import jwt from "jsonwebtoken"
-
 const SECRET_KEY = process.env.SECRET_KEY || 'DinoBetSecret20239988';
-
 function authenticateToken(req: Request, res: Response, next: NextFunction) {
   const token = req.header('Authorization');
-
   if (token === undefined) {
     return res.status(401).json({ message: 'Unauthorized' });
   }
-
   jwt.verify(token.replace('Bearer ', ''), SECRET_KEY, (err, user) => {
     if (err) {
       return res.status(403).json({ message: 'Forbidden' });
@@ -66,16 +59,13 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
     req.user = user;
   });
 }
-
 router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
   res.json({ message: 'Protected route accessed successfully' });
 });
-
 router.post('/dinobetapi/login', (req: Request, res: Response) => {
   const username = req.body.username;
   const password = req.body.password;
   const expiresIn = 3650 * 24 * 60 * 60; // 10 years in seconds
-
   if (username == "dinobet" && password == "DinoBetSecret20239988") {
     const user = { name: username };
     const token = jwt.sign(user, SECRET_KEY, { expiresIn });
@@ -85,10 +75,5 @@ router.post('/dinobetapi/login', (req: Request, res: Response) => {
   }
 });
 
-
-
-
-
-
-
 export default router;
+
