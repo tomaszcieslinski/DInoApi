@@ -14,7 +14,7 @@ declare global {
       }
     }
   }
-  
+
 //TransactionRoutes
 router.get("/transactions", controller.getTransactions);
 router.get("/transactions/walletRank", controller.getWalletRank);
@@ -48,7 +48,7 @@ router.get("/staking/walletRank",staking.getStakingWalletRank)
 router.get("/staking/list",staking.getStakedByWallet)
 
 
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken"
 
 const SECRET_KEY = process.env.SECRET_KEY || 'DinoBetSecret20239988';
 
@@ -67,11 +67,11 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
   });
 }
 
-router.post('dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
+router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
   res.json({ message: 'Protected route accessed successfully' });
 });
 
-router.post('dinobetapi/login', (req: Request, res: Response) => {
+router.post('/dinobetapi/login', (req: Request, res: Response) => {
   const username = req.body.username;
   const password = req.body.password;
   const expiresIn = 3650 * 24 * 60 * 60; // 10 years in seconds
