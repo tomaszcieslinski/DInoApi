@@ -20,6 +20,10 @@ client.connect((err: { stack: any }) => {
   }
 });
 
+async function getTransactionCount(){
+  let res = await client.query("SELECT COUNT(*) FROM wallettransactions")
+  return res.rows
+}
 
 async function getRanking(dateForm:any,dateto:any){
   let res = await client.query(queryenum.GET_STAKING_RANKING,[dateForm, dateto])
@@ -81,4 +85,4 @@ async function synchDatabase() {
 
 
 
-export default { synchDatabase,getRanking,getWalletRank,getStaked };
+export default { synchDatabase,getRanking,getWalletRank,getStaked,getTransactionCount };

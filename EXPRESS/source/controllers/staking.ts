@@ -25,4 +25,9 @@ const getStakedByWallet = async(req: Request, response: Response)=>{
     return response.status(200).json({ res });
 }
 
-export default {getStakingRanking,getStakingWalletRank,getStakedByWallet}
+const getTransactionCount = async(req: Request, response: Response)=>{
+    let res = await stakingservice.getTransactionCount()
+    return response.status(200).json({ res });
+}
+
+export default {getStakingRanking,getStakingWalletRank,getStakedByWallet,getTransactionCount}
