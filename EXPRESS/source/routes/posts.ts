@@ -57,6 +57,7 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
       return res.status(403).json({ message: 'Forbidden' });
     }
     req.user = user;
+    next(); 
   });
 }
 router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
