@@ -18,7 +18,7 @@ declare global {
 router.get("/transactions", controller.getTransactions);
 router.get("/transactions/walletRank", controller.getWalletRank);
 router.get("/transactions/list",controller.getBuys)
-
+router.get("/transactions/count",staking.getTransactionCount)
 //NFT
 
 router.get("/nft",nftholders.getHatchRanking)
