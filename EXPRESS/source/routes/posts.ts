@@ -74,9 +74,28 @@ router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res:
      scoreTotal+=Number(element.Won)
   })
   console.log(scoreTotal)
+  let game = req.body.game.title.replace(/\_/g, '\\_')
+  .replace(/\*/g, '\\*')
+  .replace(/\[/g, '\\[')
+  .replace(/\]/g, '\\]')
+  .replace(/\(/g, '\\(')
+  .replace(/\)/g, '\\)')
+  .replace(/\~/g, '\\~')
+  .replace(/\`/g, '\\`')
+  .replace(/\>/g, '\\>')
+  .replace(/\#/g, '\\#')
+  .replace(/\+/g, '\\+')
+  .replace(/\-/g, '\\-')
+  .replace(/\=/g, '\\=')
+  .replace(/\|/g, '\\|')
+  .replace(/\{/g, '\\{')
+  .replace(/\}/g, '\\}')
+  .replace(/\./g, '\\.')
+  .replace(/\!/g, '\\!')
+
   await supabase.from("DinoBet").insert({Player: req.body.name, Won: req.body.won})
   bot.sendPhoto(5536121131,"source/DinoBanner3mobile.png",{
-    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${Math.floor(req.body.won)}\n *Game* : \\${req.body.game.title}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${ Math.round(req.body.multiple)}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
+    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${Math.floor(req.body.won)}\n *Game* : \\${game}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${ Math.round(req.body.multiple)}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
     parse_mode: 'MarkdownV2',
     reply_markup: {
       inline_keyboard: [
