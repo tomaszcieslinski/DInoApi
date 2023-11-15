@@ -76,7 +76,7 @@ router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res:
   console.log(scoreTotal)
   await supabase.from("DinoBet").insert({Player: req.body.name, Won: req.body.won})
   bot.sendPhoto(-1001883928989,"source/DinoBanner3mobile.png",{
-    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${Math.floor(req.body.won)}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${ Math.round(req.body.multiple)}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
+    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${Math.floor(req.body.won)}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${ Math.round(req.body.multiple)}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
     parse_mode: 'MarkdownV2',
     reply_markup: {
       inline_keyboard: [
