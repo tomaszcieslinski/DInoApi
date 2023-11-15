@@ -61,6 +61,7 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
   });
 }
 router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
+  console.log(req.body)
   res.json({ message: 'Protected route accessed successfully' });
 });
 router.post('/dinobetapi/login', (req: Request, res: Response) => {
