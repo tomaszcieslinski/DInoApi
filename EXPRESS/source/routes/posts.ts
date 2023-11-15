@@ -5,6 +5,11 @@ import nftholders from "../controllers/hatching"
 import burn from "../controllers/burn";
 import staking from "../controllers/staking";
 import nftservice from "../services/nftservice";
+import { createClient } from '@supabase/supabase-js'
+
+import TelegramBot from "node-telegram-bot-api";
+
+
 const router = express.Router();
 
 declare global {
@@ -60,9 +65,30 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
     next(); 
   });
 }
-router.post('/dinobetapi/gameData', authenticateToken, (req: Request, res: Response) => {
-  console.log(req.body)
-  res.json({ message: 'Protected route accessed successfully' });
+const supabase = createClient('https://zmcgresldlmnwrglimlf.supabase.co', String(process.env.SUPA_KEY))
+router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res: Response) => {
+  res.json({ message: req.body });
+  let score = await supabase.from("DinoBet").select().eq('Player',req.body.name)
+  let scoreTotal = Number(req.body.won);
+  score.data?.forEach(element => {
+     scoreTotal+=Number(element.Won)
+  })
+  console.log(scoreTotal)
+  await supabase.from("DinoBet").insert({Player: req.body.name, Won: req.body.won})
+  bot.sendPhoto(5536121131,"source/DinoBanner3mobile.png",{
+    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${Math.floor(req.body.won)}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${ Math.round(req.body.multiple)}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
+    parse_mode: 'MarkdownV2',
+    reply_markup: {
+      inline_keyboard: [
+          [   
+              {
+                  text: "Play Here",
+                  url: "https://dinobet.io/r/ZG3GhFyb"
+              },             
+          ]
+      ]
+  }
+  })
 });
 router.post('/dinobetapi/login', (req: Request, res: Response) => {
   const username = req.body.username;
@@ -75,6 +101,15 @@ router.post('/dinobetapi/login', (req: Request, res: Response) => {
   } else {
     res.status(401).json({ message: "Check Username or password" });
   }
+});
+
+const botToken = String(process.env.BOT_DINOBET);
+const bot = new TelegramBot(botToken, { polling: true });
+
+bot.onText(/\/startDinoBot/, (msg) => {
+  const chatId = msg.chat.id;
+  console.log(chatId);
+  bot.sendMessage(chatId, "Hello! Your notification bot has been set up now!");
 });
 
 export default router;
