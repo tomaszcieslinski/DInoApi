@@ -68,6 +68,7 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
 const supabase = createClient('https://zmcgresldlmnwrglimlf.supabase.co', String(process.env.SUPA_KEY))
 router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res: Response) => {
   res.json({ message: req.body });
+  console.log(req.body);
   let score = await supabase.from("DinoBet").select().eq('Player',req.body.name)
   let scoreTotal = Number(req.body.won);
   score.data?.forEach(element => {
