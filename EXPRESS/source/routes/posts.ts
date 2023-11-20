@@ -65,6 +65,11 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
     next(); 
   });
 }
+
+router.post("/score",async (req: Request, res: Response) => {
+  console.log(req)
+})
+
 const supabase = createClient('https://zmcgresldlmnwrglimlf.supabase.co', String(process.env.SUPA_KEY))
 router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res: Response) => {
   res.json({ message: req.body });
