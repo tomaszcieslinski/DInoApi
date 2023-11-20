@@ -67,7 +67,7 @@ function authenticateToken(req: Request, res: Response, next: NextFunction) {
 }
 
 router.post("/score",async (req: Request, res: Response) => {
-  console.log(req)
+  console.log(req.body)
 })
 
 const supabase = createClient('https://zmcgresldlmnwrglimlf.supabase.co', String(process.env.SUPA_KEY))
