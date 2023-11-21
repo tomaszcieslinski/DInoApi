@@ -98,45 +98,16 @@ router.post('/dinobetapi/gameData', authenticateToken, async (req: Request, res:
   .replace(/\}/g, '\\}')
   .replace(/\./g, '\\.')
   .replace(/\!/g, '\\!')
-  let won = req.body.won.replace(/\_/g, '\\_')
-  .replace(/\*/g, '\\*')
-  .replace(/\[/g, '\\[')
-  .replace(/\]/g, '\\]')
-  .replace(/\(/g, '\\(')
-  .replace(/\)/g, '\\)')
-  .replace(/\~/g, '\\~')
-  .replace(/\`/g, '\\`')
-  .replace(/\>/g, '\\>')
-  .replace(/\#/g, '\\#')
-  .replace(/\+/g, '\\+')
-  .replace(/\-/g, '\\-')
-  .replace(/\=/g, '\\=')
-  .replace(/\|/g, '\\|')
-  .replace(/\{/g, '\\{')
-  .replace(/\}/g, '\\}')
-  .replace(/\./g, '\\.')
-  .replace(/\!/g, '\\!')
-  let multiple = req.body.multiple.replace(/\_/g, '\\_')
-  .replace(/\*/g, '\\*')
-  .replace(/\[/g, '\\[')
-  .replace(/\]/g, '\\]')
-  .replace(/\(/g, '\\(')
-  .replace(/\)/g, '\\)')
-  .replace(/\~/g, '\\~')
-  .replace(/\`/g, '\\`')
-  .replace(/\>/g, '\\>')
-  .replace(/\#/g, '\\#')
-  .replace(/\+/g, '\\+')
-  .replace(/\-/g, '\\-')
-  .replace(/\=/g, '\\=')
-  .replace(/\|/g, '\\|')
-  .replace(/\{/g, '\\{')
-  .replace(/\}/g, '\\}')
-  .replace(/\./g, '\\.')
-  .replace(/\!/g, '\\!')
+  let won = Math.trunc(Number(req.body.won))
+  let multiple = Math.trunc(Number(req.body.multiple))
   await supabase.from("DinoBet").insert({Player: req.body.name, Won: req.body.won})
-  bot.sendPhoto(-1001883928989,"source/DinoBanner3mobile.png",{
-    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${won}\n *Game* : \\${game}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${multiple}\n *Total Win* : \$${scoreTotal}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
+  let video = "source/dinobet_win.mp4"
+  if(won > 20000){
+    console.log(1)
+    video = "source/dinobet_funny.mp4"
+  }
+  bot.sendVideo(-1001883928989,video,{
+    caption: `🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖\n\n\n *Player* : ${req.body.name}\n *Won* : \$${won}\n *Game* : \\${game}\n *Currency* : ${req.body.currency}\n *Multiplier* : x${multiple}\n\n\n🦖💰🦖💰🦖💰🦖💰🦖💰🦖💰🦖`,
     parse_mode: 'MarkdownV2',
     reply_markup: {
       inline_keyboard: [
