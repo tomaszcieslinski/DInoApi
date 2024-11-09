@@ -1,0 +1,47 @@
+{
+  "name": "The DINOsaurs #6988",
+  "description": "Warrior Class",
+  "image": "ipfs://QmR5Lu49d3YXrEcWGMhKKrE89XQmpxQLve6ZqyEfGVzpKA/7003.jpg",
+  "dna": "30c337f5f1d58d6b417f96c0573bc3ed5f9119b8",
+  "edition": 1000,
+  "date": 1682171800387,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Sword"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Warrior"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Branch"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Coat"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Headphones"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Squared"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

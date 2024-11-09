@@ -1,0 +1,47 @@
+{
+  "name": "The DINOsaurs #4201",
+  "description": "Thief Class",
+  "image": "ipfs://QmR5Lu49d3YXrEcWGMhKKrE89XQmpxQLve6ZqyEfGVzpKA/4210.jpg",
+  "dna": "878297ed461729cca91e4a3861413d14597612e6",
+  "edition": 209,
+  "date": 1682179232310,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Shuriken"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Thief"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Bored"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Sweater"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "None"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Squared"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

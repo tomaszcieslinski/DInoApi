@@ -1,0 +1,47 @@
+{
+  "name": "The DINOsaurs #1525",
+  "description": "Archer Class",
+  "image": "ipfs://QmR5Lu49d3YXrEcWGMhKKrE89XQmpxQLve6ZqyEfGVzpKA/1528.jpg",
+  "dna": "41903ea461c36cf9b9fd1efd296b604486c79a67",
+  "edition": 1525,
+  "date": 1682178272454,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Weapon",
+      "value": "Crossbow"
+    },
+    {
+      "trait_type": "Class",
+      "value": "Archer"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Bored"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Farmer"
+    },
+    {
+      "trait_type": "Pet",
+      "value": "None"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Baseball"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Squared"
+    },
+    {
+      "trait_type": "First Edition",
+      "value": "First"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}
